@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Adélaïde Laanatri</title>
+    <link rel="stylesheet" href="assets/css/dauphinois.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="container-fluid">
+        <div class="navBar">
+            <a href="index.php?#projets" class="retour">
+                <p class="textRetour">retour</p>
+            </a>
+        </div>
+    </nav>
+    <!--FIN NAVBAR-->
+    <!--ACCUEIL-->
+    <main>
+        <section class="container-fluid accueil">
+            <div class="row flex-column col-lg-12  banner">
+                <img src="assets/images/image-dauphinois/Image-dauphinois-banner.jpg" alt="">
+            </div>
+        </section>
+        <!--FIN ACCUEIL-->
+        <!--TITRE-->
+        <section class="container titre">
+            <div class="row work">
+                <div class="col-lg-2 offset-lg-10 col-5 offset-1 web-d">
+                </div>
+            </div>
+        </section>
+        <!--FIN TITRE-->
+        <!--CONTENU-->
+        <section class="container-fluid content">
+            <div class="row">
+                <div class="col-lg-6 col-12 maquette">
+                    <img src="assets/images/image-dauphinois/screencapture-dauphinois-2020-02-16-16_39_53.jpg" alt="">
+                </div>
+                <div class="col-lg-6 col-12 charte">
+                    <div class="  text-projet">
+                        <h4>Projet <br> <span>Chauffage</span></h4>
+                        <div class="hr"></div>
+
+                        <div class="row description">
+                            <div class="col-lg-7 brief">
+                                <p>Une entreprise d'instalateurs de poêles et de cheminées qui souhaitaient un site de prise de contact. </p>
+                            </div>
+                            <div class="col-lg-5 outils">
+                                <p class="p1">Poêles et Cheminées</p>
+                                <p class="p2">Wireframe
+                                    <br> maquette
+                                    <br> Elements graphiques
+                                    <br> HTML 5
+                                    <br> CSS 3
+                                    <br> JS</p>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="row typo-couleur align-items-center">
+                        <div class="col-4 couleur">
+                            <img src="assets/images/image-dauphinois/couleur-dauphinois.jpg" alt="">
+                        </div>
+                        <div class="col-6 offset-2 typo">
+                            <img src="assets/images/image-dauphinois/typo-dauphinois.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="row logo-picto align-items-center">
+                        <div class="col-12 logo">
+                            <img src="assets/images/image-dauphinois/picto-dauphinois.png" alt="">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </section>
+    </main>
+
+
+    <footer class="d-flex justify-content-center align-items-center">
+        <p>Portfolio créé par Adélaïde Laanatri -&nbsp;</p>
+        <a href="https://fr.linkedin.com/in/ad%C3%A9la%C3%AFde-laanatri" target="_blank">Linkedin</a>
+        <p class="pf">&nbsp;&nbsp;&nbsp;</p>
+        <a href="https://dribbble.com/Adelaide_Laanatri" target="_blank">Dribble</a>
+        <p class="pf">&nbsp;&nbsp;&nbsp;</p>
+        <a href="https://www.pinterest.fr/adelaidelaanatri/" target="_blank">Pinterest</a>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+    ////////// retour
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 20) {
+            $('.retour').addClass('retourOnSroll');
+        } else {
+            $('.retour').removeClass('retourOnSroll');
+        }
+    });
+
+    $(document).ready(function() {
+        $('.retour').mouseover(function() {
+            $('.textRetour').replaceWith('<img src="assets/images/left-arrow.svg" class="fleche" alt="">')
+        })
+        $('.retour').mouseleave(function() {
+            $('.fleche').replaceWith('<p class="textRetour" >retour</p>')
+
+        })
+    })
+</script>

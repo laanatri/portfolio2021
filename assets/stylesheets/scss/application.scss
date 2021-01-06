@@ -1,0 +1,1388 @@
+// Import stylesheets
+
+// Components
+@import url("../css/components/navbar.css");
+
+// Config
+@import url("../css/config/colors.css");
+@import url("../css/config/fonts.css");
+
+//Pages
+@import url("../css/pages/main.css");
+@import url("../css/pages/chill-swell.css");
+@import url("../css/pages/dauphinois.css");
+@import url("../css/pages/welina.css");
+@import url("../css/pages/code_1.css");
+@import url("../css/pages/graphics.css");
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+ ::-webkit-scrollbar {
+    background-color: #F2EFE9;
+    border: none;
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track-piece {
+    background-color: #F2EFE9;
+    border: none;
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #D93D59;
+    background-size: cover;
+    border: none;
+    border-radius: 10px;
+    width: 10px;
+}
+
+
+
+////////////// MAIN
+////// SECTION 1 ACCUEIL
+main {
+    background-color: #efe8e1;
+    .accueil {
+        width: 99.4vw;
+        height: 100vh;
+        background-image: url("../images/image-home/Image-background-top-home.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        position: relative;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: hidden;
+        .logo {
+            height: 100%;
+            width: 100%;
+            margin: 0 !important;
+            padding: 73px 0 0 0 !important;
+            .nom {
+                font-family: 'Oswald', sans-serif;
+                font-size: 30px !important;
+                color: #efe8e1 !important;
+                width: 100%;
+                text-align: end;
+                font-variant: small-caps;
+            }
+            .portfolio {
+                font-family: 'Playfair Display', serif;
+                font-size: 12rem;
+                color: #efe8e1;
+                line-height: 10rem;
+                text-align: center;
+                margin: 3vh 0;
+                padding-bottom: 20px;
+            }
+            .titre {
+                font-family: 'Oswald', sans-serif;
+                font-size: 30px !important;
+                color: #efe8e1 !important;
+                width: 100%;
+                font-variant: small-caps;
+            }
+            .hr {
+                height: 3px;
+                width: 25vw;
+                background-color: #efe8e1;
+            }
+            p {
+                margin: 0 !important;
+            }
+            @media screen and (max-width: 991px) {
+                .nom .row,
+                .titre .row {
+                    justify-content: center !important;
+                    align-items: center !important;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                }
+                .portfolio {
+                    font-size: 7rem !important;
+                    line-height: 6rem !important;
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+    ////// SECTION 2 PROJETS
+    .projetsSection {
+        height: auto;
+        padding: 0 !important;
+        .section2 {
+            margin: 0 !important;
+            .projet {
+                height: auto;
+                width: 100%;
+                padding: 0 !important;
+                margin: 0 !important;
+                .titreProjets {
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(../images/image-home/projet-web-design.png);
+                    background-repeat: no-repeat;
+                    background-position: top;
+                    background-size: initial;
+                    margin-top: 85px;
+                }
+            }
+            .projets {
+                margin: 0;
+                padding: 85px 0 85px 0;
+                .projetWeb1:hover {
+                    .image-projet1 img {
+                        opacity: 0;
+                    }
+                }
+                .projetWeb1 {
+                    width: 100%;
+                    flex-direction: row;
+                    margin: 0 0 85px 0;
+                    .image-projet1 {
+                        padding: 0;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                            position: absolute;
+                            transition: 0.3s ease-in-out;
+                        }
+                        video {
+                            width: 99.9%;
+                            height: 100%;
+                            z-index: 1;
+                        }
+                    }
+                    .text-projet {
+                        z-index: 66;
+                        text-align: end;
+                        padding-top: 48px;
+                        h4 {
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 40px;
+                        }
+                        .hr {
+                            height: 3px;
+                            width: 130%;
+                            margin: 20px 0 20px -30%;
+                            background-color: black;
+                        }
+                        .p1 {
+                            font-family: 'Crimson Pro', serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .p2 {
+                            font-family: 'Crimson Pro', serif;
+                            font-size: 16px;
+                            margin-bottom: 28%;
+                        }
+                        .fleche {
+                            width: 25%;
+                            height: 10vw;
+                            margin-left: 40px;
+                            .img1 {
+                                width: 100px;
+                                height: 100px;
+                                display: block;
+                            }
+                            .img2 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .projetWeb2:hover {
+                    .image-projet2 img {
+                        opacity: 0;
+                    }
+                }
+                .projetWeb2 {
+                    align-self: flex-end;
+                    width: 100%;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    margin: 0 0 85px 0;
+                    .image-projet2 {
+                        padding: 0;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                            position: absolute;
+                            transition: 0.3s ease-in-out;
+                        }
+                        video {
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                        }
+                    }
+                    .text-projet {
+                        z-index: 66;
+                        padding-top: 48px;
+                        display: flex;
+                        flex-direction: column;
+                        h4 {
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 40px;
+                        }
+                        .hr {
+                            height: 3px;
+                            width: 130%;
+                            margin: 20px -30% 20px 0;
+                            background-color: black;
+                        }
+                        .p1 {
+                            font-family: 'Crimson Pro', serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .p2 {
+                            font-family: 'Crimson Pro', serif;
+                            font-size: 16px;
+                            margin-bottom: 28%;
+                        }
+                        .fleche {
+                            width: 25%;
+                            height: 10vw;
+                            align-self: flex-end;
+                            margin-right: 50px;
+                            transition: 0.5s ease-in-out;
+                            .img1 {
+                                width: 100px;
+                                height: 100px;
+                                display: block;
+                            }
+                            .img2 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .projetWeb3:hover {
+                    .image-projet3 img {
+                        opacity: 0;
+                    }
+                }
+                .projetWeb3 {
+                    width: 100%;
+                    flex-direction: row;
+                    margin: 0;
+                    .image-projet3 {
+                        padding: 0;
+                        position: relative;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                            position: absolute;
+                            transition: 0.3s ease-in-out;
+                        }
+                        video {
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                        }
+                    }
+                    .text-projet {
+                        z-index: 66;
+                        text-align: end;
+                        padding-top: 48px;
+                        h4 {
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 40px;
+                        }
+                        .hr {
+                            height: 3px;
+                            width: 130%;
+                            margin: 20px 0 20px -30%;
+                            background-color: black;
+                        }
+                        .p1 {
+                            font-family: 'Crimson Pro', serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .p2 {
+                            font-family: 'Crimson Pro', serif;
+                            font-size: 16px;
+                            margin-bottom: 28%;
+                        }
+                        .fleche {
+                            width: 25%;
+                            height: 10vw;
+                            margin-left: 40px;
+                            transition: 0.5s ease-in-out;
+                            .img1 {
+                                width: 100px;
+                                height: 100px;
+                                display: block;
+                            }
+                            .img2 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        ////// SECTION 2 PROJETS RESPONSIVE
+        @media screen and (max-width: 991px) {
+            .section2 {
+                flex-direction: column;
+                align-items: center;
+                .projet {
+                    height: 100vh !important;
+                    .titreProjets {
+                        background-position: center;
+                        background-size: 23% auto;
+                    }
+                }
+                .projets {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    .projetWeb1 {
+                        flex-direction: column;
+                        margin: 0 0 170px 0;
+                        .image-projet1 {
+                            img {
+                                display: none;
+                            }
+                        }
+                        .text-projet {
+                            .p2 {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                .img1 {
+                                    display: none !important;
+                                }
+                                .img2 {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                    }
+                    .projetWeb2 {
+                        flex-direction: column-reverse !important;
+                        margin: 0 0 170px 0;
+                        .image-projet2 {
+                            img {
+                                display: none;
+                            }
+                        }
+                        .text-projet {
+                            .p2 {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                .img1 {
+                                    display: none !important;
+                                }
+                                .img2 {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                    }
+                    .projetWeb3 {
+                        flex-direction: column;
+                        margin: 0 0 170px 0;
+                        .image-projet3 {
+                            img {
+                                display: none;
+                            }
+                        }
+                        .text-projet {
+                            .p2 {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                .img1 {
+                                    display: none !important;
+                                }
+                                .img2 {
+                                    display: block !important;
+                                }
+                            }
+                        }
+                    }
+                    .hr {
+                        width: 100% !important;
+                        margin: 20px 0 20px 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////// SECTION 3 CITATION
+.boardSection {
+    height: 120vh;
+    background-color: black;
+    z-index: -99;
+    padding: 0 !important;
+    .section3 {
+        height: 100%;
+        width: 100%;
+        margin: 0 !important;
+        .board {
+            height: 100%;
+            padding: 85px 0 85px 0;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}
+
+//////////// SECTION 3 CITATION RESPONSIVE
+@media screen and (max-width: 991px) {
+    .boardSection {
+        height: auto;
+        .section3 {
+            height: auto;
+            padding-top: 85px;
+            padding-bottom: 85px;
+            .board {
+                height: auto;
+                padding: 0;
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//////////// SECTION 4 CODE
+.codeSection {
+    height: auto;
+    padding: 0 !important;
+    .section4 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 !important;
+        .code {
+            height: auto;
+            width: 100%;
+            padding: 0 !important;
+            margin: 0 !important;
+            .titreCodes {
+                width: 100%;
+                height: 100%;
+                background-image: url(../images/image-home/fun-code.png);
+                background-repeat: no-repeat;
+                background-size: initial;
+                background-position: 120px 85px;
+            }
+        }
+        .codes {
+            margin: 0;
+            padding: 85px 0 85px 0;
+            .code1:hover {
+                .image-code1 img {
+                    opacity: 0;
+                }
+            }
+            .code1 {
+                align-self: flex-end;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin: 0 0 85px 0;
+                .image-code1 {
+                    padding: 0;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                        position: absolute;
+                        transition: 0.3s ease-in-out;
+                    }
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                }
+                .text-code {
+                    z-index: 66;
+                    padding-top: 48px;
+                    display: flex;
+                    flex-direction: column;
+                    h4 {
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 40px;
+                    }
+                    .hr {
+                        height: 3px;
+                        width: 130%;
+                        margin: 20px -30% 20px 0;
+                        background-color: black;
+                    }
+                    .p1 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .p2 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 16px;
+                        margin-bottom: 28%;
+                    }
+                    .fleche {
+                        width: 25%;
+                        height: 10vw;
+                        margin-left: 40px;
+                        transition: 0.5s ease-in-out;
+                        align-self: flex-end;
+                        margin-right: 50px;
+                        .img1 {
+                            width: 100px;
+                            height: 100px;
+                            display: block;
+                        }
+                        .img2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .code2:hover {
+                .image-code2 img {
+                    opacity: 0;
+                }
+            }
+            .code2 {
+                width: 100%;
+                flex-direction: row;
+                margin: 0;
+                .image-code2 {
+                    padding: 0;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                        position: absolute;
+                        transition: 0.3s ease-in-out;
+                    }
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                }
+                .text-code {
+                    z-index: 66;
+                    text-align: end;
+                    padding-top: 48px;
+                    h4 {
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 40px;
+                    }
+                    .hr {
+                        height: 3px;
+                        width: 130%;
+                        margin: 20px 0 20px -30%;
+                        background-color: black;
+                    }
+                    .p1 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .p2 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 16px;
+                        margin-bottom: 28%;
+                    }
+                    .fleche {
+                        width: 25%;
+                        height: 10vw;
+                        margin-left: 40px;
+                        transition: 0.5s ease-in-out;
+                        .img1 {
+                            width: 100px;
+                            height: 100px;
+                            display: block;
+                        }
+                        .img2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //////////// SECTION 4 CODE RESPONSIVE
+    @media screen and (max-width: 991px) {
+        .section4 {
+            flex-direction: column;
+            align-items: center;
+            .code {
+                height: 100vh;
+                .titreCodes {
+                    background-position: center;
+                    background-size: 20% auto;
+                }
+            }
+            .codes {
+                padding-top: 0;
+                padding-bottom: 0;
+                .code1 {
+                    flex-direction: column-reverse;
+                    margin: 0 0 170px 0;
+                    .image-code1 {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .text-code {
+                        .p2 {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            .img1 {
+                                display: none !important;
+                            }
+                            .img2 {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+                .code2 {
+                    flex-direction: column;
+                    margin: 0 0 170px 0;
+                    .image-code2 {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .text-code {
+                        .p2 {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            .img1 {
+                                display: none !important;
+                            }
+                            .img2 {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+                .hr {
+                    width: 100% !important;
+                    margin: 20px 0 20px 0 !important;
+                }
+            }
+        }
+    }
+}
+
+//////////// SECTION 5 CITATION
+.black {
+    width: 99.4vw;
+    background-color: black;
+}
+
+.citationSection {
+    height: 120vh;
+    .hrHaut {
+        height: 10%;
+        padding-bottom: 25px;
+        .hr {
+            height: 3px;
+            background-color: #efe8e1;
+        }
+    }
+    .inspiration {
+        height: 80%;
+        background-image: url(../images/image-home/inspiration.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        .textInspiration {
+            height: 36%;
+            padding-bottom: 20%;
+            p {
+                font-family: 'Crimson Pro', serif;
+                font-size: 30px;
+                color: #efe8e1;
+            }
+             :last-child {
+                font-size: 16px;
+                text-align: right;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .inspiration {
+            background-image: url(../images/image-home/inspiration-responsive.png);
+            background-position: center 20%;
+            background-size: 80%;
+            align-items: center;
+            .textInspiration {
+                height: 60%;
+                padding-bottom: 20%;
+            }
+        }
+    }
+    .hrBas {
+        height: 10%;
+        padding-top: 25px;
+        .hr {
+            height: 3px;
+            background-color: #efe8e1;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .citationSection {
+        height: 100vh;
+    }
+}
+
+////// SECTION 6 GRAPHICS
+.graphicsSection {
+    height: auto;
+    padding: 0 !important;
+    .section6 {
+        margin: 0 !important;
+        .graphic {
+            height: auto;
+            width: 100%;
+            padding: 0 !important;
+            margin: 0 !important;
+            .titreGraphics {
+                width: 100%;
+                height: 100%;
+                background-image: url(../images/image-home/graphics.png);
+                background-repeat: no-repeat;
+                background-size: initial;
+                background-position: 0 85px;
+            }
+        }
+        .graphics {
+            margin: 0;
+            padding: 85px 0 85px 0;
+            .graphic1:hover {
+                .image-graphic1 img {
+                    opacity: 0;
+                }
+            }
+            .graphic1 {
+                width: 100%;
+                flex-direction: row;
+                margin: 0 0 85px 0;
+                .image-graphic1 {
+                    padding: 0;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                        position: absolute;
+                        transition: 0.3s ease-in-out;
+                    }
+                    video {
+                        width: 99.9%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                }
+                .text-graphic1 {
+                    z-index: 66;
+                    text-align: end;
+                    padding-top: 48px;
+                    h4 {
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 40px;
+                    }
+                    .hr {
+                        height: 3px;
+                        width: 130%;
+                        margin: 20px 0 20px -30%;
+                        background-color: black;
+                    }
+                    .p1 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .p2 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 16px;
+                        margin-bottom: 28%;
+                    }
+                    .fleche {
+                        width: 25%;
+                        height: 10vw;
+                        margin-left: 40px;
+                        transition: 0.5s ease-in-out;
+                        .img1 {
+                            width: 100px;
+                            height: 100px;
+                            display: block;
+                        }
+                        .img2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .graphic2:hover {
+                .image-graphic2 img {
+                    opacity: 0;
+                }
+            }
+            .graphic2 {
+                align-self: flex-end;
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin: 0 0 85px 0;
+                .image-graphic2 {
+                    padding: 0;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                        position: absolute;
+                        transition: 0.3s ease-in-out;
+                    }
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                    }
+                }
+                .text-graphic2 {
+                    z-index: 66;
+                    padding-top: 48px;
+                    display: flex;
+                    flex-direction: column;
+                    h4 {
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 40px;
+                    }
+                    .hr {
+                        height: 3px;
+                        width: 130%;
+                        margin: 20px -30% 20px 0;
+                        background-color: black;
+                    }
+                    .p1 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    .p2 {
+                        font-family: 'Crimson Pro', serif;
+                        font-size: 16px;
+                        margin-bottom: 28%;
+                    }
+                    .fleche {
+                        width: 25%;
+                        height: 10vw;
+                        transition: 0.5s ease-in-out;
+                        align-self: flex-end;
+                        margin-right: 70px;
+                        .img1 {
+                            width: 100px;
+                            height: 100px;
+                            display: block;
+                        }
+                        .img2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ////// SECTION 6 GRAPHICS RESPONSIVE
+    @media screen and (max-width: 991px) {
+        .section6 {
+            flex-direction: column;
+            align-items: center;
+            .graphic {
+                height: 100vh;
+                .titreGraphics {
+                    background-position: center;
+                    background-size: 20% auto;
+                }
+            }
+            .graphics {
+                padding-top: 0;
+                padding-bottom: 0;
+                .graphic1 {
+                    flex-direction: column;
+                    margin: 0 0 170px 0;
+                    .image-graphic1 {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .text-graphic1 {
+                        .p2 {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            .img1 {
+                                display: none !important;
+                            }
+                            .img2 {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+                .graphic2 {
+                    flex-direction: column-reverse;
+                    margin: 0 0 170px 0;
+                    .image-graphic2 {
+                        img {
+                            display: none;
+                        }
+                    }
+                    .text-graphic2 {
+                        .p2 {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            .img1 {
+                                display: none !important;
+                            }
+                            .img2 {
+                                display: block !important;
+                            }
+                        }
+                    }
+                }
+                .hr {
+                    width: 100% !important;
+                    margin: 20px 0 20px 0 !important;
+                }
+            }
+        }
+    }
+}
+
+////// SECTION 7 CV
+.black2 {
+    width: 99.4vw;
+    background-color: black;
+    z-index: 50;
+    margin-bottom: -22vh;
+    .CVSection {
+        height: 125vh;
+        padding: 85px 0 0 0;
+        .inspiration {
+            height: 48%;
+            margin: 0;
+            .photo {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                .portrait {
+                    padding: 0;
+                    margin: 0;
+                    height: 60%;
+                    width: 100%;
+                    img {
+                        height: 100%;
+                    }
+                }
+                .boutton {
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        margin: 0 0 50px 0;
+                        padding: 0;
+                        width: 380px;
+                        height: auto;
+                        background-color: rgba($color: #00ab98, $alpha: 0.3);
+                        font-family: 'Crimson Pro', serif;
+                        color: #efe8e1;
+                        font-weight: 600;
+                        font-size: 2rem;
+                        line-height: 4rem;
+                        opacity: 0.8;
+                        text-align: center;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            .description {
+                height: 100%;
+                padding: 30px 0 15% 0;
+                .titre {
+                    padding: 0 10% 0 10%;
+                }
+                p {
+                    font-family: 'Crimson Pro', serif;
+                    font-size: 25px;
+                    color: #efe8e1;
+                    padding: 0 10% 0 10%;
+                }
+            }
+        }
+        .skills {
+            height: 20%;
+            div {
+                width: 99.4vw;
+                height: 100%;
+            }
+            svg {
+                display: block;
+                font: 10.5em 'Oswald';
+                width: 99.4vw;
+                height: 100%;
+                margin: 0 0;
+                text {
+                    width: 80%;
+                }
+            }
+            .text-copy {
+                fill: none;
+                stroke: #efe8e1;
+                stroke-dasharray: 6% 29%;
+                stroke-width: 5px;
+                stroke-dashoffset: 0%;
+                animation: stroke-offset 5.5s infinite linear;
+            }
+            .text-copy:nth-child(1) {
+                stroke: #439b8d;
+                animation-delay: -1;
+            }
+            .text-copy:nth-child(2) {
+                stroke: #00ab98;
+                animation-delay: -2s;
+            }
+            .text-copy:nth-child(3) {
+                stroke: #95757a;
+                animation-delay: -3s;
+            }
+            .text-copy:nth-child(4) {
+                stroke: #d8425d;
+                animation-delay: -4s;
+            }
+            .text-copy:nth-child(5) {
+                stroke: #fd043a;
+                animation-delay: -5s;
+            }
+            @keyframes stroke-offset {
+                100% {
+                    stroke-dashoffset: -35%;
+                }
+            }
+        }
+        .skills2 {
+            height: 24%;
+            div {
+                width: 99.4vw;
+                height: 100%;
+                padding-bottom: 40px;
+                z-index: 98;
+            }
+            svg {
+                display: block;
+                font: 10.5em 'Oswald';
+                width: 99.4vw;
+                height: 100%;
+                margin: 0 0;
+                text {
+                    width: 80%;
+                }
+            }
+            .text-copy {
+                fill: none;
+                stroke: #efe8e1;
+                stroke-dasharray: 6% 29%;
+                stroke-width: 5px;
+                stroke-dashoffset: 0%;
+                animation: stroke-offset 5.5s infinite linear;
+            }
+            .text-copy:nth-child(1) {
+                stroke: #439b8d;
+                animation-delay: -1;
+            }
+            .text-copy:nth-child(2) {
+                stroke: #00ab98;
+                animation-delay: -2s;
+            }
+            .text-copy:nth-child(3) {
+                stroke: #95757a;
+                animation-delay: -3s;
+            }
+            .text-copy:nth-child(4) {
+                stroke: #d8425d;
+                animation-delay: -4s;
+            }
+            .text-copy:nth-child(5) {
+                stroke: #fd043a;
+                animation-delay: -5s;
+            }
+            @keyframes stroke-offset {
+                100% {
+                    stroke-dashoffset: -35%;
+                }
+            }
+        }
+    }
+}
+
+////// SECTION 7 CV RESPONSIVE
+@media screen and (max-width: 991px) {
+    .black2 {
+        margin: 0;
+        .CVSection {
+            height: auto;
+            .inspiration {
+                flex-direction: column-reverse;
+            }
+            .description {
+                margin: 0 !important;
+            }
+            .titre {
+                margin-bottom: 85px;
+                text-align: center;
+                width: 100%;
+                padding: 0 !important;
+            }
+            p {
+                padding: 0 15px 0 15px !important;
+            }
+            .photo {
+                align-items: center !important;
+                .portrait {
+                    margin-bottom: 85px !important;
+                }
+                .boutton {
+                    justify-content: center !important;
+                    margin-bottom: 85px !important;
+                    width: 80% !important;
+                    a {
+                        margin: 0 !important;
+                    }
+                }
+            }
+            .skills {
+                display: none;
+            }
+            .skills2 {
+                display: none;
+            }
+        }
+    }
+}
+
+////// SECTION 8 CONTACT
+.back {
+    background-image: url("../images/image-home/Image-background-footer-home.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99.4vw;
+}
+
+.contactSection {
+    height: 95vh;
+    .section8 {
+        height: 100%;
+        margin: 0;
+        .contact {
+            padding: 10% 0 0 0;
+            h3 {
+                font-family: 'Playfair Display', serif;
+                font-size: 8vw;
+                color: #efe8e1;
+                font-variant: small-caps;
+            }
+            p {
+                font-family: 'Oswald', sans-serif;
+                font-weight: 100;
+                font-size: 2.5rem;
+                color: #efe8e1;
+            }
+            span {
+                font-size: 4rem;
+            }
+        }
+        @media screen and (max-width: 1200px) and (min-width: 991px) {
+            .contact {
+                padding: 10% 0 0 10px;
+            }
+        }
+        .contacts {
+            padding: 21% 0 0 0;
+            .formulaireContact {
+                width: 80%;
+                div {
+                    width: 100%;
+                }
+                input {
+                    width: 100%;
+                    background-color: transparent;
+                    font-family: 'Crimson Pro', serif;
+                    border: none;
+                    border-bottom: 2px solid #efe8e1;
+                    font-size: 1.5rem;
+                    margin-bottom: 7%;
+                }
+                input::placeholder {
+                    color: #efe8e1;
+                    font-family: 'Crimson Pro', serif;
+                    font-size: 1.5rem;
+                    opacity: 0.5;
+                }
+                textarea {
+                    width: 100%;
+                    background-color: transparent;
+                    font-family: 'Crimson Pro', serif;
+                    color: #efe8e1;
+                    border: none;
+                    border-bottom: 2px solid #efe8e1;
+                    margin-bottom: 7%;
+                }
+                textarea::placeholder {
+                    color: #efe8e1;
+                    font-family: 'Crimson Pro', serif;
+                    font-size: 1.5rem;
+                    opacity: 0.5;
+                }
+                .envoyer {
+                    width: 100%;
+                    background-color: rgba($color: #fff, $alpha: 0.3);
+                    font-family: 'Crimson Pro', serif;
+                    border: none;
+                    color: #efe8e1;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    line-height: 4rem;
+                    opacity: 0.8;
+                }
+                .envoyer:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+    .contactSection {
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 10% !important;
+    }
+}
+
+////// SECTION 8 CONTACT RESPONSIVE
+@media screen and (max-width: 991px) {
+    .back {
+        background-size: cover;
+        height: auto;
+        .container {
+            max-width: 100%;
+        }
+    }
+    .contactSection {
+        padding: 0 !important;
+        margin: 0 !important;
+        height: auto;
+        .section8 {
+            margin: 0;
+            padding: 0;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            .contact {
+                margin: auto;
+                align-items: center;
+                h3 {
+                    font-size: 16vw;
+                }
+                p {
+                    font-size: 6vw;
+                }
+                span {
+                    font-size: 8vw;
+                }
+            }
+            .contacts {
+                margin: auto;
+                align-items: center;
+                padding: 40px 0 0 0;
+                height: auto;
+                .formulaireContact {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+////// SECTION 9 FOOTER
+footer {
+    height: 50px;
+    background-color: black;
+    p,
+    a {
+        color: #efe8e1;
+        text-align: center;
+        font-family: 'Crimson Pro', serif;
+        font-size: 14px;
+        text-decoration: #efe8e1;
+        margin: 0;
+    }
+    a:hover {
+        color: #efe8e1;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        .pf {
+            display: none;
+        }
+    }
+}
