@@ -1,0 +1,201 @@
+/////// NAVIGATION
+.navbar {
+  width: 99.4vw;
+  z-index: 99 !important;
+  padding: 0 !important;
+  .navbarFixe {
+      width: 100%;
+      button {
+          height: 70px;
+          margin-right: 10px;
+          display: inline !important;
+          border: none !important;
+          outline: none !important;
+          img {
+              height: 100%;
+              padding-top: 10px;
+          }
+      }
+  }
+
+
+
+  .navBis {
+      transition: 0.5s ease-out;
+      padding: 0 !important;
+      width: 100%;
+      border-bottom: 2px solid #564752;
+      ul {
+          width: 100%;
+          padding: 0 !important;
+          height: calc(100vh - 70px);
+          .bouton1 {
+              margin-top: 50px;
+          }
+          .bouton4 {
+              margin-bottom: 30px;
+          }
+          li {
+              width: 100%;
+              margin-left: 10%;
+              a {
+                  width: 500px;
+                  height: 100%;
+                  padding: 0 !important;
+                  position: relative;
+                  .hautDeLaNav {
+                      width: 500px;
+                      font-family: 'Slang', serif;
+                      font-size: 6em;
+                      color: 564752;
+                      text-decoration: none;
+                      line-height: 0.8em;
+                      transition: 0.2s ease-in-out;
+                      span {
+                          font-size: 0.5em;
+                          color: #564752;
+                          font-family: 'Sofia', cursive;
+                      }
+                  }
+              }
+          }
+          .hr {
+              height: 2px;
+              width: 80%;
+              margin-left: 10%;
+              margin-top: 0 !important;
+              margin-bottom: 30px;
+              background-color: #564752;
+          }
+          p {
+              margin-left: 10%;
+              margin-bottom: 20px;
+              font-family: 'Sofia', cursive;
+              font-size: 1.2em;
+              font-weight: 100;
+              color: #564752;
+          }
+          .reseaux {
+            margin-left: 10vw;
+            margin-right: 10vw;
+            
+            a {
+              font-size: 2em;
+              font-family: 'Slang', serif;
+              font-weight: 0;
+              padding-right: 30px;
+            }
+            .reseau_linkedin {
+              color: #A7C0F2;
+            }
+            .reseau_github {
+              color: #3FB376;
+            }
+            .reseau_dribbble {
+              color: #D93D59;
+            }
+          }
+        }
+      }
+    }
+
+.nav-link {
+  color: #564752;
+  text-decoration: none;
+  position: relative;
+}
+
+.bouton-projets {
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    bottom: 8px;
+    left: 47%;
+    border-radius: 5px;
+    z-index: -1;
+    background: #A7C0F2;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0s;
+  }
+  .nav-link:hover {
+    color: #A7C0F2;
+  }
+  .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+.bouton2 {
+  .nav-link:before {
+      content: "";
+      position: absolute;
+      width: 13%;
+      height: 2px;
+      bottom: 8px;
+      left: 27%;
+      border-radius: 0px;
+      z-index: 0;
+      background: #00ffca;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+      transform-origin: left;
+      transition-delay: 0s;
+  }
+  .nav-link:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+  }
+}
+
+.bouton3 {
+  .nav-link:before {
+      content: "";
+      position: absolute;
+      width: 19%;
+      height: 2px;
+      bottom: 8px;
+      left: 62%;
+      border-radius: 0px;
+      z-index: 0;
+      background: #00ffca;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+      transform-origin: left;
+      transition-delay: 0s;
+  }
+  .nav-link:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+  }
+}
+
+.bouton4 {
+  .nav-link:before {
+      content: "";
+      position: absolute;
+      width: 21%;
+      height: 2px;
+      bottom: 8px;
+      left: 20%;
+      border-radius: 0px;
+      z-index: 0;
+      background: #00ffca;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: 0.3s ease-in-out;
+      transform-origin: left;
+      transition-delay: 0s;
+  }
+  .nav-link:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+  }
+}

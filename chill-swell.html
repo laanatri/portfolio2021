@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Adélaïde Laanatri</title>
+    <link rel="stylesheet" href="assets/css/chill-swell.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="container-fluid">
+        <div class="navBar">
+            <a href="index.php?#projets" class="retour">
+                <p class="textRetour">retour</p>
+            </a>
+        </div>
+    </nav>
+    <!--FIN NAVBAR-->
+    <!--ACCUEIL-->
+    <main>
+        <section class="container-fluid accueil">
+            <div class="row flex-column col-lg-12  banner">
+                <img src="assets/images/image-cands/Image-ocean-chill-swell-banner.png" alt="">
+            </div>
+        </section>
+        <!--FIN ACCUEIL-->
+        <!--TITRE-->
+        <section class="container titre">
+            <div class="row work">
+                <div class="col-lg-2 offset-lg-10 web-d">
+                </div>
+            </div>
+        </section>
+        <!--FIN TITRE-->
+        <!--CONTENU-->
+        <section class="container-fluid content">
+            <div class="row">
+                <div class="col-lg-6 maquette">
+                    <img src="assets/images/image-cands/screencapture-chillandswell-2020-02-16-16_39_53.jpg" alt="">
+                </div>
+                <div class="col-lg-6 charte">
+                    <div class="  text-projet">
+                        <h4>Projet <br> <span>CHILL & SWELL</span></h4>
+                        <div class="hr"></div>
+
+                        <div class="row description">
+                            <div class="col-lg-7 brief">
+                                <p>Chill & Swell a été créé pour promouvoir la location d'une villa à Essaouira au bord de l'océan. Le site est créé pour donner de la visibilité au projet et rediriger vers le site de réservation en ligne.</p>
+                            </div>
+                            <div class="col-lg-5 outils">
+                                <p class="p1">Surfhouse</p>
+                                <p class="p2">Logo
+                                    <br> Wireframe
+                                    <br> Wordpress
+                                    <br> CSS 3
+                                    <br> Retouche Photo</p>
+                            </div>
+
+                        </div>
+                        <div class="row typo-couleur align-items-center">
+                            <div class="col-4 couleur">
+                                <img src="assets/images/image-cands/couleur-cands.jpg" alt="">
+                            </div>
+                            <div class="col-6 offset-2 typo">
+                                <img src="assets/images/image-cands/typo-cands.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row flex-column capture">
+                            <div class="col-7 align-self-end">
+                                <img src="assets/images/image-cands/Image-screencapture-chillandswell-nos-chambres1-2020-03-03-16_32_53.png" alt="">
+                            </div>
+
+                            <div class="col-7">
+                                <img src="assets/images/image-cands/Image-screencapture-chillandswell-nos-chambres2-2020-03-03-16_32_53.png" alt="">
+                            </div>
+
+                            <div class="col-7 align-self-end">
+                                <img src="assets/images/image-cands/Image-screencapture-chillandswell-nos-chambres3-2020-03-03-16_32_53.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+        </section>
+    </main>
+
+
+    <footer class="d-flex justify-content-center align-items-center">
+        <p>Portfolio créé par Adélaïde Laanatri -&nbsp;</p>
+        <a href="https://fr.linkedin.com/in/ad%C3%A9la%C3%AFde-laanatri" target="_blank">Linkedin</a>
+        <p class="pf">&nbsp;&nbsp;&nbsp;</p>
+        <a href="https://dribbble.com/Adelaide_Laanatri" target="_blank">Dribble</a>
+        <p class="pf">&nbsp;&nbsp;&nbsp;</p>
+        <a href="https://www.pinterest.fr/adelaidelaanatri/" target="_blank">Pinterest</a>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+    ////////// retour
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 20) {
+            $('.retour').addClass('retourOnSroll');
+        } else {
+            $('.retour').removeClass('retourOnSroll');
+        }
+    });
+
+    $(document).ready(function() {
+        $('.retour').mouseover(function() {
+            $('.textRetour').replaceWith('<img src="assets/images/left-arrow.svg" class="fleche" alt="">')
+        })
+        $('.retour').mouseleave(function() {
+            $('.fleche').replaceWith('<p class="textRetour" >retour</p>')
+
+        })
+    })
+</script>
