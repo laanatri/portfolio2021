@@ -2,6 +2,8 @@
 
 // Components
 @import url("../css/components/navbar.css");
+@import url("../css/components/accueil.css");
+
 
 // Config
 @import url("../css/config/colors.css");
@@ -14,8 +16,6 @@
 @import url("../css/pages/welina.css");
 @import url("../css/pages/code_1.css");
 @import url("../css/pages/graphics.css");
-
-
 
 * {
     padding: 0;
@@ -51,73 +51,7 @@
 ////// SECTION 1 ACCUEIL
 main {
     background-color: #F2EFE9;
-    .accueil {
-        width: 99.4vw;
-        height: 100vh;
-        background-image: url("../images/image-home/Image-background-top-home.jpg");
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 0;
-        position: relative;
-        padding: 0 !important;
-        margin: 0 !important;
-        overflow: hidden;
-        .logo {
-            height: 100%;
-            width: 100%;
-            margin: 0 !important;
-            padding: 73px 0 0 0 !important;
-            .nom {
-                font-family: 'Oswald', sans-serif;
-                font-size: 30px !important;
-                color: #efe8e1 !important;
-                width: 100%;
-                text-align: end;
-                font-variant: small-caps;
-            }
-            .portfolio {
-                font-family: 'Playfair Display', serif;
-                font-size: 12rem;
-                color: #efe8e1;
-                line-height: 10rem;
-                text-align: center;
-                margin: 3vh 0;
-                padding-bottom: 20px;
-            }
-            .titre {
-                font-family: 'Oswald', sans-serif;
-                font-size: 30px !important;
-                color: #efe8e1 !important;
-                width: 100%;
-                font-variant: small-caps;
-            }
-            .hr {
-                height: 3px;
-                width: 25vw;
-                background-color: #efe8e1;
-            }
-            p {
-                margin: 0 !important;
-            }
-            @media screen and (max-width: 991px) {
-                .nom .row,
-                .titre .row {
-                    justify-content: center !important;
-                    align-items: center !important;
-                    text-align: center;
-                    padding: 0;
-                    margin: 0;
-                }
-                .portfolio {
-                    font-size: 7rem !important;
-                    line-height: 6rem !important;
-                    margin: 30px 0;
-                }
-            }
-        }
-    }
+    
     ////// SECTION 2 PROJETS
     .projetsSection {
         height: auto;

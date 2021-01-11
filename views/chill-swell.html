@@ -127,21 +127,21 @@
 <script>
     ////////// retour
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 20) {
-            $('.retour').addClass('retourOnSroll');
-        } else {
-            $('.retour').removeClass('retourOnSroll');
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() > 20) {
+    //         $('.retour').addClass('retourOnSroll');
+    //     } else {
+    //         $('.retour').removeClass('retourOnSroll');
+    //     }
+    // });
 
-    $(document).ready(function() {
-        $('.retour').mouseover(function() {
-            $('.textRetour').replaceWith('<img src="assets/images/left-arrow.svg" class="fleche" alt="">')
-        })
-        $('.retour').mouseleave(function() {
-            $('.fleche').replaceWith('<p class="textRetour" >retour</p>')
+    // $(document).ready(function() {
+    //     $('.retour').mouseover(function() {
+    //         $('.textRetour').replaceWith('<img src="assets/images/left-arrow.svg" class="fleche" alt="">')
+    //     })
+    //     $('.retour').mouseleave(function() {
+    //         $('.fleche').replaceWith('<p class="textRetour" >retour</p>')
 
-        })
-    })
+    //     })
+    // })
 </script>
