@@ -1,9 +1,9 @@
 /////// NAVIGATION
 .navbar {
-  width: 99.4vw;
   z-index: 99 !important;
   padding: 0 !important;
-  background-color: #F2EFE9;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
   .navbarFixe {
       width: 100%;
       button {
@@ -18,14 +18,10 @@
           }
       }
   }
-
-
-
   .navBis {
       transition: 0.5s ease-out;
       padding: 0 !important;
       width: 100%;
-      border-bottom: 2px solid #40303C;
       ul {
           width: 100%;
           padding: 0 !important;
@@ -41,16 +37,18 @@
               margin-left: 10%;
               a {
                   width: 500px;
-                  height: 100%;
+                  height: 5.5em;
                   padding: 0 !important;
+                  color: #40303C;
+                  text-decoration: none;
                   position: relative;
-                  .hautDeLaNav {
+                  .category {
                       width: 500px;
                       font-family: 'Slang', serif;
                       font-size: 6em;
                       text-decoration: none;
                       line-height: 0.7em;
-                      transition: 0.2s ease-in-out;
+                      transition: 0s ease-in-out;
                       span {
                           font-size: 0.5em;
                           color: #40303C;
@@ -112,10 +110,8 @@
   }
 }
 
-.nav-link {
-  color: #40303C;
-  text-decoration: none;
-  position: relative;
+.navbar-white {
+  background-color: #F2EFE9;
 }
 
 .bouton-projets {
@@ -143,6 +139,7 @@
     transform: scaleX(1);
   }
 }
+
 .bouton-code {
   .nav-link:before {
     content: "";
@@ -168,6 +165,7 @@
     transform: scaleX(1);
   }
 }
+
 .bouton-graphics {
   .nav-link:before {
     content: "";
@@ -193,6 +191,7 @@
     transform: scaleX(1);
   }
 }
+
 .bouton-cv {
   .nav-link:before {
     content: "";
