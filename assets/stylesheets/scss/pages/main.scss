@@ -1,3 +1,10 @@
+//GENERAL
+.h2-section {
+  font-family: 'Slang';
+  font-size: 15em;
+}
+
+//sections
 .section-projets {
   margin-top: 500px;
   .row-projets {
@@ -11,12 +18,10 @@
         display: inline-block;
         transform-origin: left top;
         transform: rotate(-90deg);
-        font-family: 'Slang';
-        font-size: 10em;
         color: #A7C0F2;
         position: absolute;
-        top: 0;
-        right: 30%;
+        top: 5%;
+        right: 50%;
       }
       h2:before {
         content: "Web";
@@ -24,11 +29,11 @@
         font-size: 0.2em;
         color: #40303C;
         display: inline-block;
-        -webkit-transform: rotate(90deg translate(150px, 285px));
-        -moz-transform: rotate(90deg translate(150px, 285px));
-        -o-transform: rotate(90deg translate(150px, 285px));
-        -ms-transform: rotate(90deg translate(150px, 285px));
-        transform: rotate(90deg) translate(150px, 285px);
+        -webkit-transform: rotate(90deg translate(220px, 430px));
+        -moz-transform: rotate(90deg translate(220px, 430px));
+        -o-transform: rotate(90deg translate(220px, 430px));
+        -ms-transform: rotate(90deg translate(220px, 430px));
+        transform: rotate(90deg) translate(220px, 430px);
       }
     }
     .list-projets {
@@ -130,14 +135,26 @@
 }
 
 .section-board {
-  background-color: #3FB376;
+  background-color: #A7C0F2;
   margin-top: -280px;
   .container {
     height: 500px;
+    text-align: center;
     h2 {
       font-family: 'Slang';
       color: #F2CED8;
       font-size: 20em;
+    }
+  }
+}
+
+.section-code {
+  .list-code {
+
+  }
+  .title-code {
+    h2 {
+      color: #D93D59;
     }
   }
 }
