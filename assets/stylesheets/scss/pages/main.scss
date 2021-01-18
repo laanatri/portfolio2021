@@ -1,39 +1,86 @@
 //GENERAL
-.h2-section {
+.h-section {
   font-family: 'Slang';
   font-size: 15em;
 }
+ //COMPONENTS
+
+ //TITLES
+.title-left {
+  background-color: lightcoral;
+  position: relative;
+  h2 {
+    color: #A7C0F2;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform-origin: top right;
+    right: 80%;
+    top: 3%;
+    position: absolute;
+  }
+  .title-graph {
+    color: #3FB376;
+    top: 5%;
+  }
+  h2:before {
+    content: "Web";
+    font-family: 'Sofia', cursive;
+    font-size: 0.2em;
+    color: #40303C;
+    display: inline-block;
+    -webkit-transform: rotate(90deg translate(220px, 430px));
+    -moz-transform: rotate(90deg translate(220px, 430px));
+    -o-transform: rotate(90deg translate(220px, 430px));
+    -ms-transform: rotate(90deg translate(220px, 430px));
+    transform: rotate(90deg) translate(220px, 430px);
+    position: absolute;
+    top: -100px;
+    right: 0px;
+  }
+  .title-graph:before {
+    content: "Vecteurs";
+    right: 90px;
+    top: -110px;
+  }
+}
+
+.title-right {
+  h2 {
+    color: #D93D59;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-top: 70px;
+    margin-left: 0;
+    position: relative;
+  }
+  h2:after {
+    content: "Code";
+    font-family: 'Sofia', cursive;
+    font-size: 0.2em;
+    color: #40303C;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg translate(220px, 430px));
+    -moz-transform: rotate(-90deg translate(220px, 430px));
+    -o-transform: rotate(-90deg translate(220px, 430px));
+    -ms-transform: rotate(-90deg translate(220px, 430px));
+    transform: rotate(-90deg) translate(220px, 430px);
+    position: absolute;
+    top: 380px;
+    left: -340px;
+  }
+}
+//FIN TITLES
+
+//FIN COMPONENTS
 
 //sections
 .section-projets {
-  margin-top: 500px;
   .row-projets {
-    
-    .title-projets {
-      height: 100%;
-      // background-color: lightcoral;
-      text-align: right;
-      position: relative;
-      h2 {
-        color: #A7C0F2;
-        writing-mode: tb-rl;
-        text-orientation: mixed;
-      }
-      h2:before {
-        content: "Web";
-        font-family: 'Sofia', cursive;
-        font-size: 0.2em;
-        color: #40303C;
-        display: inline-block;
-        -webkit-transform: rotate(90deg translate(220px, 430px));
-        -moz-transform: rotate(90deg translate(220px, 430px));
-        -o-transform: rotate(90deg translate(220px, 430px));
-        -ms-transform: rotate(90deg translate(220px, 430px));
-        transform: rotate(90deg) translate(220px, 430px);
-      }
-    }
+    margin-top: -335px;
     .list-projets {
-      margin-top: -335px;
       background-color: aquamarine;
       .projetWeb {
         width: 100%;
@@ -240,37 +287,6 @@
       }
     }
   }
-  .title-code {
-    // h2 {
-    //   display: inline-block;
-    //   transform-origin: left bottom;
-    //   line-height: 0.8em;
-    //   transform: rotate(90deg);
-    //   color: #D93D59;
-    //   position: absolute;
-    //   left: 0;
-    //   top: 0;
-    //   margin-top: -120px;
-    // }
-    h2 {
-      color: #D93D59;
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
-      margin-top: 80px;
-    }
-    h2:after {
-      content: "Code";
-      font-family: 'Sofia', cursive;
-      font-size: 0.2em;
-      color: #40303C;
-      display: inline-block;
-      -webkit-transform: rotate(-90deg translate(220px, 430px));
-      -moz-transform: rotate(-90deg translate(220px, 430px));
-      -o-transform: rotate(-90deg translate(220px, 430px));
-      -ms-transform: rotate(-90deg translate(220px, 430px));
-      transform: rotate(-90deg) translate(220px, 430px);
-    }
-  }
 }
 
 .section-citation {
@@ -288,29 +304,6 @@
 
 .section-graphics {
   .row-graphics {
-    .title-graphics {
-      height: 100%;
-      // background-color: lightcoral;
-      text-align: right;
-      position: relative;
-      h2 {
-        color: #3FB376;
-        writing-mode: tb-rl;
-        text-orientation: mixed;
-      }
-      h2:before {
-        content: "Web";
-        font-family: 'Sofia', cursive;
-        font-size: 0.2em;
-        color: #40303C;
-        display: inline-block;
-        -webkit-transform: rotate(90deg translate(220px, 430px));
-        -moz-transform: rotate(90deg translate(220px, 430px));
-        -o-transform: rotate(90deg translate(220px, 430px));
-        -ms-transform: rotate(90deg translate(220px, 430px));
-        transform: rotate(90deg) translate(220px, 430px);
-      }
-    }
     .list-graphics {
       background-color: aquamarine;
       .projetWeb {
