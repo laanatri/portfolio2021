@@ -74,6 +74,33 @@
 }
 //FIN TITLES
 
+//IMAGE/VIDEO
+
+.image-video {
+  padding: 0;
+  width: 350px;
+  height: 600px;
+  position: relative;
+  img {
+      height: 600px;
+      z-index: 2;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+  }
+  video {
+      object-fit: cover;
+      z-index: 1;
+  }
+}
+
+.projetWeb:hover {
+  .image-video img {
+      opacity: 0;
+  }
+}
+
+//FIN IMAGE/VIDEO
+
 //FIN COMPONENTS
 
 //sections
@@ -87,22 +114,6 @@
         height: 600px;
         flex-direction: row;
         margin: 0 0 85px 0;
-        .image-projet1 {
-            padding: 0;
-            width: 350px;
-            height: 600px;
-            position: relative;
-            img {
-                height: 600px;
-                z-index: 2;
-                position: absolute;
-                transition: 0.3s ease-in-out;
-            }
-            video {
-                object-fit: cover;
-                z-index: 1;
-            }
-        }
         .text-projet {
           z-index: 66;
           text-align: end;
@@ -169,11 +180,6 @@
           }
         }
       }
-      .projetWeb:hover {
-        .image-projet1 img {
-            opacity: 0;
-        }
-      }
     }
   }
 }
@@ -199,22 +205,6 @@
       height: 600px;
       flex-direction: row;
       margin: 0 0 85px 0;
-      .image-projet1 {
-          padding: 0;
-          width: 350px;
-          height: 600px;
-          position: relative;
-          img {
-              height: 600px;
-              z-index: 2;
-              position: absolute;
-              transition: 0.3s ease-in-out;
-          }
-          video {
-              object-fit: cover;
-              z-index: 1;
-          }
-      }
       .text-projet {
         z-index: 66;
         text-align: end;
@@ -281,11 +271,6 @@
         }
       }
     }
-    .projetWeb:hover {
-      .image-projet1 img {
-          opacity: 0;
-      }
-    }
   }
 }
 
@@ -311,22 +296,6 @@
         height: 600px;
         flex-direction: row;
         margin: 0 0 85px 0;
-        .image-projet1 {
-            padding: 0;
-            width: 350px;
-            height: 600px;
-            position: relative;
-            img {
-                height: 600px;
-                z-index: 2;
-                position: absolute;
-                transition: 0.3s ease-in-out;
-            }
-            video {
-                object-fit: cover;
-                z-index: 1;
-            }
-        }
         .text-projet {
           z-index: 66;
           text-align: end;
@@ -391,11 +360,6 @@
           .oeuil {
             margin-right: 40px;
           }
-        }
-      }
-      .projetWeb:hover {
-        .image-projet1 img {
-            opacity: 0;
         }
       }
     }
