@@ -8,20 +8,16 @@
 .section-projets {
   margin-top: 500px;
   .row-projets {
-    height: 2000px;
+    
     .title-projets {
       height: 100%;
       // background-color: lightcoral;
       text-align: right;
       position: relative;
       h2 {
-        display: inline-block;
-        transform-origin: left top;
-        transform: rotate(-90deg);
         color: #A7C0F2;
-        position: absolute;
-        top: 5%;
-        right: 50%;
+        writing-mode: tb-rl;
+        text-orientation: mixed;
       }
       h2:before {
         content: "Web";
@@ -38,6 +34,7 @@
     }
     .list-projets {
       margin-top: -335px;
+      background-color: aquamarine;
       .projetWeb {
         width: 100%;
         height: 600px;
@@ -136,9 +133,8 @@
 
 .section-board {
   background-color: #A7C0F2;
-  margin-top: -280px;
   .container {
-    height: 500px;
+    height: 100vh;
     text-align: center;
     h2 {
       font-family: 'Slang';
@@ -150,11 +146,265 @@
 
 .section-code {
   .list-code {
-
+    background-color: aquamarine;
+    .projetWeb {
+      width: 100%;
+      height: 600px;
+      flex-direction: row;
+      margin: 0 0 85px 0;
+      .image-projet1 {
+          padding: 0;
+          width: 350px;
+          height: 600px;
+          position: relative;
+          img {
+              height: 600px;
+              z-index: 2;
+              position: absolute;
+              transition: 0.3s ease-in-out;
+          }
+          video {
+              object-fit: cover;
+              z-index: 1;
+          }
+      }
+      .text-projet {
+        z-index: 66;
+        text-align: end;
+        padding-top: 48px;
+        height: 600px;
+        h3 {
+          font-family: 'Slang';
+          font-size: 4em;
+          color: #40303C;
+          z-index: 0;
+        }
+        .hr {
+          height: 3px;
+          width: 130%;
+          margin: -10px 0 0 -30%;
+          background-color: #40303C;
+        }
+        .p1 {
+              font-family: 'Sofia', cursive;
+              color: #40303C;
+              font-size: 1.8em;
+              font-weight: 600;
+              margin-bottom: 0;
+              padding-bottom: 16px;
+              padding-top: 5px;
+              background-color: #F2EFE9;
+              z-index: 99;
+            }
+        .p2 {
+          font-family: 'Crimson Pro', serif;
+          color: #40303C;
+          font-size: 16px;
+          margin-bottom: 28%;
+        }
+        .oeuil {
+          height: 100px;
+          width: 100px;
+          margin-left: 40px;
+          position: relative;
+          .img1 {
+            object-fit: cover;
+            display: block;
+            position: absolute;
+          }
+          .img2 {
+            object-fit: cover;
+            display: none;
+            position: absolute;
+          }
+        }
+        .oeuil:hover {
+          .img2 {
+            display: block;
+          }
+        }
+      }
+      #welina {
+        text-align: start;
+        .hr {
+          margin: -10px 0 0 0;
+        }
+        .oeuil {
+          margin-right: 40px;
+        }
+      }
+    }
+    .projetWeb:hover {
+      .image-projet1 img {
+          opacity: 0;
+      }
+    }
   }
   .title-code {
+    // h2 {
+    //   display: inline-block;
+    //   transform-origin: left bottom;
+    //   line-height: 0.8em;
+    //   transform: rotate(90deg);
+    //   color: #D93D59;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   margin-top: -120px;
+    // }
     h2 {
       color: #D93D59;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      margin-top: 80px;
+    }
+    h2:after {
+      content: "Code";
+      font-family: 'Sofia', cursive;
+      font-size: 0.2em;
+      color: #40303C;
+      display: inline-block;
+      -webkit-transform: rotate(-90deg translate(220px, 430px));
+      -moz-transform: rotate(-90deg translate(220px, 430px));
+      -o-transform: rotate(-90deg translate(220px, 430px));
+      -ms-transform: rotate(-90deg translate(220px, 430px));
+      transform: rotate(-90deg) translate(220px, 430px);
+    }
+  }
+}
+
+.section-citation {
+  background-color: #A7C0F2;
+  .container {
+    height: 100vh;
+    text-align: center;
+    h2 {
+      font-family: 'Slang';
+      color: #F2D64B;
+      font-size: 20em;
+    }
+  }
+}
+
+.section-graphics {
+  .row-graphics {
+    .title-graphics {
+      height: 100%;
+      // background-color: lightcoral;
+      text-align: right;
+      position: relative;
+      h2 {
+        color: #3FB376;
+        writing-mode: tb-rl;
+        text-orientation: mixed;
+      }
+      h2:before {
+        content: "Web";
+        font-family: 'Sofia', cursive;
+        font-size: 0.2em;
+        color: #40303C;
+        display: inline-block;
+        -webkit-transform: rotate(90deg translate(220px, 430px));
+        -moz-transform: rotate(90deg translate(220px, 430px));
+        -o-transform: rotate(90deg translate(220px, 430px));
+        -ms-transform: rotate(90deg translate(220px, 430px));
+        transform: rotate(90deg) translate(220px, 430px);
+      }
+    }
+    .list-graphics {
+      background-color: aquamarine;
+      .projetWeb {
+        width: 100%;
+        height: 600px;
+        flex-direction: row;
+        margin: 0 0 85px 0;
+        .image-projet1 {
+            padding: 0;
+            width: 350px;
+            height: 600px;
+            position: relative;
+            img {
+                height: 600px;
+                z-index: 2;
+                position: absolute;
+                transition: 0.3s ease-in-out;
+            }
+            video {
+                object-fit: cover;
+                z-index: 1;
+            }
+        }
+        .text-projet {
+          z-index: 66;
+          text-align: end;
+          padding-top: 48px;
+          height: 600px;
+          h3 {
+            font-family: 'Slang';
+            font-size: 4em;
+            color: #40303C;
+            z-index: 0;
+          }
+          .hr {
+            height: 3px;
+            width: 130%;
+            margin: -10px 0 0 -30%;
+            background-color: #40303C;
+          }
+          .p1 {
+                font-family: 'Sofia', cursive;
+                color: #40303C;
+                font-size: 1.8em;
+                font-weight: 600;
+                margin-bottom: 0;
+                padding-bottom: 16px;
+                padding-top: 5px;
+                background-color: #F2EFE9;
+                z-index: 99;
+              }
+          .p2 {
+            font-family: 'Crimson Pro', serif;
+            color: #40303C;
+            font-size: 16px;
+            margin-bottom: 28%;
+          }
+          .oeuil {
+            height: 100px;
+            width: 100px;
+            margin-left: 40px;
+            position: relative;
+            .img1 {
+              object-fit: cover;
+              display: block;
+              position: absolute;
+            }
+            .img2 {
+              object-fit: cover;
+              display: none;
+              position: absolute;
+            }
+          }
+          .oeuil:hover {
+            .img2 {
+              display: block;
+            }
+          }
+        }
+        #welina {
+          text-align: start;
+          .hr {
+            margin: -10px 0 0 0;
+          }
+          .oeuil {
+            margin-right: 40px;
+          }
+        }
+      }
+      .projetWeb:hover {
+        .image-projet1 img {
+            opacity: 0;
+        }
+      }
     }
   }
 }
