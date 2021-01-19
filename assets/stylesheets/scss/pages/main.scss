@@ -7,7 +7,6 @@
 
  //TITLES
 .title-left {
-  background-color: lightcoral;
   position: relative;
   h2 {
     color: #A7C0F2;
@@ -75,7 +74,6 @@
 //FIN TITLES
 
 //IMAGE/VIDEO
-
 .image-video {
   padding: 0;
   width: 350px;
@@ -88,7 +86,6 @@
       transition: 0.3s ease-in-out;
   }
   video {
-      object-fit: cover;
       z-index: 1;
   }
 }
@@ -98,8 +95,76 @@
       opacity: 0;
   }
 }
-
 //FIN IMAGE/VIDEO
+
+//TEXTS CARDS
+.text-card {
+  z-index: 66;
+  text-align: end;
+  padding-top: 48px;
+  height: 600px;
+  h3 {
+    font-family: 'Slang';
+    font-size: 4em;
+    color: #40303C;
+    z-index: 0;
+  }
+  .hr {
+    height: 3px;
+    width: 130%;
+    margin: -10px 0 0 -30%;
+    background-color: #40303C;
+  }
+  .p1 {
+        font-family: 'Sofia', cursive;
+        color: #40303C;
+        font-size: 1.8em;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding-bottom: 16px;
+        padding-top: 5px;
+        background-color: #F2EFE9;
+        z-index: 99;
+      }
+  .p2 {
+    font-family: 'Crimson Pro', serif;
+    color: #40303C;
+    font-size: 16px;
+    margin-bottom: 28%;
+  }
+  .oeuil {
+    height: 100px;
+    width: 100px;
+    margin-left: 40px;
+    position: relative;
+    .img1 {
+      object-fit: cover;
+      display: block;
+      position: absolute;
+    }
+    .img2 {
+      object-fit: cover;
+      display: none;
+      position: absolute;
+    }
+  }
+  .oeuil:hover {
+    .img2 {
+      display: block;
+    }
+  }
+}
+
+#text-a-gauche{
+  text-align: start;
+  .hr {
+    margin: -10px 0 0 0;
+  }
+  .oeuil {
+    margin-right: 40px;
+  }
+}
+//FIN TEXTS CARDS
 
 //FIN COMPONENTS
 
@@ -108,77 +173,11 @@
   .row-projets {
     margin-top: -335px;
     .list-projets {
-      background-color: aquamarine;
       .projetWeb {
         width: 100%;
         height: 600px;
         flex-direction: row;
         margin: 0 0 85px 0;
-        .text-projet {
-          z-index: 66;
-          text-align: end;
-          padding-top: 48px;
-          height: 600px;
-          h3 {
-            font-family: 'Slang';
-            font-size: 4em;
-            color: #40303C;
-            z-index: 0;
-          }
-          .hr {
-            height: 3px;
-            width: 130%;
-            margin: -10px 0 0 -30%;
-            background-color: #40303C;
-          }
-          .p1 {
-                font-family: 'Sofia', cursive;
-                color: #40303C;
-                font-size: 1.8em;
-                font-weight: 600;
-                margin-bottom: 0;
-                padding-bottom: 16px;
-                padding-top: 5px;
-                background-color: #F2EFE9;
-                z-index: 99;
-              }
-          .p2 {
-            font-family: 'Crimson Pro', serif;
-            color: #40303C;
-            font-size: 16px;
-            margin-bottom: 28%;
-          }
-          .oeuil {
-            height: 100px;
-            width: 100px;
-            margin-left: 40px;
-            position: relative;
-            .img1 {
-              object-fit: cover;
-              display: block;
-              position: absolute;
-            }
-            .img2 {
-              object-fit: cover;
-              display: none;
-              position: absolute;
-            }
-          }
-          .oeuil:hover {
-            .img2 {
-              display: block;
-            }
-          }
-        }
-        #welina {
-          text-align: start;
-          .hr {
-            margin: -10px 0 0 0;
-          }
-          .oeuil {
-            margin-right: 40px;
-          }
-        }
       }
     }
   }
@@ -199,77 +198,11 @@
 
 .section-code {
   .list-code {
-    background-color: aquamarine;
     .projetWeb {
       width: 100%;
       height: 600px;
       flex-direction: row;
       margin: 0 0 85px 0;
-      .text-projet {
-        z-index: 66;
-        text-align: end;
-        padding-top: 48px;
-        height: 600px;
-        h3 {
-          font-family: 'Slang';
-          font-size: 4em;
-          color: #40303C;
-          z-index: 0;
-        }
-        .hr {
-          height: 3px;
-          width: 130%;
-          margin: -10px 0 0 -30%;
-          background-color: #40303C;
-        }
-        .p1 {
-              font-family: 'Sofia', cursive;
-              color: #40303C;
-              font-size: 1.8em;
-              font-weight: 600;
-              margin-bottom: 0;
-              padding-bottom: 16px;
-              padding-top: 5px;
-              background-color: #F2EFE9;
-              z-index: 99;
-            }
-        .p2 {
-          font-family: 'Crimson Pro', serif;
-          color: #40303C;
-          font-size: 16px;
-          margin-bottom: 28%;
-        }
-        .oeuil {
-          height: 100px;
-          width: 100px;
-          margin-left: 40px;
-          position: relative;
-          .img1 {
-            object-fit: cover;
-            display: block;
-            position: absolute;
-          }
-          .img2 {
-            object-fit: cover;
-            display: none;
-            position: absolute;
-          }
-        }
-        .oeuil:hover {
-          .img2 {
-            display: block;
-          }
-        }
-      }
-      #welina {
-        text-align: start;
-        .hr {
-          margin: -10px 0 0 0;
-        }
-        .oeuil {
-          margin-right: 40px;
-        }
-      }
     }
   }
 }
@@ -290,77 +223,11 @@
 .section-graphics {
   .row-graphics {
     .list-graphics {
-      background-color: aquamarine;
       .projetWeb {
         width: 100%;
         height: 600px;
         flex-direction: row;
         margin: 0 0 85px 0;
-        .text-projet {
-          z-index: 66;
-          text-align: end;
-          padding-top: 48px;
-          height: 600px;
-          h3 {
-            font-family: 'Slang';
-            font-size: 4em;
-            color: #40303C;
-            z-index: 0;
-          }
-          .hr {
-            height: 3px;
-            width: 130%;
-            margin: -10px 0 0 -30%;
-            background-color: #40303C;
-          }
-          .p1 {
-                font-family: 'Sofia', cursive;
-                color: #40303C;
-                font-size: 1.8em;
-                font-weight: 600;
-                margin-bottom: 0;
-                padding-bottom: 16px;
-                padding-top: 5px;
-                background-color: #F2EFE9;
-                z-index: 99;
-              }
-          .p2 {
-            font-family: 'Crimson Pro', serif;
-            color: #40303C;
-            font-size: 16px;
-            margin-bottom: 28%;
-          }
-          .oeuil {
-            height: 100px;
-            width: 100px;
-            margin-left: 40px;
-            position: relative;
-            .img1 {
-              object-fit: cover;
-              display: block;
-              position: absolute;
-            }
-            .img2 {
-              object-fit: cover;
-              display: none;
-              position: absolute;
-            }
-          }
-          .oeuil:hover {
-            .img2 {
-              display: block;
-            }
-          }
-        }
-        #welina {
-          text-align: start;
-          .hr {
-            margin: -10px 0 0 0;
-          }
-          .oeuil {
-            margin-right: 40px;
-          }
-        }
       }
     }
   }
