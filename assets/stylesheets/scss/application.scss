@@ -317,70 +317,9 @@ main {
 
 ////// SECTION 7 CV
 .black2 {
-    width: 99.4vw;
-    background-color: black;
-    z-index: 50;
-    margin-bottom: -22vh;
+
     .CVSection {
-        height: 125vh;
-        padding: 85px 0 0 0;
-        .inspiration {
-            height: 48%;
-            margin: 0;
-            .photo {
-                height: 100%;
-                padding: 0;
-                margin: 0;
-                .portrait {
-                    padding: 0;
-                    margin: 0;
-                    height: 60%;
-                    width: 100%;
-                    img {
-                        height: 100%;
-                    }
-                }
-                .boutton {
-                    width: 100%;
-                    height: auto;
-                    padding: 0;
-                    margin: 0;
-                    display: flex;
-                    justify-content: center;
-                    a {
-                        margin: 0 0 50px 0;
-                        padding: 0;
-                        width: 380px;
-                        height: auto;
-                        background-color: rgba($color: #00ab98, $alpha: 0.3);
-                        font-family: 'Crimson Pro', serif;
-                        color: #efe8e1;
-                        font-weight: 600;
-                        font-size: 2rem;
-                        line-height: 4rem;
-                        opacity: 0.8;
-                        text-align: center;
-                        text-decoration: none;
-                    }
-                    a:hover {
-                        opacity: 1;
-                    }
-                }
-            }
-            .description {
-                height: 100%;
-                padding: 30px 0 15% 0;
-                .titre {
-                    padding: 0 10% 0 10%;
-                }
-                p {
-                    font-family: 'Crimson Pro', serif;
-                    font-size: 25px;
-                    color: #efe8e1;
-                    padding: 0 10% 0 10%;
-                }
-            }
-        }
+
         .skills {
             height: 20%;
             div {
@@ -532,14 +471,7 @@ main {
 }
 
 ////// SECTION 8 CONTACT
-.back {
-    background-image: url("../images/image-home/Image-background-footer-home.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99.4vw;
-}
+
 
 .contactSection {
     height: 95vh;
