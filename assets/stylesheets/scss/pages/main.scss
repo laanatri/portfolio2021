@@ -184,19 +184,6 @@
   }
 }
 
-.section-board {
-  background-color: #A7C0F2;
-  .container {
-    height: 100vh;
-    text-align: center;
-    h2 {
-      font-family: 'Slang';
-      color: #F2CED8;
-      font-size: 20em;
-    }
-  }
-}
-
 .section-code {
   margin-top: 100px;
   margin-bottom: 15px;
@@ -206,19 +193,6 @@
       height: 600px;
       flex-direction: row;
       margin: 0 0 85px 0;
-    }
-  }
-}
-
-.section-citation {
-  background-color: #A7C0F2;
-  .container {
-    height: 100vh;
-    text-align: center;
-    h2 {
-      font-family: 'Slang';
-      color: #F2D64B;
-      font-size: 20em;
     }
   }
 }
@@ -240,6 +214,8 @@
 
 .section-cv {
   background-color: #A7C0F2;
+  padding: 0 !important;
+  height: 200vh;
   .img-cv {
     img {
       margin-top: -500px;
@@ -250,8 +226,11 @@
       transform: scaleX(-1);
     }
   }
-  .container {
+  .cv-container {
     margin-top: -687px;
+  }
+  .container {
+    margin-bottom: 100px;
     text-align: center;
     h2 {
       font-family: 'Slang';
@@ -326,4 +305,50 @@
       }
     }
   }
+}
+
+.text-animate {
+  display: block;
+  font: 10em 'Slang';
+  width: 100vw;
+  overflow: hidden;
+  margin: 0 auto;
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 2px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 8s infinite linear;
+  }
+  
+  .text-copy:nth-child(1){
+  stroke: #D93D59;
+  animation-delay: 0s;
+  }
+  
+  .text-copy:nth-child(2){
+  stroke: #F2CED8;
+  animation-delay: 1.2s;
+  }
+  
+  .text-copy:nth-child(3){
+  stroke: #D93D59;
+  animation-delay: 2.4s;
+  }
+  
+  .text-copy:nth-child(4){
+  stroke: #F2CED8;
+  animation-delay: 3.6s;
+  }
+  
+  .text-copy:nth-child(5){
+  stroke: #D93D59;
+  animation-delay: 4.8s;
+  }
+
+  @keyframes stroke-offset{
+  100% {stroke-dashoffset: -100%;}
+  }
+
 }

@@ -30,8 +30,6 @@
 
 // console.log("lala");
 
-
-//FOND NAVBAR
 const bouton = document.querySelector(".navbar-toggler");
 
 const fond = () => {
@@ -60,3 +58,7 @@ const menu = () => {
 }
 
 menu();
+//FOND NAVBAR
+// import menu from "./components/navbar.js";
+
+// menu();
