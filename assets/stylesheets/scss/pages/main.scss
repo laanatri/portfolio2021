@@ -6,6 +6,34 @@
  //COMPONENTS
 
  //TITLES
+
+.title-content {
+  margin-top: 75px;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+}
+#title-projets {
+  height: 695px;
+}
+#title-fun {
+  height: 428px;
+}
+#title-graphics {
+  height: 964px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .title-left {
   position: relative;
   h2 {
@@ -16,8 +44,9 @@
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform-origin: top right;
+    position: -webkit-sticky;
     right: 100%;
-    top: 2%;
+    top: 5.9%;
     position: absolute;
   }
   .title-graph {
@@ -36,8 +65,8 @@
     -ms-transform: rotate(90deg translate(220px, 430px));
     transform: rotate(90deg) translate(220px, 430px);
     position: absolute;
-    top: -100px;
-    right: 0px;
+    top: -60px;
+    right: 155px;
   }
   .title-graph:before {
     content: "Vecteurs";
@@ -50,9 +79,8 @@
   h2 {
     color: #D93D59;
     writing-mode: vertical-rl;
+    padding-top: 45px;
     text-orientation: mixed;
-    margin-top: 70px;
-    margin-left: 0;
     position: relative;
   }
   h2:after {
@@ -67,8 +95,8 @@
     -ms-transform: rotate(-90deg translate(220px, 430px));
     transform: rotate(-90deg) translate(220px, 430px);
     position: absolute;
-    top: 380px;
-    left: -340px;
+    top: 210px;
+    left: -275px;
   }
 }
 //FIN TITLES
@@ -180,12 +208,18 @@
         flex-direction: row;
         margin: 0 0 85px 0;
       }
+      .projetWeb-last {
+        width: 100%;
+        height: 600px;
+        flex-direction: row;
+        margin: 0 0 0 0;
+      }
     }
   }
 }
 
 .section-code {
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 15px;
   .list-code {
     .projetWeb {
@@ -310,7 +344,7 @@
 .text-animate {
   display: block;
   font: 10em 'Slang';
-  width: 100vw;
+  width: 97vw;
   overflow: hidden;
   margin: 0 auto;
   .text-copy {
