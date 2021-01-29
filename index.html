@@ -25,23 +25,24 @@
         </div>
         <div class="navBis collapse " id="navbarSupportedContent">
             <ul class="d-flex flex-column navbar-nav mr-auto">
+
                 <li class="bouton-projets webAuScroll nav-item">
-                    <a class="nav-link projets d-flex flex-row justify-content-start" href="#projets">
+                    <a class="nav-link projets d-flex flex-row justify-content-start" href="#projets" onclick="test('projets'); return false;">
                         <div class="projetsBis category category-inactive">Projets <span>Web</span></div>
                     </a>
                 </li>
                 <li class="bouton-code webAuScroll nav-item">
-                    <a class="nav-link code d-flex flex-row justify-content-start" href="#fun">
+                    <a class="nav-link code d-flex flex-row justify-content-start" href="#code" onclick="test('code'); return false;">
                         <div class="codeBis category category-inactive">Fun <span>Code</span></div>
                     </a>
                 </li>
                 <li class="bouton-graphics webAuScroll nav-item">
-                    <a class="nav-link fun d-flex flex-row justify-content-start" href="#graphics">
+                    <a class="nav-link fun d-flex flex-row justify-content-start" href="#graphics" onclick="test('graphics'); return false;">
                         <div class="funBis category category-inactive">Graphics <span>Vecteurs </span></div>
                     </a>
                 </li>
                 <li class="bouton-cv webAuScroll nav-item">
-                    <a class="nav-link cv d-flex flex-row justify-content-start" href="#cv">
+                    <a class="nav-link cv d-flex flex-row justify-content-start" href="#cv" onclick="test('cv'); return false;">
                         <div class="cvBis category category-inactive">CV <span>About me</span></div>
                     </a>
                 </li>
@@ -101,11 +102,17 @@
         </section>
 <!--FIN ACCUEIL-->
 <!-- PROJETS-->
-        <section class="container section-projets" data-aos="fade-up" data-aos-duration="1000">
+        <section class="container section-projets" id="projets" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-projets">
+
+
                 <div class="title-left col-4">
-                    <h2 class="h-section">Projets</h2>
+                    <div class="title-content" id="title-projets">
+                        <h2 class="h-section">Projets</h2>
+                    </div>
                 </div>
+
+
                 <div class="list-projets col-8">
                     <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
@@ -115,7 +122,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>SURF ON TIME</h3>
                             <div class="hr"></div>
                             <p class="p1">Surftrip</p>
@@ -138,7 +145,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>WELINA IKA</h3>
                             <div class="hr"></div>
                             <p class="p1">Hawaïan coffee shop</p>
@@ -152,7 +159,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row projetWeb projetWeb-last" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/atre-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
@@ -160,7 +167,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>L'ÂTRE</h3>
                             <div class="hr"></div>
                             <p class="p1">Chauffages et Poêles</p>
@@ -181,7 +188,7 @@
         </section>
 <!--FIN PROJETS-->
 <!--CODE-->
-        <section class="container section-code" data-aos="fade-up" data-aos-duration="1000">
+        <section class="container section-code" id="code" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-code">
                 <div class="list-code col-8">
                     <div class="row flex-row-reverse projetWeb" data-aos="fade-up" data-aos-duration="1500">
@@ -192,7 +199,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" ddata-aos-duration="1500" data-aos-delay="500">
                             <h3>COMPONENTS</h3>
                             <div class="hr"></div>
                             <p class="p1">UI / UX</p>
@@ -213,7 +220,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>ANIMATIONS</h3>
                             <div class="hr"></div>
                             <p class="p1">Fun</p>
@@ -226,19 +233,31 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="title-right col-4">
-                    <h2 class="h-section">Fun</h2>
+                    <div class="title-content" id="title-fun">
+                        <h2 class="h-section">Fun</h2>
+                    </div>
                 </div>
+
+
             </div>
 
         </section>
 <!--FIN CODE-->
 <!--GRAPHICS-->
-        <section class="container section-graphics" data-aos="fade-up" data-aos-duration="1000">
+        <section class="container section-graphics" id="graphics" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-graphics">
+
+
                 <div class="title-left col-4">
-                    <h2 class="h-section title-graph">Graphics</h2>
+                    <div class="title-content" id="title-graphics">
+                        <h2 class="h-section title-graph">Graphics</h2>
+                    </div>
                 </div>
+
+
                 <div class="list-graphics col-8">
                     <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
@@ -248,7 +267,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>VECTORIELS</h3>
                             <div class="hr"></div>
                             <p class="p1">Illustrator</p>
@@ -269,7 +288,7 @@
                                 type = "video/mp4" >
                                 </video>
                         </div>
-                        <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>PICTOS</h3>
                             <div class="hr"></div>
                             <p class="p1">Illustrator</p>
@@ -286,7 +305,7 @@
         </section>
 <!--FIN GRAPHICS-->
 <!--CV-->
-        <section class="container-fluid section-cv" data-aos="fade-up" data-aos-duration="1000">
+        <section class="container-fluid section-cv" id="cv" data-aos="fade-up" data-aos-duration="1000">
             <div class="img-cv">
                 <img src="assets/images/image-home/fleurs_hor.png" alt="Bouquet de fleur">
             </div>
