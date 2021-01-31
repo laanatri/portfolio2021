@@ -73,86 +73,45 @@ const menu = () => {
 menu();
 //FiN NAVBAR
 
-//TEXT FIXED
-
-const titles1 = document.querySelector(".section-projets .h-section");
-
-// console.log(titles1.scrollTop);
-
-
-// window.addEventListener('scroll', () => {
-//   const lala = window.scrollY;
-//   console.log(`lala = ${lala}`);
-//   const titles1 = document.querySelector(".section-projets .title-content");
-//   if (lala > 950 && lala < 2060) {
-//     titles1.style.position = 'fixed';
-//     console.log("fixed!!!!");
-//   } else {
-//     titles1.style.position = 'absolute';
-//   }
-// });
-  
-
-
-// const positionT = () => {
-//   positionW();
-//   if (scrollyW >= 950) {
-//     console.log("fixed!!!!");
-//   }
-//   console.log("positionT");
-//   const titles1 = document.querySelector(".section-projets .h-section");
-//   console.log(titles1);
-//   console.log(scrollyW);
- 
-// };
-
 //NAV SCROLLING
 
+// const scrollTo = (to, duration) => {
+//   console.log(to);
+//   console.log(duration);
+//   console.log("fin");
 
-
-{/* <div class="header">
-    <p class="menu"><a href="#S1" onclick="test('S1'); return false;">S1</a></p>
-    <p class="menu"><a href="#S2" onclick="test('S2'); return false;">S2</a></p>
-    <p class="menu"><a href="#S3" onclick="test('S3'); return false;">S3</a></p>
-    <p class="menu"><a href="#S4" onclick="test('S4'); return false;">S3</a></p>
-</div>
-<div style="width: 100%;">
-    <div id="S1" class="curtain">
-    blabla
-    </div>
-    <div id="S2" class="curtain">
-    blabla
-    </div>
-    <div id="S3" class="curtain">
-    blabla
-    </div>
-    <div id="S4" class="curtain">
-    blabla
-    </div>
- </div> */}
+//   // document.body.scrollTop = to;
 
 
 
+//   // if (document.body.scrollTop == to) return;
 
 
 
-const scrollTo = (to, duration) => {
-  if (document.body.scrollTop == to) return;
-  var diff = to - document.body.scrollTop;
-  var scrollStep = Math.PI / (duration / 10);
-  var count = 0, currPos;
-  start = element.scrollTop;
-  scrollInterval = setInterval(function(){
-      if (document.body.scrollTop != to) {
-          count = count + 1;
-          currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
-          document.body.scrollTop = currPos;
-      }
-      else { clearInterval(scrollInterval); }
-  },10);
-};
+//   let diff = to - document.body.scrollTop;
+//   let scrollStep = Math.PI / (duration / 10);
+//   let count = 0, currPos;
 
-const test = (elID) => {
-  var dest = document.getElementById(elID);
-  scrollTo(dest.offsetTop, 500);
-};
+
+//   // start = window.pageYOffset;
+//   start = element.scrollTop;
+
+
+//   scrollInterval = setInterval(function(){
+//       if (document.body.scrollTop != to) {
+//           count = count + 1;
+//           currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+//           document.body.scrollTop = currPos;
+//       }
+//       else { clearInterval(scrollInterval); }
+//   },10);
+// };
+
+// const test = (elID) => {
+//   console.log(elID);
+//   let dest = document.getElementById(elID);
+//   console.log(dest);
+//   scrollTo(dest.offsetTop, 2000);
+// };
+
+//FIN NAV SCROLLING
