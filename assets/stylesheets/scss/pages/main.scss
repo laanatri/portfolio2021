@@ -138,7 +138,7 @@
 
 //TEXTS CARDS
 .text-card {
-  z-index: 66;
+  z-index: 30;
   text-align: end;
   padding-top: 48px;
   height: 600px;
@@ -162,7 +162,6 @@
         margin-bottom: 0;
         padding-bottom: 16px;
         padding-top: 5px;
-        background-color: #F2EFE9;
         z-index: 99;
       }
   .p2 {
@@ -391,4 +390,126 @@
   100% {stroke-dashoffset: -100%;}
   }
 
+}
+
+
+//MODAL
+
+/* The Modal (background) */
+.btn-modal {
+  border: none;
+}
+
+.btn:focus {
+  border: none;
+  outline: none;
+}
+
+@keyframes modalActive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal {
+  display: none;
+  opacity: 1;
+  position: fixed;
+  z-index: 99 !important;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+#myModalSurf {
+  background-color: rgba(167, 192, 242, .5);
+}
+
+.modal-active {
+  justify-content: center;
+  align-items: center;
+  animation-name: modalActive;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Modal Content/Box */
+
+
+
+.modal-box {
+  background-color: #f2efe9 !important;
+  border: none !important;
+  height: 75vh !important;
+  padding: 50px !important;
+  border-radius: 50px 0 50px 0 !important;
+  position: relative;
+  .close {
+    color: #D93D59;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    transform-origin: center;
+    top: -22px;
+    right: -18.16px;
+    padding: 10px;
+  }
+  .close:hover,
+  .close:focus {
+    color:#40303C;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .d-flex {
+    height: 100%;
+    width: 100%;
+    .modal-title {
+      width: 10%;
+      height: 100%;
+      padding: 0 20px;
+      position: relative;
+      .title-modal {
+        color: #A7C0F2;
+        font-family: Slang;
+        font-size: 4em;
+        width: 400%;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform-origin: top right;
+        position: absolute;
+        top: 0;
+        right: 120%;
+      }
+      a {
+        font-family: 'Sofia', cursive;
+        color: #3FB376;
+        font-size: 1.2em;
+      }
+      a:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+    .modal-cont{
+      width: 90%;
+      height: 100%;
+      overflow-y: scroll;
+      .contenu {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+
+
+  
 }
