@@ -17,7 +17,7 @@
 <body>
 
     <!--NAVBAR-->
-    <nav class="navbar container-fluid navbarMobile fixed-top navbar-expand-lg d-flex flex-column justify-content-between">
+    <nav class="navbar container-fluid navbarMobile fixed-top navbar-expand-lg flex-column justify-content-between">
         <div class="navbarFixe d-flex justify-content-end">
             <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="assets/images/pictos/fleur_menu.png" alt="Icon de menu">
@@ -105,22 +105,28 @@
         <span class="anchor" id="projets"></span>
         <section class="container section-projets" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-projets">
-
-
                 <div class="title-left col-4">
                     <div class="title-content" id="title-projets">
                         <h2 class="h-section">Projets</h2>
                     </div>
                 </div>
                 <div class="list-projets col-8">
-                    <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
+
+
+
+
+
+
+                    <div class="row projetWeb card-surf" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/chill-swell-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-chill-swell-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>SURF ON TIME</h3>
                             <div class="hr"></div>
@@ -130,16 +136,20 @@
                                 <br> HTML5
                                 <br> CSS3
                                 <br> JS</p>
+
+
                             <div type="button" class="row oeuil btn-modal" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
                             </div>
+
+
                             <div id="myModalSurf" class="modal">
                                 <div class="modal-box container">
                                     <div class="close">&times;</div>
                                     <div class="d-flex">
                                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                                            <p class="title-modal">Surf on Time</p>
+                                            <p class="title-modal text-end">Surf on Time</p>
                                             <a href="http://www.surfontime.com/" target="_blank">Site</a>
                                             <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                                         </div>
@@ -156,16 +166,18 @@
 
 
 
-                    
 
-                    <div class="row flex-row-reverse projetWeb" data-aos="fade-up" data-aos-duration="1500">
+
+                    <div class="row flex-row-reverse projetWeb card-welina" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/welina-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-welina-ika-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>WELINA IKA</h3>
                             <div class="hr"></div>
@@ -174,29 +186,48 @@
                                 <br> Wireframe
                                 <br> Maquette
                                 <br> Eléments graphiques</p>
-                            <a href="chill-swell.html" class="row oeuil align-self-end">
+                            
+
+                            <div type="button" class="row oeuil btn-modal align-self-end" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-                            </a>
+                            </div>
+
+
+                            <div id="myModalWelina" class="modal">
+                                <div class="modal-box container">
+                                    <div class="close">&times;</div>
+                                    <div class="d-flex">
+                                        <div class="modal-title d-flex flex-column justify-content-end align-items-star">
+                                            <p class="title-modal text-end">Welina Ika</p>
+                                        </div>
+                                        <div class="modal-cont">
+                                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
+                    
 
 
 
 
 
 
-
-                    <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="row projetWeb card-atre" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/atre-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-atre-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>L'ÂTRE</h3>
                             <div class="hr"></div>
@@ -207,12 +238,37 @@
                                 <br> HTML5
                                 <br> CSS3
                                 <br> JS</p>
-                            <a href="chill-swell.html" class="row oeuil">
+
+
+                            <div type="button" class="row oeuil btn-modal" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-                            </a>
+                            </div>
+
+
+                            <div id="myModalAtre" class="modal">
+                                <div class="modal-box container">
+                                    <div class="close">&times;</div>
+                                    <div class="d-flex">
+                                        <div class="modal-title d-flex flex-column justify-content-end align-items-star">
+                                            <p class="title-modal text-end">L'âtre</p>
+                                            <a href="http://www.surfontime.com/" target="_blank">Site</a>
+                                            <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
+                                        </div>
+                                        <div class="modal-cont">
+                                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
+
+
+
+
                 </div>
             </div>
         </section>
@@ -222,14 +278,23 @@
         <section class="container section-code" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-code">
                 <div class="list-code col-8">
-                    <div class="row flex-row-reverse projetWeb" data-aos="fade-up" data-aos-duration="1500">
+
+
+
+
+
+
+
+                    <div class="row flex-row-reverse projetWeb card-components" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/welina-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-welina-ika-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" ddata-aos-duration="1500" data-aos-delay="500">
                             <h3>COMPONENTS</h3>
                             <div class="hr"></div>
@@ -239,22 +304,46 @@
                                 <br> JS</p>
 
 
-
-
-                            <a href="chill-swell.html" class="row oeuil align-self-end">
+                            <div type="button" class="row oeuil btn-modal align-self-end" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-                            </a>
+                            </div>
+
+
+                            <div id="myModalComponents" class="modal">
+                                <div class="modal-box container">
+                                    <div class="close">&times;</div>
+                                    <div class="d-flex">
+                                        <div class="modal-title d-flex flex-column justify-content-end align-items-star">
+                                            <p class="title-modal text-end">Components</p>
+                                            <a href="http://www.surfontime.com/" target="_blank">Site</a>
+                                            <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
+                                        </div>
+                                        <div class="modal-cont">
+                                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
+
+
+
+
+
+
+
+                    <div class="row projetWeb card-animations" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/atre-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-atre-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>ANIMATIONS</h3>
                             <div class="hr"></div>
@@ -263,31 +352,34 @@
                                 <br> CSS3</p>
 
 
-                          <!-- Trigger/Open The Modal -->
-<div type="button" class="row oeuil btn-modal" id="myBtn">
-    <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
-    <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-</div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-
-
-                            <!-- <a href="chill-swell.html" class="row oeuil">
+                            <div type="button" class="row oeuil btn-modal" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-                            </a> -->
+                            </div>
+
+
+                            <div id="myModalAnimations" class="modal">
+                                <div class="modal-box container">
+                                    <div class="close">&times;</div>
+                                    <div class="d-flex">
+                                        <div class="modal-title d-flex flex-column justify-content-end align-items-star">
+                                            <p class="title-modal text-end">Animations</p>
+                                            <a href="http://www.surfontime.com/" target="_blank">Site</a>
+                                            <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
+                                        </div>
+                                        <div class="modal-cont">
+                                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+
+
 
 
                 <div class="title-right col-4">
@@ -295,34 +387,35 @@
                         <h2 class="h-section">Fun</h2>
                     </div>
                 </div>
-
-
             </div>
-
         </section>
 <!--FIN CODE-->
 <!--GRAPHICS-->
         <span class="anchor" id="graphics"></span>
         <section class="container section-graphics" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-graphics">
-
-
                 <div class="title-left col-4">
                     <div class="title-content" id="title-graphics">
                         <h2 class="h-section title-graph">Graphics</h2>
                     </div>
                 </div>
-
-
                 <div class="list-graphics col-8">
-                    <div class="row projetWeb" data-aos="fade-up" data-aos-duration="1500">
+
+
+
+
+
+
+                    <div class="row projetWeb card-vectoriels" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/graphics-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-vectoriels-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>VECTORIELS</h3>
                             <div class="hr"></div>
@@ -330,32 +423,89 @@
                             <p class="p2">Polygones
                                 <br> Textures
                                 <br> Flat design</p>
-                            <a href="chill-swell.html" class="row oeuil">
+
+
+                            <div type="button" class="row oeuil btn-modal" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-                            </a>
+                            </div>
+
+
+                            <div id="myModalVectoriels" class="modal">
+                                <div class="modal-box container">
+                                    <div class="close">&times;</div>
+                                    <div class="d-flex">
+                                        <div class="modal-title d-flex flex-column justify-content-end align-items-star">
+                                            <p class="title-modal text-end">Vectoriels</p>
+                                            <a href="http://www.surfontime.com/" target="_blank">Site</a>
+                                            <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
+                                        </div>
+                                        <div class="modal-cont">
+                                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row flex-row-reverse projetWeb" data-aos="fade-up" data-aos-duration="1500">
+
+
+
+
+
+
+
+
+                    <div class="row flex-row-reverse projetWeb card-pictos" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/pictos-image-home.jpg" alt="" srcset="">
                             <video autoplay muted loop width="auto"> 
                                 <source src = "assets/videos/video-pictos-350-600.webm"
                                 type = "video/mp4" >
-                                </video>
+                            </video>
                         </div>
+
+
                         <div class="col-lg-5 text-card d-flex flex-column" id="text-a-gauche" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
                             <h3>PICTOS</h3>
                             <div class="hr"></div>
                             <p class="p1">Illustrator</p>
                             <p class="p2">Vecteurs
                                 <br> Brushes</p>
-                            <a href="chill-swell.html" class="row oeuil align-self-end">
+
+
+                            <div type="button" class="row oeuil btn-modal align-self-end" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
-                            </a>
+                            </div>
+
+
+                            <div id="myModalPictos" class="modal">
+                                <div class="modal-box container">
+                                    <div class="close">&times;</div>
+                                    <div class="d-flex">
+                                        <div class="modal-title d-flex flex-column justify-content-end align-items-star">
+                                            <p class="title-modal text-end">Pictos</p>
+                                            <a href="http://www.surfontime.com/" target="_blank">Site</a>
+                                            <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
+                                        </div>
+                                        <div class="modal-cont">
+                                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </section>
@@ -517,6 +667,8 @@
         <a href="https://dribbble.com/Adelaide_Laanatri" target="_blank">Dribbble</a>
     </footer>
 
+
+
     <!--////////SCRIPT///////-->
     <!--//JS-->
     <script src="javascript/application.js"></script>
@@ -537,177 +689,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
 
-
-    <script>
-
-        // ////////// NAVBAR
-
-        // $(window).ready(function() {
-        //     let vh = $(window).height()
-        //     let projet = $('.projetsSection').height()
-        //     let code = $('.codeSection').height()
-        //     let graphics = $('.graphicsSection').height()
-
-
-
-
-        //     $(window).ready(function() {
-        //         hoverBoutonNav('.work', '.workBis')
-        //         hoverBoutonNav('.code', '.codeBis')
-        //         hoverBoutonNav('.fun', '.funBis')
-        //         hoverBoutonNav('.cv', '.cvBis')
-        //     });
-
-
-
-
-        //     if ($(document).width() > 1400) {
-
-        //         $(window).scroll(function() {
-        //             if (($(window).scrollTop() > 1 * vh) && ($(window).scrollTop() < (1 * vh) + projet)) {
-        //                 $('.navbar').css({
-        //                     backgroundColor: '#efe8e1'
-        //                 });
-        //                 $('button span').css({
-        //                     color: 'black'
-        //                 });
-        //                 $('.hautDeLaNav, .hautDeLaNav span, .navbar p, .navbar .rez a').css({
-        //                     color: 'black'
-        //                 });
-        //                 $('.navbar .hr').css({
-        //                     backgroundColor: 'black'
-        //                 });
-        //                 hoverBoutonNavBlack('.work', '.workBis')
-        //                 hoverBoutonNavBlack('.code', '.codeBis')
-        //                 hoverBoutonNavBlack('.fun', '.funBis')
-        //                 hoverBoutonNavBlack('.cv', '.cvBis')
-        //             } else if (($(window).scrollTop() > (2.2 * vh) + projet) && ($(window).scrollTop() < (2.2 * vh) + projet + code)) {
-        //                 $('.navbar').css({
-        //                     backgroundColor: '#efe8e1'
-        //                 });
-        //                 $('button span').css({
-        //                     color: 'black'
-        //                 });
-        //                 $('.hautDeLaNav, .hautDeLaNav span,.navbar .hr,.navbar p,.navbar .rez a').css({
-        //                     color: 'black'
-        //                 });
-        //                 $('.navbar .hr').css({
-        //                     backgroundColor: 'black'
-        //                 });
-        //                 hoverBoutonNavBlack('.work', '.workBis')
-        //                 hoverBoutonNavBlack('.code', '.codeBis')
-        //                 hoverBoutonNavBlack('.fun', '.funBis')
-        //                 hoverBoutonNavBlack('.cv', '.cvBis')
-        //             } else if (($(window).scrollTop() > (3.4 * vh) + projet + code) && ($(window).scrollTop() < (3.4 * vh) + projet + code + graphics)) {
-        //                 $('.navbar').css({
-        //                     backgroundColor: '#efe8e1'
-        //                 });
-        //                 $('button span').css({
-        //                     color: 'black'
-        //                 });
-        //                 $('.hautDeLaNav, .hautDeLaNav span,.navbar .hr,.navbar p,.navbar .rez a').css({
-        //                     color: 'black'
-        //                 });
-        //                 $('.navbar .hr').css({
-        //                     backgroundColor: 'black'
-        //                 });
-        //                 hoverBoutonNavBlack('.work', '.workBis')
-        //                 hoverBoutonNavBlack('.code', '.codeBis')
-        //                 hoverBoutonNavBlack('.fun', '.funBis')
-        //                 hoverBoutonNavBlack('.cv', '.cvBis')
-        //             } else {
-        //                 $('.navbar').css({
-        //                     backgroundColor: 'black'
-        //                 });
-        //                 $('button span').css({
-        //                     color: '#efe8e1'
-        //                 });
-        //                 $('.hautDeLaNav, .hautDeLaNav span,.navbar .hr,.navbar p,.navbar .rez a').css({
-        //                     color: '#efe8e1'
-        //                 });
-        //                 $('.navbar .hr').css({
-        //                     backgroundColor: '#efe8e1'
-        //                 });
-        //                 hoverBoutonNav('.work', '.workBis')
-        //                 hoverBoutonNav('.code', '.codeBis')
-        //                 hoverBoutonNav('.fun', '.funBis')
-        //                 hoverBoutonNav('.cv', '.cvBis')
-        //             }
-        //         });
-
-        //     } else {}
-
-
-
-
-
-
-
-
-        // });
-        ///////FIN NAVBAR
-    </script>
-
-    <!-- <script>
-        ////////// NAVBAR CLIC
-        $(".nav-link").on('click', function() {
-                $(".navbar-toggler").click();
-            })
-            //////////FIN NAVBAR CLIC
-    </script>
-
-    <script>
-        /////////// OEUIL
-        $(document).ready(function() {
-                $('.fleche').mouseover(function() {
-                    $(this).children('img').attr('src', 'assets/images/image-home/oeuil2.png')
-                })
-                $('.fleche').mouseout(function() {
-                    $(this).children('img').attr('src', 'assets/images/image-home/oeuil1.png')
-
-                })
-            })
-            ///////////FIN OEUIL
-    </script>
-
-
-
-
-    <script>
-        $(window).scroll(function() {
-            let pos = $(this).scrollTop();
-
-
-            $('.titreProjets').css({
-                'background-position': 'center' + pos / 1.5 + 'px'
-            });
-        })
-    </script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 </body>
-
-
-
-
 
 </html>
