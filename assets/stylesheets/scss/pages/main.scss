@@ -219,18 +219,6 @@
         flex-direction: row;
         margin: 0 0 85px 0;
       }
-      .card-surf {
-        position: relative;
-        z-index: 80;
-      }
-      .card-welina {
-        position: relative;
-        z-index: 70;
-      }
-      .card-atre {
-        position: relative;
-        z-index: 60;
-      }
     }
   }
 }
@@ -245,14 +233,6 @@
       flex-direction: row;
       margin: 0 0 85px 0;
     }
-    .card-components {
-      position: relative;
-      z-index: 50;
-    }
-    .card-animations {
-      position: relative;
-      z-index: 40;
-    }
   }
 }
 
@@ -266,14 +246,6 @@
         height: 600px;
         flex-direction: row;
         margin: 0 0 85px 0;
-      }
-      .card-vectoriels {
-        position: relative;
-        z-index: 30;
-      }
-      .card-pictos {
-        position: relative;
-        z-index: 20;
       }
     }
   }

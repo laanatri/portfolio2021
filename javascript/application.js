@@ -161,13 +161,15 @@ console.log(btnModalPictos);
 // Get the <span> element that closes the modal
 // var span = document.getElementsByClassName("close")[0];
 
-const btnCloseSurf = document.querySelector(".card-surf .close");
-const btnCloseWelina = document.querySelector(".card-welina .close");
-const btnCloseAtre = document.querySelector(".card-atre .close");
-const btnCloseComponents = document.querySelector(".card-components .close");
-const btnCloseAnimations = document.querySelector(".card-animations .close");
-const btnCloseVectoriels = document.querySelector(".card-vectoriels .close");
-const btnClosePictos = document.querySelector(".card-pictos .close");
+
+
+const btnCloseSurf = modalSurf.querySelector(".close");
+const btnCloseWelina = modalWelina.querySelector(".close");
+const btnCloseAtre = modalAtre.querySelector(".close");
+const btnCloseComponents = modalComponents.querySelector(".close");
+const btnCloseAnimations = modalAnimations.querySelector(".close");
+const btnCloseVectoriels = modalVectoriels.querySelector(".close");
+const btnClosePictos = modalPictos.querySelector(".close");
 
 
 
