@@ -272,3 +272,20 @@ const blockScroll = (btnModal, btnClose) => {
 
 blockScroll(btnModalSurf, btnCloseSurf);
 blockScroll(btnModalWelina, btnCloseWelina);
+
+
+
+//GLIDER
+
+// window.addEventListener('load', function(){
+//   console.log("GLIDDER!!!!!");
+//   new Glider(document.querySelector('.glider'), {
+//     slidesToShow: 1,
+//     dots: '#dots',
+//     draggable: true,
+//     arrows: {
+//       prev: '.glider-prev',
+//       next: '.glider-next'
+//     }
+//   });
+// });

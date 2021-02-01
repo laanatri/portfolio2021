@@ -9,13 +9,9 @@
     <title>Adélaïde Laanatri | Développeuse Web | Portfolio</title>
     <meta name="description" content="Je m&#39;appele Adélaïde Laanatri et je suis développeuse web à Lyon. Je me spécialise dans le  front-end ( HTML5, CSS3, SASS, JS, RUBY ). Voici mon portfolio et CV." />
 
-
     <link rel="stylesheet" href="assets/stylesheets/css/application.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-
 </head>
 
 
@@ -110,76 +106,12 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">Surf on Time</p>
+                            <p class="title-modal text-end">Surf on Time</p>
                             <a href="http://www.surfontime.com/" target="_blank">Site</a>
                             <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                         </div>
                         <div class="modal-cont">
-
-
-                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <ol class="carousel-indicators">
-                                  <div data-bs-target=""  class="active">
-                                      <i class="fab fa-envira"></i>
-                                  </div>
-                                  <div data-bs-target="" >
-                                      <i class="fab fa-envira"></i>
-                                  </div>
-                                  <div data-bs-target="" >
-                                      <i class="fab fa-envira"></i>
-                                  </div>
-                                  <div data-bs-target="" >
-                                      <i class="fab fa-envira"></i>
-                                  </div>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active" data-bs-interval="5000">
-                                    <img src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/images/image-cands/screencapture-surfontime-spots-2021-01-31-21_02_05.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/images/image-cands/screencapture-surfontime-spots-29-2021-01-31-21_03_03.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/images/image-cands/screencapture-surfontime-surf-schools-29-2021-01-31-21_04_01.png" class="d-block w-100" alt="...">
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-                                  <span class="carousel-prev-icon" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
-                                  
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-                                  <span class="carousel-next-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
-                                  
-                                </a>
-                              </div>
-
-                            <!-- <div class="glider-contain">
-                                <div class="glider">
-                                    <div class="frame" id="frame">
-                                        <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
-                                    </div>
-                                    <div class="frame" id="frame">
-                                        <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
-                                    </div>
-                                    <div class="frame" id="frame">
-                                        <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
-                                    </div>
-                                    <div class="frame" id="frame">
-                                        <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
-                                    </div>
-                                </div>
-                              
-                                <button aria-label="Previous" class="glider-prev">«</button>
-                                <button aria-label="Next" class="glider-next">»</button>
-                                <div role="tablist" class="dots"></div>
-                            </div> -->
-
-
-
-                            <!-- <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt=""> -->
+                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -189,10 +121,10 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">Welina Ika</p>
+                            <p class="title-modal text-end">Welina Ika</p>
                         </div>
                         <div class="modal-cont">
-                            <img class="contenu" src="assets/images/image-welina/screencapture-welina-2020-02-16-16_39_53.jpg" alt="">
+                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -202,50 +134,12 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">L'âtre</p>
-                            <a href="http://www.latredauphinois.fr/" target="_blank">Site</a>
+                            <p class="title-modal text-end">L'âtre</p>
+                            <a href="http://www.surfontime.com/" target="_blank">Site</a>
+                            <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                         </div>
                         <div class="modal-cont">
-
-
-                            <div id="carouselExampleDark2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                <ol class="carousel-indicators">
-                                  <div data-bs-target=""  class="active">
-                                      <i class="fas fa-fire"></i>
-                                  </div>
-                                  <div data-bs-target="" >
-                                      <i class="fas fa-fire"></i>
-                                  </div>
-                                  <div data-bs-target="" >
-                                      <i class="fas fa-fire"></i>
-                                  </div>
-                                  <div data-bs-target="" >
-                                      <i class="fas fa-fire"></i>
-                                  </div>
-                                </ol>
-                                <div class="carousel-inner">
-                                  <div class="carousel-item active" data-bs-interval="5000">
-                                    <img src="assets/images/image-dauphinois/screencapture-latredauphinois-fr-index-php-2021-02-01-23_41_43.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/images/image-dauphinois/screencapture-latredauphinois-fr-poeles-php-2021-02-01-23_42_21.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/images/image-dauphinois/screencapture-latredauphinois-fr-cheminees-php-2021-02-01-23_42_44.png" class="d-block w-100" alt="...">
-                                  </div>
-                                  <div class="carousel-item" data-bs-interval="5000">
-                                    <img src="assets/images/image-dauphinois/screencapture-latredauphinois-fr-prestations-devis-php-2021-02-01-23_46_32.png" class="d-block w-100" alt="...">
-                                  </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleDark2" role="button" data-bs-slide="prev">
-                                  <span class="carousel-prev-icon" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
-                                  
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleDark2" role="button" data-bs-slide="next">
-                                  <span class="carousel-next-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
-                                  
-                                </a>
-                              </div>
+                            <img class="contenu" src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -255,7 +149,7 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">Components</p>
+                            <p class="title-modal text-end">Components</p>
                             <a href="http://www.surfontime.com/" target="_blank">Site</a>
                             <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                         </div>
@@ -270,7 +164,7 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">Animations</p>
+                            <p class="title-modal text-end">Animations</p>
                             <a href="http://www.surfontime.com/" target="_blank">Site</a>
                             <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                         </div>
@@ -285,7 +179,7 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">Vectoriels</p>
+                            <p class="title-modal text-end">Vectoriels</p>
                             <a href="http://www.surfontime.com/" target="_blank">Site</a>
                             <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                         </div>
@@ -300,7 +194,7 @@
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
-                            <p class="title-modal">Pictos</p>
+                            <p class="title-modal text-end">Pictos</p>
                             <a href="http://www.surfontime.com/" target="_blank">Site</a>
                             <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                         </div>
@@ -667,8 +561,6 @@
     <script>
       AOS.init();
     </script>
-    <!--GLIDER-->
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
     <!--//bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
