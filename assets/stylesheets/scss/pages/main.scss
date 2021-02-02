@@ -1,20 +1,13 @@
+@import "../config/colors";
+@import "../config/fonts";
 //GENERAL
 .h-section {
-  font-family: 'Slang';
+  font-family: $sans-serif;
   font-size: 20em;
 }
  //COMPONENTS
 
- //ANCHOR
 
-//  .anchor{
-//   display: block;
-//   height: 100px; /*same height as header*/
-//   margin-top: -100px; /*same height as header*/
-//   visibility: hidden;
-// }
-
- //FIN ANCHOR
 
  //TITLES
 
@@ -48,7 +41,7 @@
 .title-left {
   position: relative;
   h2 {
-    color: #A7C0F2;
+    color: $blue;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -61,14 +54,14 @@
     position: absolute;
   }
   .title-graph {
-    color: #3FB376;
+    color: $green;
     top: 5%;
   }
   h2:before {
     content: "Web";
-    font-family: 'Sofia', cursive;
+    font-family: $cursive;
     font-size: 0.2em;
-    color: #40303C;
+    color: $black;
     display: inline-block;
     -webkit-transform: rotate(90deg translate(220px, 430px));
     -moz-transform: rotate(90deg translate(220px, 430px));
@@ -88,7 +81,7 @@
 
 .title-right {
   h2 {
-    color: #D93D59;
+    color: $red;
     writing-mode: vertical-rl;
     padding-top: 45px;
     text-orientation: mixed;
@@ -96,9 +89,9 @@
   }
   h2:after {
     content: "Code";
-    font-family: 'Sofia', cursive;
+    font-family: $cursive;
     font-size: 0.2em;
-    color: #40303C;
+    color: $black;
     display: inline-block;
     -webkit-transform: rotate(-90deg translate(220px, 430px));
     -moz-transform: rotate(-90deg translate(220px, 430px));
@@ -143,20 +136,20 @@
   padding-top: 48px;
   height: 600px;
   h3 {
-    font-family: 'Slang';
+    font-family: $sans-serif;
     font-size: 4em;
-    color: #40303C;
+    color: $black;
     z-index: 0;
   }
   .hr {
     height: 3px;
     width: 130%;
     margin: -10px 0 0 -30%;
-    background-color: #40303C;
+    background-color: $black;
   }
   .p1 {
-        font-family: 'Sofia', cursive;
-        color: #40303C;
+        font-family: $cursive;
+        color: $black;
         font-size: 1.8em;
         font-weight: 600;
         margin-bottom: 0;
@@ -165,8 +158,8 @@
         z-index: 99;
       }
   .p2 {
-    font-family: 'Crimson Pro', serif;
-    color: #40303C;
+    font-family: $serif;
+    color: $black;
     font-size: 16px;
     margin-bottom: 28%;
   }
@@ -252,7 +245,7 @@
 }
 
 .section-cv {
-  background-color: #A7C0F2;
+  background-color: $blue;
   padding: 0 !important;
   height: 200vh;
   .img-cv {
@@ -272,15 +265,15 @@
     margin-bottom: 100px;
     text-align: center;
     h2 {
-      font-family: 'Slang';
-      color: #D93D59;
+      font-family: $sans-serif;
+      color: $red;
       font-size: 20em;
       line-height: 0.8em;
       margin-bottom: -50px;
     }
     a {
-      font-family: 'Sofia', cursive;
-      color: #D93D59;
+      font-family: $cursive;
+      color: $red;
       font-size: 2em;
       padding: 20px 50px 10px 50px;
       background-color: transparent;
@@ -300,7 +293,7 @@
         left: 50%;
         border-radius: 0 5px 5px 0;
         z-index: -1;
-        background: #F2CED8;
+        background: $pink;
         visibility: hidden;
         transform: scaleX(0);
         transition: 0.3s ease-in-out;
@@ -320,7 +313,7 @@
         left: 50%;
         border-radius: 0 5px 5px 0;
         z-index: -1;
-        background: #F2CED8;
+        background: $pink;
         visibility: hidden;
         transform: scaleX(0);
         transition: 0.3s ease-in-out;
@@ -333,14 +326,14 @@
       }
     }
     .text {
-      font-family: 'Crimson Pro', serif;
+      font-family: $serif;
       font-size: 2em;
-      color: #40303C;
+      color: $black;
       margin-top: 50px;
       span {
         font-size: 2.5em;
         line-height: 0.7em;
-        color: #D93D59;
+        color: $red;
       }
     }
   }
@@ -348,7 +341,7 @@
 
 .text-animate {
   display: block;
-  font: 10em 'Slang';
+  font: 10em $sans-serif;
   width: 97vw;
   overflow: hidden;
   margin: 0 auto;
@@ -362,27 +355,27 @@
   }
   
   .text-copy:nth-child(1){
-  stroke: #D93D59;
+  stroke: $red;
   animation-delay: 0s;
   }
   
   .text-copy:nth-child(2){
-  stroke: #F2CED8;
+  stroke: $pink;
   animation-delay: 1.2s;
   }
   
   .text-copy:nth-child(3){
-  stroke: #D93D59;
+  stroke: $red;
   animation-delay: 2.4s;
   }
   
   .text-copy:nth-child(4){
-  stroke: #F2CED8;
+  stroke: $pink;
   animation-delay: 3.6s;
   }
   
   .text-copy:nth-child(5){
-  stroke: #D93D59;
+  stroke: $red;
   animation-delay: 4.8s;
   }
 
@@ -469,14 +462,14 @@
 
 
 .modal-box {
-  background-color: #f2efe9 !important;
+  background-color: $beige !important;
   border: none !important;
   height: 75vh !important;
   padding: 50px !important;
   border-radius: 50px 0 50px 0 !important;
   position: relative;
   .close {
-    color: #D93D59;
+    color: $red;
     font-size: 28px;
     font-weight: bold;
     position: absolute;
@@ -487,7 +480,7 @@
   }
   .close:hover,
   .close:focus {
-    color:#40303C;
+    color:$black;
     text-decoration: none;
     cursor: pointer;
   }
@@ -511,9 +504,9 @@
       padding: 0 20px 0 0;
       position: relative;
       .title-modal {
-        color: #A7C0F2;
+        color: $blue;
         text-align: end;
-        font-family: Slang;
+        font-family: $sans-serif;
         font-size: 4em;
         width: 400%;
         transform: rotate(-90deg);
@@ -527,8 +520,8 @@
         right: 120%;
       }
       a {
-        font-family: 'Sofia', cursive;
-        color: #3FB376;
+        font-family: $cursive;
+        color: $green;
         font-size: 1.2em;
       }
       a:first-of-type {
@@ -588,7 +581,7 @@
 
 .carousel {
   height: 100%;
-  color: #40303C;
+  color: $black;
   .carousel-inner {
     height: 100%;
   }
@@ -602,7 +595,7 @@
 }
 
 .carousel-control-prev, .carousel-control-next {
-  color: #40303C !important;
+  color: $black !important;
   opacity: 1 !important;
   width: 5% !important;
 }
@@ -621,13 +614,13 @@
 
 .carousel-control-next:hover {
   .carousel-next-icon i {
-    color: #3FB376;
+    color: $green;
     font-size: 1.5em;
   }
 }
 .carousel-control-prev:hover {
   .carousel-prev-icon i {
-    color: #3FB376;
+    color: $green;
     font-size: 1.5em;
   }
 }
@@ -643,7 +636,7 @@
     transform: rotate(90deg);
   }
   #myModalSurf .active {
-    color: #3FB376;
+    color: $green;
     transform: scale(1.5);
   }
   .fa, .fas {
@@ -651,7 +644,7 @@
     opacity: .8;
   }
   #carouselExampleDark2 .active {
-    color: #F2D64B;
+    color:$yellow;
     transform: scale(1.5);
   }
 }

@@ -1,13 +1,12 @@
 // Import stylesheets
 
+// Config
+@import "config/colors";
+@import "config/fonts";
+
 // Components
 @import url("../css/components/navbar.css");
 @import url("../css/components/accueil.css");
-
-
-// Config
-@import url("../css/config/colors.css");
-@import url("../css/config/fonts.css");
 
 //Pages
 @import url("../css/pages/main.css");
@@ -26,19 +25,19 @@
 
 
  ::-webkit-scrollbar {
-    background-color: #40303C;
+    background-color:$black;
     border: none;
     width: 10px;
 }
 
  ::-webkit-scrollbar-track-piece {
-    background-color: #40303C;
+    background-color:$black;
     border: none;
     width: 10px;
 }
 
  ::-webkit-scrollbar-thumb {
-    background-color: #D93D59;
+    background-color: $red;
     background-size: cover;
     border: none;
     border-radius: 10px;
@@ -50,7 +49,7 @@
 ////////////// MAIN
 ////// SECTION 1 ACCUEIL
 main {
-    background-color: #F2EFE9;
+    background-color: $beige;
 }
 
         ////// SECTION 2 PROJETS RESPONSIVE
