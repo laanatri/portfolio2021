@@ -1,10 +1,7 @@
 @import "../config/colors";
 @import "../config/fonts";
 //GENERAL
-.h-section {
-  font-family: $sans-serif;
-  font-size: 20em;
-}
+
  //COMPONENTS
 
 
@@ -29,34 +26,8 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .title-left {
   position: relative;
-  h2 {
-    color: $blue;
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform-origin: top right;
-    position: -webkit-sticky;
-    right: 100%;
-    top: 5.9%;
-    position: absolute;
-  }
-  .title-graph {
-    color: $green;
-    top: 5%;
-  }
   h2:before {
     content: "Web";
     font-family: $cursive;
@@ -80,13 +51,6 @@
 }
 
 .title-right {
-  h2 {
-    color: $red;
-    writing-mode: vertical-rl;
-    padding-top: 45px;
-    text-orientation: mixed;
-    position: relative;
-  }
   h2:after {
     content: "Code";
     font-family: $cursive;
@@ -135,12 +99,6 @@
   text-align: end;
   padding-top: 48px;
   height: 600px;
-  h3 {
-    font-family: $sans-serif;
-    font-size: 4em;
-    color: $black;
-    z-index: 0;
-  }
   .hr {
     height: 3px;
     width: 130%;
@@ -264,13 +222,6 @@
   .container {
     margin-bottom: 100px;
     text-align: center;
-    h2 {
-      font-family: $sans-serif;
-      color: $red;
-      font-size: 20em;
-      line-height: 0.8em;
-      margin-bottom: -50px;
-    }
     a {
       font-family: $cursive;
       color: $red;
