@@ -2,6 +2,12 @@
 @import "../config/fonts";
 //GENERAL
 
+
+main {
+  background-color: $beige;
+}
+
+
  //COMPONENTS
 
 
@@ -70,27 +76,28 @@
 //FIN TITLES
 
 //IMAGE/VIDEO
-.image-video {
-  padding: 0;
-  width: 350px;
-  height: 600px;
-  position: relative;
-  img {
-      height: 600px;
-      z-index: 2;
-      position: absolute;
-      transition: 0.3s ease-in-out;
-  }
-  video {
-      z-index: 1;
-  }
-}
+// .image-video {
+//   padding: 0;
+//   width: 350px;
+//   height: 600px;
+//   position: relative;
+//   img {
+//       height: 600px;
+//       z-index: 5;
+//       position: absolute;
+//       transition: 0.3s ease-in-out;
+//   }
+//   video {
+//       z-index: 4;
+//       position: relative;
+//   }
+// }
 
-.projetWeb:hover {
-  .image-video img {
-      opacity: 0;
-  }
-}
+// .projetWeb:hover {
+//   .image-video img {
+//       opacity: 0;
+//   }
+// }
 //FIN IMAGE/VIDEO
 
 //TEXTS CARDS
@@ -159,8 +166,10 @@
 
 //sections
 .section-projets {
+  position: relative;
+  z-index: 5;
   .row-projets {
-    margin-top: -235px;
+    // margin-top: -235px;
     margin-bottom: 15px;
     padding-top: 100px;
     .list-projets {
