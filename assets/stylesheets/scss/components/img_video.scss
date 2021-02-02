@@ -1,0 +1,25 @@
+@import "../config/colors";
+@import "../config/fonts";
+
+.image-video {
+  padding: 0;
+  width: 350px;
+  height: 600px;
+  position: relative;
+  img {
+      height: 600px;
+      z-index: 5;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+  }
+  video {
+      z-index: 4;
+      position: relative;
+  }
+}
+
+.projetWeb:hover {
+  .image-video img {
+      opacity: 0;
+  }
+}

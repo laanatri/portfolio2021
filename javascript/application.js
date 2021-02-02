@@ -275,17 +275,18 @@ blockScroll(btnModalWelina, btnCloseWelina);
 
 
 
-//GLIDER
+// IMG VIDEO
 
-// window.addEventListener('load', function(){
-//   console.log("GLIDDER!!!!!");
-//   new Glider(document.querySelector('.glider'), {
-//     slidesToShow: 1,
-//     dots: '#dots',
-//     draggable: true,
-//     arrows: {
-//       prev: '.glider-prev',
-//       next: '.glider-next'
-//     }
-//   });
-// });
+const pWeb = document.querySelectorAll(".projetWeb");
+const pWebArr = Array.from(pWeb);
+
+const video = document.getElementsByTagName("video");
+const videoArr = Array.from(video);
+
+pWebArr.forEach((p) => {
+  p.addEventListener('mouseenter', () => {
+    const i = pWebArr.indexOf(p);
+    videoArr[i].currentTime = 0;
+    videoArr[i].play();
+  })
+})

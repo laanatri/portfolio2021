@@ -1,19 +1,29 @@
 @import "../config/colors";
 @import "../config/fonts";
 
+
+/// TITLES HOME
 h1 {
   font-family: $sans-serif;
   font-size: 10em !important;
-  margin-right: 100px;
-  padding-bottom: 10%;
   color: $red;
+  padding-bottom: 10%;
 }
 
-.accueil h2 {
+.home h2 {
   font-size: 5em;
   color: $black;
   font-family: $cursive;
 }
+
+/// FIN TITLES HOME
+
+
+
+
+
+
+
 
 .h-section {
   font-family: $sans-serif;
@@ -47,9 +57,7 @@ h1 {
 }
 
 .section-cv h2 {
-  font-family: $sans-serif;
   color: $red;
-  font-size: 20em;
   line-height: 0.8em;
   margin-bottom: -50px;
 }
