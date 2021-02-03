@@ -3,9 +3,11 @@
 
 .home {
   height: 100vh;
+  padding: 0 !important;
   .title-home {
     height: 100vh;
     margin-bottom: -70vh;
+    padding: 0;
     position: relative;
     z-index: 0;
     .title-content {
@@ -19,15 +21,23 @@
   .picture-home{
     height: 100vh;
     margin-bottom: -120vh;
+    padding: 0;
     position: relative;
     z-index: 1;
     .picture-content {
       height: 100%;
-      width: 100%;
+      width: 50%;
+      .picture {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
   .name-home {
     height: 100vh;
+    padding: 0;
     position: relative;
     z-index: 2;
     .name-content {
