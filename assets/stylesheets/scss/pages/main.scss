@@ -20,6 +20,15 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
  //TITLES
 
 .title-content {
@@ -148,14 +157,24 @@ main {
 
 //FIN COMPONENTS
 
+
+
+
+
+
 //sections
 .section-projets {
   position: relative;
   z-index: 5;
   .row-projets {
-    // margin-top: -235px;
     margin-bottom: 15px;
     padding-top: 100px;
+    .title-left {
+      .title-content {
+        .h-section {
+        }
+      }
+    }
     .list-projets {
       .projetWeb {
         width: 100%;
@@ -166,6 +185,113 @@ main {
     }
   }
 }
+
+
+
+/// HOME RESPONSIVE
+
+@media (min-width: 1200px) { 
+  .section-projets {
+    .row-projets {
+      .title-left {
+        .title-content {
+          .h-section {
+          }
+        }
+      }
+      .list-projets {
+        .projetWeb {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199.99px) and (min-width: 992px) { 
+  .section-projets {
+    .row-projets {
+      .title-left {
+        .title-content {
+          .h-section {
+          }
+        }
+      }
+      .list-projets {
+        .projetWeb {
+        }
+      }
+    }
+  }
+}
+
+ @media (max-width: 991.99px) and (min-width: 768px) { 
+  .section-projets {
+    .row-projets {
+      .title-left {
+        .title-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .h-section {
+          }
+        }
+      }
+      .list-projets {
+        .projetWeb {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.99px) and (min-width: 576px) { 
+  .section-projets {
+    .row-projets {
+      .title-left {
+        .title-content {
+          .h-section {
+          }
+        }
+      }
+      .list-projets {
+        .projetWeb {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { 
+  .section-projets {
+    .row-projets {
+      .title-left {
+        .title-content {
+          .h-section {
+          }
+        }
+      }
+      .list-projets {
+        .projetWeb {
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section-code {
   margin-top: 100px;
