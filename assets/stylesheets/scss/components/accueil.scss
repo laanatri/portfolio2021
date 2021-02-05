@@ -2,71 +2,94 @@
 @import "../config/fonts";
 
 .home {
+  width: 100vw;
   height: 100vh;
   padding: 0 !important;
+  background-color: aqua;
+  position: relative;
   .title-home {
     height: 100vh;
-    margin-bottom: -70vh;
+    width: 100%;
     padding: 0;
-    position: relative;
+    position: absolute;
     z-index: 0;
-    .title-content {
-      height: 100%;
-      width: 100%;
-      h1 {
-        padding-bottom: 20%;
-      }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
   }
   .picture-home{
     height: 100vh;
-    margin-bottom: -120vh;
+    width: 52vw;
     padding: 0;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    .picture-content {
-      height: 100%;
-      width: 50%;
-      .picture {
-        width: 100%;
-        img {
-          width: 100%;
-        }
-      }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit:contain;
+      width: 100%;
     }
   }
   .name-home {
     height: 100vh;
+    width: 100%;
     padding: 0;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    .name-content {
-      height: 100%;
-      width: 100%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-
-
 
 /// HOME RESPONSIVE
 
 @media (min-width: 1200px) { 
-
+  .home {
+    .picture-home {
+      top: 30%;
+    }
+  }
  }
 
 @media (max-width: 1199.99px) and (min-width: 992px) { 
-  
- }
+  .home {
+    background-color: burlywood;
+    .picture-home {
+      width: 60vw;
+      top: 30%;
+    }
+  }
+}
 
  @media (max-width: 991.99px) and (min-width: 768px) { 
-  
+  .home {
+    background-color: lightsalmon;
+    .picture-home {
+      width: 70vw;
+      top: 35%;
+    }
+  }
 }
 
 @media (max-width: 767.99px) and (min-width: 576px) { 
-  
+  .home {
+    background-color: lightskyblue;
+    .picture-home {
+      width: 100vw;
+      top: 35%;
+    }
+  }
 }
 
 @media (max-width: 575.98px) { 
-
+.home {
+    background-color: lightseagreen;
+    .picture-home {
+      width: 120vw;
+      top: 35%;
+    }
+  }
 }
