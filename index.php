@@ -340,22 +340,14 @@
             </div>
         </section>
         <span class="anchor" id="projets"></span>
-
-
-
-
         <section class="container section-projets" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-projets">
-
-
-                <div class="title-left col-12 col-lg-4">
+                <div class="title-left col-4">
                     <div class="title-content" id="title-projets">
                         <h2 class="h-section">Projets</h2>
                     </div>
                 </div>
-
-
-                <div class="list-projets col-12 col-lg-8">
+                <div class="list-projets col-8">
                     <div class="row projetWeb card-surf" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
                             <img class="image-source" src="assets/images/image-video-home/chill-swell-image-home.jpg" alt="" srcset="">
@@ -431,12 +423,8 @@
 <!--FIN PROJETS-->
 <!--CODE-->
         <span class="anchor" id="code"></span>
-
-
         <section class="container section-code" data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-code">
-
-
                 <div class="list-code col-8">
                     <div class="row projetWeb card-components" data-aos="fade-up" data-aos-duration="1500">
                         <div class="image-video">
