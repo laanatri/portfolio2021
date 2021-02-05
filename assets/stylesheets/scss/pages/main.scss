@@ -2,10 +2,18 @@
 @import "../config/fonts";
 //GENERAL
 
+body {
+  overflow-x: hidden;
+  background-color: $beige !important;
+}
 
 main {
-  background-color: $beige;
+  
+  background-color: lightslategrey;
 }
+
+
+
 
 
  //COMPONENTS

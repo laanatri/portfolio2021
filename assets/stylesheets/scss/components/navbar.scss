@@ -3,13 +3,16 @@
 /////// NAVIGATION
 .navbar {
   display: flex;
+  width: 100vw;
   z-index: 90 !important;
   padding: 0 !important;
   margin: 0 !important;
+  background-color: $beige;
   background-color: transparent;
   transition: .2s ease-in-out;
   .navbarFixe {
     width: 100%;
+    height: 100px;
     button {
       height: 100px;
       padding-right: 0 0 !important;
@@ -27,108 +30,104 @@
       margin-top: 30px;
     }
   }
-
-
-
-
-
+  
+  
   .navBis {
-      transition: 0.5s ease-out;
-      width: 100%;
-      padding-left: 20%;
-      ul {
-          width: 100%;
-          padding: 0 !important;
-          height: calc(100vh - 70px);
-          .bouton-projets {
-              margin-top: 10%;
-          }
-          .bouton-cv {
-              margin-bottom: 15px;
-          }
-          li {
-              width: 100%;
-              a {
-                  width: 500px;
-                  height: 5.5em;
-                  padding: 0 !important;
-                  color: $black;
-                  text-decoration: none;
-                  position: relative;
-                  .category {
-                      width: 500px;
-                      font-family: $sans-serif;
-                      font-size: 6em;
-                      text-decoration: none;
-                      line-height: 0.7em;
-                      transition: 0s ease-in-out;
-                      span {
-                          font-size: 0.5em;
-                          color: $black;
-                          font-family: $cursive;
-                      }
-                  }
-              }
-          }
-          .hr {
-            width: 80%;
-            margin-top: 0 !important;
-            margin-bottom: 30px;
-            div {
-              margin-right: 10px;
-            }
-            .dot {
-              width: 10px;
-              height: 10px;
-              border-radius: 50%;
-              background-color: $black;
-            }
-            .picto {
-              height: 100%;
-              img {
-                height: 100%;
-              }
-            }
-          }
-          p {
-              margin-bottom: 20px;
-              font-family: $cursive;
-              font-size: 1.2em;
-              font-weight: 100;
+    transition: 0.5s ease-out;
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      // width: 100%;
+      padding-bottom: 100px;
+      
+      
+      .bouton-projets {
+        
+      }
+      .bouton-cv {
+        margin-bottom: 15px;
+      }
+      li {
+        width: 100%;
+        a {
+          width: 500px;
+          height: 5.5em;
+          
+          color: $black;
+          text-decoration: none;
+          position: relative;
+          .category {
+            width: 500px;
+            font-family: $sans-serif;
+            font-size: 6em;
+            text-decoration: none;
+            line-height: 0.7em;
+            transition: 0s ease-in-out;
+            span {
+              font-size: 0.5em;
               color: $black;
-          }
-          .reseaux {
-            margin-right: 10vw;
-            
-            a {
-              font-size: 2em;
-              font-family: $sans-serif;
-              font-weight: 0;
-              padding-right: 30px;
-            }
-            .reseau_linkedin {
-              color: $blue;
-            }
-            .reseau_github {
-              color:$green;
-            }
-            .reseau_dribbble {
-              color: $red;
+              font-family: $cursive;
             }
           }
         }
+      }
+      .hr {
+        width: 80%;
+        margin-top: 0 !important;
+        margin-bottom: 30px;
+        div {
+          margin-right: 10px;
+        }
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $black;
+        }
+        .picto {
+          height: 100%;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      p {
+        margin-bottom: 20px;
+        font-family: $cursive;
+        font-size: 1.2em;
+        font-weight: 100;
+        color: $black;
+      }
+      .reseaux {
+        margin-right: 10vw;
+        
+        a {
+          font-size: 2em;
+          font-family: $sans-serif;
+          font-weight: 0;
+          padding-right: 30px;
+        }
+        .reseau_linkedin {
+          color: $blue;
+        }
+        .reseau_github {
+          color:$green;
+        }
+        .reseau_dribbble {
+          color: $red;
+        }
+      }
+    }
   }
 }
 
 .navbar-white {
   background-color: $beige;
 }
-
-
-
-
-
-
 
 .bouton-projets {
   .nav-link:before {
@@ -194,4 +193,36 @@
 .nav-link:hover:before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+/// NAV RESPONSIVE
+
+@media (min-width: 1200px) { 
+.navBis ul {
+  padding-right: 400px;
+}
+}
+
+@media (max-width: 1199.99px) and (min-width: 992px) { 
+ 
+}
+
+@media (max-width: 991.99px) and (min-width: 768px) { 
+ 
+}
+
+@media (max-width: 767.99px) and (min-width: 576px) { 
+ 
+}
+
+@media (max-width: 575.98px) { 
+
+}
+
+@media screen and (orientation: portrait) {
+
+}
+
+@media screen and (orientation: landscape) {
+
 }
