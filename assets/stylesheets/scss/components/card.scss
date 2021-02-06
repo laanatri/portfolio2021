@@ -1,2 +1,161 @@
 @import "../config/colors";
 @import "../config/fonts";
+
+
+
+////CARDS
+
+.card {
+  background-color: green !important;
+  margin: 0 0 50px 0 !important;
+  border: none !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  .img-video {
+    padding: 0 !important;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 4;
+    .img {
+      height: 600px;
+      width: 350px;
+      background-color: #fff;
+      position: relative;
+    }
+  }
+  .card-text {
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 50px;
+    height: 600px;
+    position: relative;
+    z-index: 5;
+    .hr {
+      height: 4px;
+      width: 150%;
+      margin: -10px 0 0 -50%;
+      background-color: $black;
+    }
+    .p1 {
+      font-family: $cursive;
+      color: $black;
+      font-size: 1.8em;
+      font-weight: 600;
+      margin-bottom: 0;
+      padding-bottom: 16px;
+      padding-top: 5px;
+      z-index: 99;
+    }
+    i {
+      margin-bottom: 16px;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+    }
+    .p2 {
+      font-family: $serif;
+      color: $black;
+      font-size: 16px;
+      margin-bottom: 28%;
+      text-align: right;
+    }
+  }
+}
+.card-last {
+  margin: 0 !important;
+}
+.card-reverse {
+  flex-direction: row-reverse !important;
+  .card-text {
+    align-items: start;
+    .hr {
+      margin: -10px -50% 0 0 !important;
+    }
+    .p2 {
+      text-align: left;
+    }
+  }
+}
+.card:hover {
+  .image-source {
+    opacity: 0;
+  }
+}
+
+
+/////CARD RESP
+
+@media (max-width: 1199.99px) and (min-width: 992px) { 
+  .card {
+    .card-text {
+      padding: 50px 0 50px 50px !important;
+    }
+  }
+  .card-reverse {
+    .card-text {
+      padding: 50px 50px 50px 0 !important;
+    }
+  }
+}
+
+@media (max-width: 767.99px) {
+  .image-source {
+    opacity: 0;
+  }
+  .card-text {
+    padding: 50px 10% !important;
+    i {
+      display: none;
+    }
+    .oeuil {
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 767.99px) and (min-width: 576px) { 
+  .card {
+    justify-content: center;
+    .card-text {
+      max-width: 70%;
+      padding: 50px 5% !important;
+    }
+  }
+}
+
+
+
+
+/////OEUIL
+
+
+
+.oeuil {
+  height: 100px;
+  width: 100px;
+  margin-left: 40px;
+  position: relative;
+  align-self: flex-start;
+  .img1 {
+    object-fit: cover;
+    display: block;
+    position: absolute;
+  }
+  .img2 {
+    object-fit: cover;
+    display: none;
+    position: absolute;
+  }
+}
+.card-reverse .oeuil {
+  margin-left: auto;
+}
+.oeuil:hover {
+  .img2 {
+    display: block;
+  }
+}

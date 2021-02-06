@@ -58,55 +58,115 @@ h1 {
 }
 /// FIN TITLES HOME
 
+/// TITLES SECTIONS
 
-
-
-
-
-
-
-.h-section {
+.section-title h2 {
   font-family: $sans-serif;
-  font-size: 20em;
+  font-size: 15em !important;
+  background-color: indianred;
+  display: inline-block;
 }
-
-.title-left h2 {
-  color: $blue;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform-origin: top right;
+.sticky-title-content {
+  position: sticky;
   position: -webkit-sticky;
-  right: 100%;
-  top: 5.9%;
-  position: absolute;
+  top: 0;
+  .title-content {
+    position: relative;
+    background-color: khaki;
+    h2 {
+      position: absolute;
+      top: 100%;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform-origin: top left;
+    }
+  }
+  .title-content-projets {
+    height: 595px;
+    h2 {
+      color: $blue;
+    }
+  }
+  .title-content-code {
+    height: 437px;
+    h2 {
+      color: $red;
+    }
+  }
+  .title-content-fun {
+    height: 329px;
+    h2 {
+      color: $green;
+    }
+  }
 }
-#title-graphics h2 {
-  color: $green;
-  top: 5%;
+
+@media (max-width: 991.99px) {
+  .section-title {
+    margin-bottom: 100px;
+    .title-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        position: relative;
+        transform-origin: center center !important;
+        top: auto !important;
+        margin-top: 100px;
+      }
+    }
+    .title-content-projets {
+      height: 495px;
+    }
+    .title-content-code {
+      height: 337px;
+    }
+    .title-content-fun {
+      height: 229px;
+    }
+  }
 }
 
-.title-right h2 {
-  color: $red;
-  writing-mode: vertical-rl;
-  padding-top: 45px;
-  text-orientation: mixed;
-  position: relative;
-}
-
-.section-cv h2 {
-  color: $red;
-  line-height: 0.8em;
-  margin-bottom: -50px;
-}
 
 
 
-.text-card h3 {
+
+
+
+
+/// FIN TITLES SECTIONS
+
+
+/// TITLES CARDS
+
+.card-text h3 {
   font-family: $sans-serif;
   font-size: 4em;
   color: $black;
   z-index: 0;
 }
+
+
+
+/// FIN TITLES CARDS
+
+
+/////////////////////////////////////////////:
+
+
+
+
+
+
+
+
+// .title-right h2 {
+//   color: $red;
+//   writing-mode: vertical-rl;
+//   padding-top: 45px;
+//   text-orientation: mixed;
+//   position: relative;
+// }

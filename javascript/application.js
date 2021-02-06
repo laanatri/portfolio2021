@@ -1,3 +1,108 @@
+// IMG VIDEO OK
+
+const card = document.querySelectorAll(".card");
+const cardArr = Array.from(card);
+
+const video = document.getElementsByTagName("video");
+const videoArr = Array.from(video);
+
+cardArr.forEach((p) => {
+  const i = cardArr.indexOf(p);
+  if (window.matchMedia("(max-width: 767.99px)").matches) {
+    videoArr[i].play();
+  } else {
+    p.addEventListener('mouseenter', () => {
+        videoArr[i].currentTime = 0;
+        videoArr[i].play();
+    })
+  }
+})
+
+// IMG VIDEO OK
+
+/////////////////////////////////////////////////////////////////
+
+// MODAL
+
+//Les modales
+const modals = document.querySelectorAll(".modal");
+const modalsArr = Array.from(modals);
+
+//Les btn open modales
+const boutons = document.querySelectorAll(".btn-modal");
+const boutonsArr = Array.from(boutons);
+
+//Les btn close modales
+const boutonsClose = document.querySelectorAll(".close");
+const boutonsCloseArr = Array.from(boutonsClose);
+
+//fonctions events
+
+const openModal = (btn, modal) => {
+  btn.onclick = () => {
+    modal.style.display = "flex";
+  }
+}
+
+const closeModal = (close, modal) => {
+  close.onclick = () => {
+    modal.style.display = "none";
+  }
+}
+
+//fonctions d'appel
+
+boutonsArr.forEach((bouton) => {
+  const ind = boutonsArr.indexOf(bouton);
+  openModal(bouton, modalsArr[ind]);
+})
+
+boutonsCloseArr.forEach((bouton) => {
+  const ind = boutonsCloseArr.indexOf(bouton);
+  closeModal(bouton, modalsArr[ind]);
+})
+
+// MODAL
+
+////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //NAVBAR
 // const categoryAppear = () => {
 //   console.log("hello three");
@@ -110,7 +215,7 @@ menu();
 // const test = (elID) => {
 //   console.log(elID);
 //   let dest = document.getElementById(elID);
-//   console.log(dest);
+//   console.log(dest);active
 //   scrollTo(dest.offsetTop, 2000);
 // };
 
@@ -118,6 +223,34 @@ menu();
 
 
 //MODAL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Get the modal
 // var modalContent = document.querySelector(".modal-content");
@@ -187,12 +320,12 @@ console.log(btnClosePictos);
 //   modal.classList.add("modal-active");
 // }
 
-const openModal = (btn, modal) => {
-  btn.onclick = () => {
-    modal.style.display = "flex";
-    modal.classList.add("modal-active");
-  }
-}
+// const openModal = (btn, modal) => {
+//   btn.onclick = () => {
+//     modal.style.display = "flex";
+//     modal.classList.add("modal-active");
+//   }
+// }
 
 openModal(btnModalSurf, modalSurf);
 openModal(btnModalWelina, modalWelina);
@@ -209,12 +342,12 @@ openModal(btnModalPictos, modalPictos);
 
 // }
 
-const closeModal = (close, modal) => {
-  close.onclick = () => {
-    modal.style.display = "none";
-    modal.classList.remove("modal-active");
-  }
-}
+// const closeModal = (close, modal) => {
+//   close.onclick = () => {
+//     modal.style.display = "none";
+//     modal.classList.remove("modal-active");
+//   }
+// }
 
 closeModal(btnCloseSurf, modalSurf);
 closeModal(btnCloseWelina, modalWelina);
@@ -244,6 +377,7 @@ closeModal(btnClosePictos, modalPictos);
 // const btnModalAtre = document.querySelector(".card-atre .btn-modal");
 // const btnCloseAtre = document.querySelector(".card-atre .close");
 
+////////////////////////////
 const blockScroll = (btnModal, btnClose) => {
   btnModal.addEventListener('click', () => {
     const scrolll = window.scrollY;
@@ -272,21 +406,3 @@ const blockScroll = (btnModal, btnClose) => {
 
 blockScroll(btnModalSurf, btnCloseSurf);
 blockScroll(btnModalWelina, btnCloseWelina);
-
-
-
-// IMG VIDEO
-
-const pWeb = document.querySelectorAll(".projetWeb");
-const pWebArr = Array.from(pWeb);
-
-const video = document.getElementsByTagName("video");
-const videoArr = Array.from(video);
-
-pWebArr.forEach((p) => {
-  p.addEventListener('mouseenter', () => {
-    const i = pWebArr.indexOf(p);
-    videoArr[i].currentTime = 0;
-    videoArr[i].play();
-  })
-})
