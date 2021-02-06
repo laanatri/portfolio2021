@@ -14,11 +14,61 @@ main {
 
 
 
+////SECTIONS
+
+.section-container {
+  position: relative;
+  z-index: 4;
+  padding: 100px 0 !important;
+  .row-section {
+    background-color: lightgreen;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .section-title {
+      background-color: lightpink;
+      padding: 0 !important;
+    }
+    .section-content {
+      background-color: lightblue;
+      padding: 0 !important;
+    }
+  }
+  .row-section-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .section-container {
+    padding: 50px 0 !important;
+  }
+}
 
 
- //COMPONENTS
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////
 
 
 
@@ -31,129 +81,72 @@ main {
 
  //TITLES
 
-.title-content {
-  margin-top: 75px;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20px;
-}
-#title-projets {
-  height: 785px;
-}
-#title-fun {
-  height: 428px;
-}
-#title-graphics {
-  height: 964px;
-}
+// .title-content {
+//   margin-top: 75px;
+//   width: 100%;
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 20px;
+//   padding: 0 !important;
+// }
+// #title-projets {
+//   height: 785px;
+//   padding: 0 !important;
+// }
+// #title-fun {
+//   height: 428px;
+// }
+// #title-graphics {
+//   height: 964px;
+// }
 
 
-.title-left {
-  position: relative;
-  h2:before {
-    content: "Web";
-    font-family: $cursive;
-    font-size: 0.2em;
-    color: $black;
-    display: inline-block;
-    -webkit-transform: rotate(90deg translate(220px, 430px));
-    -moz-transform: rotate(90deg translate(220px, 430px));
-    -o-transform: rotate(90deg translate(220px, 430px));
-    -ms-transform: rotate(90deg translate(220px, 430px));
-    transform: rotate(90deg) translate(220px, 430px);
-    position: absolute;
-    top: -60px;
-    right: 155px;
-  }
-  .title-graph:before {
-    content: "Vecteurs";
-    right: 90px;
-    top: -110px;
-  }
-}
 
-.title-right {
-  h2:after {
-    content: "Code";
-    font-family: $cursive;
-    font-size: 0.2em;
-    color: $black;
-    display: inline-block;
-    -webkit-transform: rotate(-90deg translate(220px, 430px));
-    -moz-transform: rotate(-90deg translate(220px, 430px));
-    -o-transform: rotate(-90deg translate(220px, 430px));
-    -ms-transform: rotate(-90deg translate(220px, 430px));
-    transform: rotate(-90deg) translate(220px, 430px);
-    position: absolute;
-    top: 210px;
-    left: -275px;
-  }
-}
+// .title-left {
+//   position: relative;
+//   h2:before {
+//     content: "Web";
+//     font-family: $cursive;
+//     font-size: 0.2em;
+//     color: $black;
+//     display: inline-block;
+//     -webkit-transform: rotate(90deg translate(220px, 430px));
+//     -moz-transform: rotate(90deg translate(220px, 430px));
+//     -o-transform: rotate(90deg translate(220px, 430px));
+//     -ms-transform: rotate(90deg translate(220px, 430px));
+//     transform: rotate(90deg) translate(220px, 430px);
+//     position: absolute;
+//     top: -60px;
+//     right: 155px;
+//   }
+//   .title-graph:before {
+//     content: "Vecteurs";
+//     right: 90px;
+//     top: -110px;
+//   }
+// }
+
+// .title-right {
+//   h2:after {
+//     content: "Code";
+//     font-family: $cursive;
+//     font-size: 0.2em;
+//     color: $black;
+//     display: inline-block;
+//     -webkit-transform: rotate(-90deg translate(220px, 430px));
+//     -moz-transform: rotate(-90deg translate(220px, 430px));
+//     -o-transform: rotate(-90deg translate(220px, 430px));
+//     -ms-transform: rotate(-90deg translate(220px, 430px));
+//     transform: rotate(-90deg) translate(220px, 430px);
+//     position: absolute;
+//     top: 210px;
+//     left: -275px;
+//   }
+// }
 //FIN TITLES
 
 
-//TEXTS CARDS
-.text-card {
-  z-index: 30;
-  text-align: end;
-  padding-top: 48px;
-  height: 600px;
-  .hr {
-    height: 3px;
-    width: 130%;
-    margin: -10px 0 0 -30%;
-    background-color: $black;
-  }
-  .p1 {
-        font-family: $cursive;
-        color: $black;
-        font-size: 1.8em;
-        font-weight: 600;
-        margin-bottom: 0;
-        padding-bottom: 16px;
-        padding-top: 5px;
-        z-index: 99;
-      }
-  .p2 {
-    font-family: $serif;
-    color: $black;
-    font-size: 16px;
-    margin-bottom: 28%;
-  }
-  .oeuil {
-    height: 100px;
-    width: 100px;
-    margin-left: 40px;
-    position: relative;
-    .img1 {
-      object-fit: cover;
-      display: block;
-      position: absolute;
-    }
-    .img2 {
-      object-fit: cover;
-      display: none;
-      position: absolute;
-    }
-  }
-  .oeuil:hover {
-    .img2 {
-      display: block;
-    }
-  }
-}
 
-#text-a-gauche{
-  text-align: start;
-  .hr {
-    margin: -10px 0 0 0;
-  }
-  .oeuil {
-    margin-right: 40px;
-  }
-}
-//FIN TEXTS CARDS
 
 //FIN COMPONENTS
 
@@ -162,121 +155,6 @@ main {
 
 
 
-//sections
-.section-projets {
-  position: relative;
-  z-index: 5;
-  .row-projets {
-    margin-bottom: 15px;
-    padding-top: 100px;
-    .title-left {
-      .title-content {
-        .h-section {
-        }
-      }
-    }
-    .list-projets {
-      .projetWeb {
-        width: 100%;
-        height: 600px;
-        flex-direction: row;
-        margin: 0 0 85px 0;
-      }
-    }
-  }
-}
-
-
-
-/// HOME RESPONSIVE
-
-@media (min-width: 1200px) { 
-  .section-projets {
-    .row-projets {
-      .title-left {
-        .title-content {
-          .h-section {
-          }
-        }
-      }
-      .list-projets {
-        .projetWeb {
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1199.99px) and (min-width: 992px) { 
-  .section-projets {
-    .row-projets {
-      .title-left {
-        .title-content {
-          .h-section {
-          }
-        }
-      }
-      .list-projets {
-        .projetWeb {
-        }
-      }
-    }
-  }
-}
-
- @media (max-width: 991.99px) and (min-width: 768px) { 
-  .section-projets {
-    .row-projets {
-      .title-left {
-        .title-content {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .h-section {
-          }
-        }
-      }
-      .list-projets {
-        .projetWeb {
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767.99px) and (min-width: 576px) { 
-  .section-projets {
-    .row-projets {
-      .title-left {
-        .title-content {
-          .h-section {
-          }
-        }
-      }
-      .list-projets {
-        .projetWeb {
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 575.98px) { 
-  .section-projets {
-    .row-projets {
-      .title-left {
-        .title-content {
-          .h-section {
-          }
-        }
-      }
-      .list-projets {
-        .projetWeb {
-        }
-      }
-    }
-  }
-}
 
 
 
@@ -289,37 +167,6 @@ main {
 
 
 
-
-
-
-
-.section-code {
-  margin-top: 100px;
-  margin-bottom: 15px;
-  .list-code {
-    .projetWeb {
-      width: 100%;
-      height: 600px;
-      flex-direction: row;
-      margin: 0 0 85px 0;
-    }
-  }
-}
-
-.section-graphics {
-  margin-top: 100px;
-  margin-bottom: 15px;
-  .row-graphics {
-    .list-graphics {
-      .projetWeb {
-        width: 100%;
-        height: 600px;
-        flex-direction: row;
-        margin: 0 0 85px 0;
-      }
-    }
-  }
-}
 
 .section-cv {
   background-color: $blue;
