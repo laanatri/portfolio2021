@@ -136,54 +136,29 @@
 
 
             <div id="myModalSurf" class="modal">
+
+
+
                 <div class="modal-box container">
+
+
+
                     <div class="close">&times;</div>
+
+
                     <div class="d-flex">
+
                         <div class="modal-title">
                             <p class="title-modal">Surf on Time</p>
-                            <div class="links-modal">
+                            <div class="llinks-modal">
                                 <a href="http://www.surfontime.com/" target="_blank">Site</a>
                                 <a href="https://github.com/laanatri/surf_on_time" target="_blank">Github</a>
                             </div>
                         </div>
-
-
-
-
-
-
-
-
                         <div class="modal-cont">
 
-                            <div class="pagination">
-                                <i class="fab fa-envira i-actif"></i>
-                                <i class="fab fa-envira"></i>
-                                <i class="fab fa-envira"></i>
-                                <i class="fab fa-envira"></i>
-                            </div>
 
-                            <div class="carousel-content">
-
-
-                                    <div class="frame-carousel">
-                                        <img src="assets/images/image-cands/screencapture-surfontime-2021-01-31-20_39_35.png" alt="0 Page du site">
-                                    </div>
-                                    <div class="frame-carousel">
-                                        <img src="assets/images/image-cands/screencapture-surfontime-spots-2021-01-31-21_02_05.png" alt="1 Page du site">
-                                    </div>
-                                    <div class="frame-carousel">
-                                        <img src="assets/images/image-cands/screencapture-surfontime-spots-29-2021-01-31-21_03_03.png" alt="2 Page du site">
-                                    </div>
-                                    <div class="frame-carousel">
-                                        <img src="assets/images/image-cands/screencapture-surfontime-surf-schools-29-2021-01-31-21_04_01.png" alt="3 Page du site">
-                                    </div>
-         
-    
-                            </div>
-
-
-                            <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                 <ol class="carousel-indicators">
                                   <div data-bs-target=""  class="active">
                                       <i class="fab fa-envira"></i>
@@ -220,19 +195,30 @@
                                   <span class="carousel-next-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
                                   
                                 </a>
-                              </div> -->
+                              </div>
 
                         </div>
+
                     </div>
+
+
                 </div>
+
+
+
+
+
+
             </div>
+
+
+
             <div id="myModalWelina" class="modal">
                 <div class="modal-box container">
                     <div class="close">&times;</div>
                     <div class="d-flex">
                         <div class="modal-title d-flex flex-column justify-content-end align-items-star">
                             <p class="title-modal">Welina Ika</p>
-                            
                         </div>
                         <div class="modal-cont">
                             <img class="contenu" src="assets/images/image-welina/screencapture-welina-2020-02-16-16_39_53.jpg" alt="">
@@ -393,7 +379,7 @@
                                 <br> HTML5
                                 <br> CSS3
                                 <br> JS</p>
-                            <div type="button" class="row oeuil btn-modal myBtnSurf" id="myBtn">
+                            <div type="button" class="row oeuil btn-modal" id="myBtn">
                                 <img src="assets/images/image-home/oeuil2.svg" class="img2" alt="">
                                 <img src="assets/images/image-home/oeuil1.svg" class="img1" alt="">
                             </div>

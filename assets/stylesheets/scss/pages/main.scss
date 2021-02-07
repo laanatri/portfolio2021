@@ -7,11 +7,14 @@ body {
   background-color: $beige !important;
 }
 
-main {
-  overflow-x: hidden;
 
-  // background-color: lightslategrey;
+@media (max-width: 991.99px) {
+  main {
+    overflow-x: hidden;
+  }
 }
+
+
 
 
 
@@ -265,74 +268,74 @@ main {
 
 
 
-//caroussel
+// //caroussel
 
-.carousel {
-  height: 100%;
-  color: $black;
-  .carousel-inner {
-    height: 100%;
-  }
+// .carousel {
+//   height: 100%;
+//   color: $black;
+//   .carousel-inner {
+//     height: 100%;
+//   }
 
-}
+// }
 
-.carousel-item {
-  overflow-y: scroll;
-  height: 100%;
+// .carousel-item {
+//   overflow-y: scroll;
+//   height: 100%;
 
-}
+// }
 
-.carousel-control-prev, .carousel-control-next {
-  color: $black !important;
-  opacity: 1 !important;
-  width: 5% !important;
-}
+// .carousel-control-prev, .carousel-control-next {
+//   color: $black !important;
+//   opacity: 1 !important;
+//   width: 5% !important;
+// }
 
-.carousel-control-next {
-  right: -40px !important;
-}
-.carousel-control-prev {
-  left: -40px !important;
-}
+// .carousel-control-next {
+//   right: -40px !important;
+// }
+// .carousel-control-prev {
+//   left: -40px !important;
+// }
 
-.carousel-next-icon i, .carousel-prev-icon i {
-  color: #85607b;
-  font-size: 1.3em;
-}
+// .carousel-next-icon i, .carousel-prev-icon i {
+//   color: #85607b;
+//   font-size: 1.3em;
+// }
 
-.carousel-control-next:hover {
-  .carousel-next-icon i {
-    color: $green;
-    font-size: 1.5em;
-  }
-}
-.carousel-control-prev:hover {
-  .carousel-prev-icon i {
-    color: $green;
-    font-size: 1.5em;
-  }
-}
-.carousel ol {
-  bottom: -50px;
+// .carousel-control-next:hover {
+//   .carousel-next-icon i {
+//     color: $green;
+//     font-size: 1.5em;
+//   }
+// }
+// .carousel-control-prev:hover {
+//   .carousel-prev-icon i {
+//     color: $green;
+//     font-size: 1.5em;
+//   }
+// }
+// .carousel ol {
+//   bottom: -50px;
   
    
     
   
-  .fa, .fab {
-    margin: 5px;
-    opacity: .8;
-    transform: rotate(90deg);
-  }
-  #myModalSurf .active {
-    color: $green;
-    transform: scale(1.5);
-  }
-  .fa, .fas {
-    margin: 5px;
-    opacity: .8;
-  }
-  #carouselExampleDark2 .active {
-    color:$yellow;
-    transform: scale(1.5);
-  }
-}
+//   .fa, .fab {
+//     margin: 5px;
+//     opacity: .8;
+//     transform: rotate(90deg);
+//   }
+//   #myModalSurf .active {
+//     color: $green;
+//     transform: scale(1.5);
+//   }
+//   .fa, .fas {
+//     margin: 5px;
+//     opacity: .8;
+//   }
+//   #carouselExampleDark2 .active {
+//     color:$yellow;
+//     transform: scale(1.5);
+//   }
+// }
