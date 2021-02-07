@@ -67,8 +67,8 @@ h1 {
   display: inline-block;
 }
 .sticky-title-content {
-  position: sticky;
-  position: -webkit-sticky;
+  position: sticky !important;
+  position: -webkit-sticky !important;
   top: 0;
   .title-content {
     position: relative;
@@ -155,18 +155,3 @@ h1 {
 
 
 /////////////////////////////////////////////:
-
-
-
-
-
-
-
-
-// .title-right h2 {
-//   color: $red;
-//   writing-mode: vertical-rl;
-//   padding-top: 45px;
-//   text-orientation: mixed;
-//   position: relative;
-// }

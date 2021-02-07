@@ -111,7 +111,93 @@ boutonsArr.forEach((bouton) => {
 ////////////////////////////////////////////////////////////////
 
 
+// CAROUSEL
 
+
+
+const btnSurf = document.querySelector(".myBtnSurf");
+
+console.log("lala");
+console.log(btnSurf);
+console.log("lala");
+
+
+btnSurf.addEventListener(("click") , () => {
+
+
+// Pagination
+
+  const pagination = document.querySelectorAll(".fab");
+  const paginationArr = Array.from(pagination);
+  console.log(paginationArr);
+
+// Frame
+
+  const frames = document.querySelectorAll(".frame-carousel");
+  const framesArr = Array.from(frames);
+  console.log(framesArr);
+
+
+
+  const modalContent = document.querySelector(".modal-cont");
+
+  const w = modalContent.offsetWidth;
+  console.log(w);
+
+  framesArr.forEach((frame) => {
+    console.log(w);
+    console.log(frame.width);
+
+    frame.style.width = w + "px";
+  })
+
+
+  const carousel = document.querySelector(".carousel-content");
+
+
+  // carousel.addEventListener(("scroll"), () => {
+  //   console.log("ça scrol!!!!");
+  //   console.log(w);
+  //   carousel.scrollTo(0, 0);
+
+  // })
+
+
+
+  paginationArr.forEach((page) => {
+    page.addEventListener(("click") , () => {
+      
+      paginationArr.forEach((page) => {
+        page.classList.remove("i-actif");
+      })
+      page.classList.add("i-actif");
+
+
+      const indPage = paginationArr.indexOf(page);
+      console.log(indPage);
+      console.log(framesArr[indPage]);
+      let X = w * indPage;
+      console.log(X);
+      carousel.scrollTo(X, 0);
+    })
+  })
+
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CAROUSEL
 
 
 
