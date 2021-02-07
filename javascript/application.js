@@ -36,30 +36,74 @@ const boutonsArr = Array.from(boutons);
 const boutonsClose = document.querySelectorAll(".close");
 const boutonsCloseArr = Array.from(boutonsClose);
 
-//fonctions events
+//La nav
+const nav = document.querySelector(".navbar");
+
+
+//fonctions modales
 
 const openModal = (btn, modal) => {
   btn.onclick = () => {
     modal.style.display = "flex";
+    nav.style.display = 'none';
+    modal.classList.add("modal-active");
+
+
+    const scro = window.scrollY;
+    console.log(scro);
+
+    const scrolling = () => {
+      window.scrollTo(0, scro);
+    }
+
+    window.addEventListener('scroll', scrolling );
+
+
+///
+
+
+    const closeModal = (close, modal) => {
+      close.onclick = () => {
+        modal.style.display = "none";
+        nav.style.display = 'flex';
+        modal.classList.remove("modal-active");
+
+        window.removeEventListener('scroll', scrolling );    
+      }
+    }
+
+    boutonsCloseArr.forEach((bouton) => {
+      const ind = boutonsCloseArr.indexOf(bouton);
+      closeModal(bouton, modalsArr[ind]);
+    })
+
+
+///
+
+
+    const otherCloseModal = (modal) => {
+
+      modal.addEventListener('click', () => {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          nav.style.display = 'flex';
+          modal.classList.remove("modal-active");
+
+          window.removeEventListener('scroll', scrolling ); 
+        }
+      })
+    }
+
+    modalsArr.forEach((modal) => {
+      otherCloseModal(modal);
+    })
+
   }
 }
-
-const closeModal = (close, modal) => {
-  close.onclick = () => {
-    modal.style.display = "none";
-  }
-}
-
-//fonctions d'appel
 
 boutonsArr.forEach((bouton) => {
   const ind = boutonsArr.indexOf(bouton);
   openModal(bouton, modalsArr[ind]);
-})
-
-boutonsCloseArr.forEach((bouton) => {
-  const ind = boutonsCloseArr.indexOf(bouton);
-  closeModal(bouton, modalsArr[ind]);
 })
 
 // MODAL
@@ -220,189 +264,3 @@ menu();
 // };
 
 //FIN NAV SCROLLING
-
-
-//MODAL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Get the modal
-// var modalContent = document.querySelector(".modal-content");
-
-const modalSurf = document.getElementById("myModalSurf");
-const modalWelina = document.getElementById("myModalWelina");
-const modalAtre = document.getElementById("myModalAtre");
-const modalComponents = document.getElementById("myModalComponents");
-const modalAnimations = document.getElementById("myModalAnimations");
-const modalVectoriels = document.getElementById("myModalVectoriels");
-const modalPictos = document.getElementById("myModalPictos");
-
-console.log(modalSurf);
-console.log(modalWelina);
-console.log(modalAtre);
-console.log(modalComponents);
-console.log(modalAnimations);
-console.log(modalVectoriels);
-console.log(modalPictos);
-
-// Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-
-const btnModalSurf = document.querySelector(".card-surf .btn-modal");
-const btnModalWelina = document.querySelector(".card-welina .btn-modal");
-const btnModalAtre = document.querySelector(".card-atre .btn-modal");
-const btnModalComponents = document.querySelector(".card-components .btn-modal");
-const btnModalAnimations = document.querySelector(".card-animations .btn-modal");
-const btnModalVectoriels = document.querySelector(".card-vectoriels .btn-modal");
-const btnModalPictos = document.querySelector(".card-pictos .btn-modal");
-
-console.log(btnModalSurf);
-console.log(btnModalWelina);
-console.log(btnModalAtre);
-console.log(btnModalComponents);
-console.log(btnModalAnimations);
-console.log(btnModalVectoriels);
-console.log(btnModalPictos);
-
-
-// Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-
-
-const btnCloseSurf = modalSurf.querySelector(".close");
-const btnCloseWelina = modalWelina.querySelector(".close");
-const btnCloseAtre = modalAtre.querySelector(".close");
-const btnCloseComponents = modalComponents.querySelector(".close");
-const btnCloseAnimations = modalAnimations.querySelector(".close");
-const btnCloseVectoriels = modalVectoriels.querySelector(".close");
-const btnClosePictos = modalPictos.querySelector(".close");
-
-
-
-console.log(btnCloseSurf);
-console.log(btnCloseWelina);
-console.log(btnCloseAtre);
-console.log(btnCloseComponents);
-console.log(btnCloseAnimations);
-console.log(btnCloseVectoriels);
-console.log(btnClosePictos);
-
-// When the user clicks on the button, open the modal
-// btn.onclick = () => {
-//   modal.style.display = "flex";
-//   modal.classList.add("modal-active");
-// }
-
-// const openModal = (btn, modal) => {
-//   btn.onclick = () => {
-//     modal.style.display = "flex";
-//     modal.classList.add("modal-active");
-//   }
-// }
-
-openModal(btnModalSurf, modalSurf);
-openModal(btnModalWelina, modalWelina);
-openModal(btnModalAtre, modalAtre);
-openModal(btnModalComponents, modalComponents);
-openModal(btnModalAnimations, modalAnimations);
-openModal(btnModalVectoriels, modalVectoriels);
-openModal(btnModalPictos, modalPictos);
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = () => {
-//   modal.style.display = "none";
-//   modal.classList.remove("modal-active");
-
-// }
-
-// const closeModal = (close, modal) => {
-//   close.onclick = () => {
-//     modal.style.display = "none";
-//     modal.classList.remove("modal-active");
-//   }
-// }
-
-closeModal(btnCloseSurf, modalSurf);
-closeModal(btnCloseWelina, modalWelina);
-closeModal(btnCloseAtre, modalAtre);
-closeModal(btnCloseComponents, modalComponents);
-closeModal(btnCloseAnimations, modalAnimations);
-closeModal(btnCloseVectoriels, modalVectoriels);
-closeModal(btnClosePictos, modalPictos);
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
-
-
-
-
-
-// const btnCloseSurf = document.querySelector(".card-surf .close");
-
-// const btnCloseWelina = document.querySelector(".card-weilna .close");
-
-// const modaleAtre = document.getElementById("myModalAtre");
-// const btnModalAtre = document.querySelector(".card-atre .btn-modal");
-// const btnCloseAtre = document.querySelector(".card-atre .close");
-
-////////////////////////////
-const blockScroll = (btnModal, btnClose) => {
-  btnModal.addEventListener('click', () => {
-    const scrolll = window.scrollY;
-
-    const nav = document.querySelector(".navbar");
-    nav.style.display = 'none';
-    console.log(nav);
-
-    const scrollling = () => {
-      window.scrollTo(0, scrolll);
-      
-    };
-
-
-    window.addEventListener('scroll', scrollling);
-
-    btnClose.addEventListener('click', () => {
-
-      window.removeEventListener('scroll', scrollling);
-      nav.style.display = 'flex';
-      
-    })
-
-  })
-}
-
-blockScroll(btnModalSurf, btnCloseSurf);
-blockScroll(btnModalWelina, btnCloseWelina);

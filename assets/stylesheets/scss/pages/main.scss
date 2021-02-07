@@ -8,8 +8,9 @@ body {
 }
 
 main {
-  
-  background-color: lightslategrey;
+  overflow-x: hidden;
+
+  // background-color: lightslategrey;
 }
 
 
@@ -47,27 +48,6 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /////////////////////////////////////////////
 
 
@@ -80,26 +60,6 @@ main {
 
 
  //TITLES
-
-// .title-content {
-//   margin-top: 75px;
-//   width: 100%;
-//   position: -webkit-sticky;
-//   position: sticky;
-//   top: 20px;
-//   padding: 0 !important;
-// }
-// #title-projets {
-//   height: 785px;
-//   padding: 0 !important;
-// }
-// #title-fun {
-//   height: 428px;
-// }
-// #title-graphics {
-//   height: 964px;
-// }
-
 
 
 // .title-left {
@@ -303,195 +263,6 @@ main {
 }
 
 
-//MODAL
-
-/* The Modal (background) */
-.btn-modal {
-  border: none;
-}
-
-.btn:focus {
-  border: none;
-  outline: none;
-}
-
-@keyframes modalActive {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.modal {
-  display: none;
-  opacity: 1;
-  position: fixed;
-  z-index: 99 !important;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-}
-
-#myModalSurf {
-  background-color: rgba(167, 192, 242, .5);
-}
-
-#myModalWelina {
-  background-color: rgba(64, 48, 60, .5);
-}
-
-#myModalAtre {
-  background-color: rgba(63, 179, 118, .5);
-}
-
-#myModalComponents {
-  background-color: rgba(167, 192, 242, .5);
-}
-
-#myModalAnimations {
-  background-color: rgba(167, 192, 242, .5);
-}
-
-#myModalVectoriels {
-  background-color: rgba(167, 192, 242, .5);
-}
-
-#myModalPictos {
-  background-color: rgba(167, 192, 242, .5);
-}
-
-
-
-.modal-active {
-  justify-content: center;
-  align-items: center;
-  animation-name: modalActive;
-  animation-duration: .5s;
-  animation-timing-function: ease-in-out;
-}
-
-/* Modal Content/Box */
-
-
-
-.modal-box {
-  background-color: $beige !important;
-  border: none !important;
-  height: 75vh !important;
-  padding: 50px !important;
-  border-radius: 50px 0 50px 0 !important;
-  position: relative;
-  .close {
-    color: $red;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    transform-origin: center;
-    top: -22px;
-    right: -18.16px;
-    padding: 10px;
-  }
-  .close:hover,
-  .close:focus {
-    color:$black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .d-flex {
-    height: 100%;
-    width: 100%;
-    ::-webkit-scrollbar {
-      display: none;
-  }
-  
-   ::-webkit-scrollbar-track-piece {
-      display: none;
-  }
-  
-   ::-webkit-scrollbar-thumb {
-      display: none;
-  }
-    .modal-title {
-      width: 10%;
-      height: 100%;
-      padding: 0 20px 0 0;
-      position: relative;
-      .title-modal {
-        color: $blue;
-        text-align: end;
-        font-family: $sans-serif;
-        font-size: 4em;
-        width: 400%;
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        transform-origin: top right;
-        position: absolute;
-        top: 0;
-        right: 120%;
-      }
-      a {
-        font-family: $cursive;
-        color: $green;
-        font-size: 1.2em;
-      }
-      a:first-of-type {
-        margin-bottom: 20px;
-      }
-    }
-    .modal-cont{
-      width: 90%;
-      height: 100%;
-      img {
-        width: 100%;
-      }
-    }
-    
-  }
-
-
-
-
-
-  
-}
-
-#myModalWelina .modal-cont {
-  overflow-y: scroll;
-}
-
-
-//GLIDER
-
-// .glider-contain {
-//   background-color: aquamarine;
-//   height: 100% !important;
-//   .glider {
-//     height: 95%;
-//     .glider-track {
-//       height: 100%;
-//       #frame {
-//         min-width: none !important;
-//       }
-//       .glider-slide {
-      
-        
-//       }
-//     }
-//   }
-
-  
-
-  
- 
-  
-// }
 
 
 //caroussel

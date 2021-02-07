@@ -108,6 +108,9 @@
   }
   .card-text {
     padding: 50px 10% !important;
+    .hr {
+      width: 100% !important;
+    }
     i {
       display: none;
     }
