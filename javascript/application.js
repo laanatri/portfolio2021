@@ -113,8 +113,6 @@ boutonsArr.forEach((bouton) => {
 
 // CAROUSEL
 
-
-
 const btnSurf = document.querySelector(".myBtnSurf");
 
 console.log("lala");
@@ -122,80 +120,46 @@ console.log(btnSurf);
 console.log("lala");
 
 
-btnSurf.addEventListener(("click") , () => {
+boutonsArr.forEach((bouton) => {
+  bouton.addEventListener(("click") , () => {
+    const indBtn = boutonsArr.indexOf(bouton);
 
 
-// Pagination
+    const pagination = modals[indBtn].getElementsByTagName("i");
+    const paginationArr = Array.from(pagination);
 
-  const pagination = document.querySelectorAll(".fab");
-  const paginationArr = Array.from(pagination);
-  console.log(paginationArr);
-
-// Frame
-
-  const frames = document.querySelectorAll(".frame-carousel");
-  const framesArr = Array.from(frames);
-  console.log(framesArr);
+    const frames = modals[indBtn].querySelectorAll(".frame-carousel");
+    const framesArr = Array.from(frames);
 
 
+    const modalContent = modals[indBtn].querySelector(".modal-cont");
 
-  const modalContent = document.querySelector(".modal-cont");
+    const w = modalContent.offsetWidth;
+  
+    framesArr.forEach((frame) => {
+  
+      frame.style.width = w + "px";
+    })
+  
 
-  const w = modalContent.offsetWidth;
-  console.log(w);
+    const carousel = modals[indBtn].querySelector(".carousel-content");
 
-  framesArr.forEach((frame) => {
-    console.log(w);
-    console.log(frame.width);
+    paginationArr.forEach((page) => {
+      page.addEventListener(("click") , () => {
 
-    frame.style.width = w + "px";
-  })
-
-
-  const carousel = document.querySelector(".carousel-content");
-
-
-  // carousel.addEventListener(("scroll"), () => {
-  //   console.log("ça scrol!!!!");
-  //   console.log(w);
-  //   carousel.scrollTo(0, 0);
-
-  // })
+        paginationArr.forEach((page) => {
+          page.classList.remove("i-actif");
+        })
+        page.classList.add("i-actif");
 
 
-
-  paginationArr.forEach((page) => {
-    page.addEventListener(("click") , () => {
-      
-      paginationArr.forEach((page) => {
-        page.classList.remove("i-actif");
+        const indPage = paginationArr.indexOf(page);
+        let X = w * indPage;
+        carousel.scrollTo(X, 0);
       })
-      page.classList.add("i-actif");
-
-
-      const indPage = paginationArr.indexOf(page);
-      console.log(indPage);
-      console.log(framesArr[indPage]);
-      let X = w * indPage;
-      console.log(X);
-      carousel.scrollTo(X, 0);
     })
   })
-
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
 
 // CAROUSEL
 
