@@ -63,7 +63,6 @@ h1 {
 .section-title h2 {
   font-family: $sans-serif;
   font-size: 15em !important;
-  background-color: indianred;
   display: inline-block;
 }
 .sticky-title-content {
@@ -72,7 +71,6 @@ h1 {
   top: 0;
   .title-content {
     position: relative;
-    background-color: khaki;
     h2 {
       position: absolute;
       top: 100%;
@@ -129,12 +127,6 @@ h1 {
     }
   }
 }
-
-
-
-
-
-
 
 
 /// FIN TITLES SECTIONS

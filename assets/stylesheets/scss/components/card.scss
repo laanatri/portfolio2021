@@ -6,14 +6,13 @@
 ////CARDS
 
 .card {
-  background-color: green !important;
   margin: 0 0 50px 0 !important;
   border: none !important;
   flex-direction: row !important;
   flex-wrap: wrap;
+  background-color: transparent !important;
   .img-video {
     padding: 0 !important;
-    background-color: greenyellow;
     display: flex;
     justify-content: center;
     position: relative;
@@ -21,12 +20,10 @@
     .img {
       height: 600px;
       width: 350px;
-      background-color: #fff;
       position: relative;
     }
   }
   .card-text {
-    background-color: darkgoldenrod;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
