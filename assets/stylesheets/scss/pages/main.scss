@@ -6,7 +6,9 @@ body {
   overflow-x: hidden;
   background-color: $beige !important;
 }
-
+main {
+  scroll-behavior: smooth;
+}
 
 @media (max-width: 991.99px) {
   main {
