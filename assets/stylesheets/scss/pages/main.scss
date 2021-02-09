@@ -10,15 +10,6 @@ main {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 991.99px) {
-  main {
-    overflow-x: hidden;
-  }
-}
-
-
-
-
 
 ////SECTIONS
 
@@ -27,17 +18,14 @@ main {
   z-index: 4;
   padding: 100px 0 !important;
   .row-section {
-    background-color: lightgreen;
     margin: 0 !important;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     .section-title {
-      background-color: lightpink;
       padding: 0 !important;
     }
     .section-content {
-      background-color: lightblue;
       padding: 0 !important;
     }
   }
@@ -60,7 +48,6 @@ main {
   div {
     height: 1000px;
     width: 100%;
-    background-color: lightsalmon;
   }
 }
 
@@ -70,205 +57,150 @@ main {
 
 
 
- //TITLES
 
 
-// .title-left {
-//   position: relative;
-//   h2:before {
-//     content: "Web";
-//     font-family: $cursive;
-//     font-size: 0.2em;
-//     color: $black;
-//     display: inline-block;
-//     -webkit-transform: rotate(90deg translate(220px, 430px));
-//     -moz-transform: rotate(90deg translate(220px, 430px));
-//     -o-transform: rotate(90deg translate(220px, 430px));
-//     -ms-transform: rotate(90deg translate(220px, 430px));
-//     transform: rotate(90deg) translate(220px, 430px);
-//     position: absolute;
-//     top: -60px;
-//     right: 155px;
+
+
+
+
+
+
+
+
+
+
+
+
+// .section-cv {
+//   background-color: $blue;
+//   padding: 0 !important;
+//   height: 200vh;
+//   .img-cv {
+//     img {
+//       margin-top: -500px;
+//       margin-left: -400px;
+//       -webkit-transform: scaleX(-1);
+//       -moz-transform: scaleX(-1);
+//       -o-transform: scaleX(-1);
+//       transform: scaleX(-1);
+//     }
 //   }
-//   .title-graph:before {
-//     content: "Vecteurs";
-//     right: 90px;
-//     top: -110px;
+//   .cv-container {
+//     margin-top: -687px;
+//   }
+//   .container {
+//     margin-bottom: 100px;
+//     text-align: center;
+//     a {
+//       font-family: $cursive;
+//       color: $red;
+//       font-size: 2em;
+//       padding: 20px 50px 10px 50px;
+//       background-color: transparent;
+//       text-decoration: none;
+//       position: relative;
+//       text-align: center;
+//       p {
+//         position: relative;
+//         z-index: 66;
+//       }
+//       p:before {
+//         content: "";
+//         position: absolute;
+//         width: 40%;
+//         height: 40px;
+//         bottom: -20%;
+//         left: 50%;
+//         border-radius: 0 5px 5px 0;
+//         z-index: -1;
+//         background: $pink;
+//         visibility: hidden;
+//         transform: scaleX(0);
+//         transition: 0.3s ease-in-out;
+//         transform-origin: left;
+//         transition-delay: 0s;
+//       }
+//       p:hover:before {
+//         visibility: visible;
+//         transform: scaleX(1);
+//       }
+//       p:after {
+//         content: "";
+//         position: absolute;
+//         width: 40%;
+//         height: 40px;
+//         bottom: -20%;
+//         left: 50%;
+//         border-radius: 0 5px 5px 0;
+//         z-index: -1;
+//         background: $pink;
+//         visibility: hidden;
+//         transform: scaleX(0);
+//         transition: 0.3s ease-in-out;
+//         transform-origin: left;
+//         transition-delay: 0s;
+//       }
+//       p:hover:after {
+//         visibility: visible;
+//         transform: scaleX(-1);
+//       }
+//     }
+//     .text {
+//       font-family: $serif;
+//       font-size: 2em;
+//       color: $black;
+//       margin-top: 50px;
+//       span {
+//         font-size: 2.5em;
+//         line-height: 0.7em;
+//         color: $red;
+//       }
+//     }
 //   }
 // }
 
-// .title-right {
-//   h2:after {
-//     content: "Code";
-//     font-family: $cursive;
-//     font-size: 0.2em;
-//     color: $black;
-//     display: inline-block;
-//     -webkit-transform: rotate(-90deg translate(220px, 430px));
-//     -moz-transform: rotate(-90deg translate(220px, 430px));
-//     -o-transform: rotate(-90deg translate(220px, 430px));
-//     -ms-transform: rotate(-90deg translate(220px, 430px));
-//     transform: rotate(-90deg) translate(220px, 430px);
-//     position: absolute;
-//     top: 210px;
-//     left: -275px;
+// .text-animate {
+//   display: block;
+//   font: 10em $sans-serif;
+//   width: 97vw;
+//   overflow: hidden;
+//   margin: 0 auto;
+//   .text-copy {
+//     fill: none;
+//     stroke: white;
+//     stroke-dasharray: 6% 29%;
+//     stroke-width: 2px;
+//     stroke-dashoffset: 0%;
+//     animation: stroke-offset 8s infinite linear;
 //   }
+  
+//   .text-copy:nth-child(1){
+//   stroke: $red;
+//   animation-delay: 0s;
+//   }
+  
+//   .text-copy:nth-child(2){
+//   stroke: $pink;
+//   animation-delay: 1.2s;
+//   }
+  
+//   .text-copy:nth-child(3){
+//   stroke: $red;
+//   animation-delay: 2.4s;
+//   }
+  
+//   .text-copy:nth-child(4){
+//   stroke: $pink;
+//   animation-delay: 3.6s;
+//   }
+  
+//   .text-copy:nth-child(5){
+//   stroke: $red;
+//   animation-delay: 4.8s;
+//   }
+
+//   @keyframes stroke-offset{
+//   100% {stroke-dashoffset: -100%;}
+//   }
+
 // }
-//FIN TITLES
-
-
-
-
-//FIN COMPONENTS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section-cv {
-  background-color: $blue;
-  padding: 0 !important;
-  height: 200vh;
-  .img-cv {
-    img {
-      margin-top: -500px;
-      margin-left: -400px;
-      -webkit-transform: scaleX(-1);
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      transform: scaleX(-1);
-    }
-  }
-  .cv-container {
-    margin-top: -687px;
-  }
-  .container {
-    margin-bottom: 100px;
-    text-align: center;
-    a {
-      font-family: $cursive;
-      color: $red;
-      font-size: 2em;
-      padding: 20px 50px 10px 50px;
-      background-color: transparent;
-      text-decoration: none;
-      position: relative;
-      text-align: center;
-      p {
-        position: relative;
-        z-index: 66;
-      }
-      p:before {
-        content: "";
-        position: absolute;
-        width: 40%;
-        height: 40px;
-        bottom: -20%;
-        left: 50%;
-        border-radius: 0 5px 5px 0;
-        z-index: -1;
-        background: $pink;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: 0.3s ease-in-out;
-        transform-origin: left;
-        transition-delay: 0s;
-      }
-      p:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
-      }
-      p:after {
-        content: "";
-        position: absolute;
-        width: 40%;
-        height: 40px;
-        bottom: -20%;
-        left: 50%;
-        border-radius: 0 5px 5px 0;
-        z-index: -1;
-        background: $pink;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: 0.3s ease-in-out;
-        transform-origin: left;
-        transition-delay: 0s;
-      }
-      p:hover:after {
-        visibility: visible;
-        transform: scaleX(-1);
-      }
-    }
-    .text {
-      font-family: $serif;
-      font-size: 2em;
-      color: $black;
-      margin-top: 50px;
-      span {
-        font-size: 2.5em;
-        line-height: 0.7em;
-        color: $red;
-      }
-    }
-  }
-}
-
-.text-animate {
-  display: block;
-  font: 10em $sans-serif;
-  width: 97vw;
-  overflow: hidden;
-  margin: 0 auto;
-  .text-copy {
-    fill: none;
-    stroke: white;
-    stroke-dasharray: 6% 29%;
-    stroke-width: 2px;
-    stroke-dashoffset: 0%;
-    animation: stroke-offset 8s infinite linear;
-  }
-  
-  .text-copy:nth-child(1){
-  stroke: $red;
-  animation-delay: 0s;
-  }
-  
-  .text-copy:nth-child(2){
-  stroke: $pink;
-  animation-delay: 1.2s;
-  }
-  
-  .text-copy:nth-child(3){
-  stroke: $red;
-  animation-delay: 2.4s;
-  }
-  
-  .text-copy:nth-child(4){
-  stroke: $pink;
-  animation-delay: 3.6s;
-  }
-  
-  .text-copy:nth-child(5){
-  stroke: $red;
-  animation-delay: 4.8s;
-  }
-
-  @keyframes stroke-offset{
-  100% {stroke-dashoffset: -100%;}
-  }
-
-}
