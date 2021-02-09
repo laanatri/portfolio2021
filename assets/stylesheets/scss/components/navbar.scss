@@ -1,228 +1,413 @@
 @import "../config/colors";
 @import "../config/fonts";
 /////// NAVIGATION
+
 .navbar {
-  display: flex;
   width: 100vw;
-  z-index: 90 !important;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  position: fixed !important;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center !important;
   padding: 0 !important;
-  margin: 0 !important;
+}
+.navbar.inactive {
+  height: 100px;
+  .nav-bis {
+    opacity: 0;
+  }
+}
+.navbar.active {
+  height: 100vh;
   background-color: $beige;
-  background-color: transparent;
-  transition: .2s ease-in-out;
-  .navbarFixe {
-    width: 100%;
-    height: 100px;
-    button {
-      height: 100px;
-      padding-right: 0 0 !important;
-      display: inline !important;
-      border: none !important;
-      outline: none !important;
-      transition: 0.5s ease-out;
-      img {
-        height: 100%;
-        padding-top: 10px;
-      }
-    }
-    .btn-actif {
-      transform: rotate(-120deg);
-      margin-top: 30px;
+  .nav-bis {
+    opacity: 1;
+  }
+}
+
+
+
+
+/// btn nav
+
+
+.navbar-fixe {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+
+
+  .btn-nav {
+    background-color: transparent;
+    height: 100%;
+    width: 80px;
+    outline: none;
+    border: none;
+    position: relative;
+    z-index: 101;
+    transition: 1s ease-out;
+    img {
+      width: 100%;
     }
   }
-  
-  
-  .navBis {
-    transition: 0.5s ease-out;
-    width: 100%;
-    height: calc(100vh - 100px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+.btn-actif {
+  transform: rotate(-130deg);
+  background-color: #fff;
+}
 
-    ul {
-      // width: 100%;
-      padding-bottom: 100px;
-      
-      
-      .bouton-projets {
-        
-      }
-      .bouton-cv {
-        margin-bottom: 15px;
-      }
-      li {
-        width: 100%;
-        a {
-          width: 500px;
-          height: 5.5em;
-          
-          color: $black;
-          text-decoration: none;
-          position: relative;
-          .category {
-            width: 500px;
-            font-family: $sans-serif;
-            font-size: 6em;
-            text-decoration: none;
-            line-height: 0.7em;
-            transition: 0s ease-in-out;
-            span {
-              font-size: 0.5em;
-              color: $black;
-              font-family: $cursive;
-            }
-          }
-        }
-      }
-      .hr {
-        width: 80%;
-        margin-top: 0 !important;
-        margin-bottom: 30px;
-        div {
-          margin-right: 10px;
-        }
-        .dot {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background-color: $black;
-        }
-        .picto {
-          height: 100%;
-          img {
-            height: 100%;
-          }
-        }
-      }
-      p {
-        margin-bottom: 20px;
-        font-family: $cursive;
-        font-size: 1.2em;
-        font-weight: 100;
+@media (max-width: 575.98px) {
+  .navbar-fixe {
+    height: 50px;
+    padding: 0;
+    .btn-nav {
+      width: 50px;
+    }
+  }
+}
+
+
+/// nav bis
+
+
+
+.nav-bis {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid $red;
+  transition: 1s ease-in-out;
+  position: relative;
+  z-index: 100;
+
+  ul {
+    
+    li {
+      max-width: 350px;
+      list-style: none;
+      a {
         color: $black;
-      }
-      .reseaux {
-        margin-right: 10vw;
+        text-decoration: none;
+        padding: 0 !important;
+        font-family: $sans-serif;
+        font-size: 6em;
+        line-height: .8em;
         
-        a {
-          font-size: 2em;
-          font-family: $sans-serif;
-          font-weight: 0;
-          padding-right: 30px;
+        span {
+          font-family: $cursive;
+          font-size: .5em;
+          position: relative;
         }
-        .reseau_linkedin {
-          color: $blue;
-        }
-        .reseau_github {
-          color:$green;
-        }
-        .reseau_dribbble {
-          color: $red;
-        }
+      }
+
+
+    }
+    .hr {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 10px;
+        background-color: $black;
+      }
+    }
+    p {
+      font-family: $cursive;
+      color: $black;
+    }
+    .reseaux {
+      display: flex;
+      a {
+        font-family: $sans-serif;
+        font-size: 2em;
+        margin-right: 20px;
+      }
+      .reseau-linkedin {
+        color: $blue;
+      }
+      .reseau-github {
+        color: $green;
+      }
+      .reseau-dribbble {
+        color: $red;
       }
     }
   }
 }
 
-.navbar-white {
-  background-color: $beige;
-}
 
-.bouton-projets {
-  .nav-link:before {
-    width: 22%;
-    bottom: 8px;
-    left: 47%;
-    background: $blue;
-  }
-  .nav-link:hover {
-    color: $blue;
-  }
-}
 
-.bouton-code {
-  .nav-link:before {
-    width: 23%;
-    bottom: 8px;
-    left: 25%;
-    background: $red;
-  }
-  .nav-link:hover {
-    color: $red;
+
+///////////
+
+
+
+
+.nav-link:hover {
+  span {
+    color: $black;
   }
 }
 
-.bouton-graphics {
-  .nav-link:before {
-    width: 36%;
-    bottom: 8px;
-    left: 58.5%;
-    background:$green;
+.projets:hover {
+  color: $blue;
+  span:before {
+    background-color: $blue;
   }
-  .nav-link:hover {
-    color:$green;
+}
+.code:hover {
+  color: $red;
+  span:before {
+    background-color: $red;
+  }
+}
+.fun:hover {
+  color: $green;
+  span:before {
+    background-color: $green;
+  }
+}
+.cv:hover {
+  color: $yellow;
+  span:before {
+    background-color: $yellow;
   }
 }
 
-.bouton-cv {
-  .nav-link:before {
-    width: 42%;
-    bottom: 8px;
-    left: 22%;
-    background: $yellow;
-  }
-  .nav-link:hover {
-    color: $yellow;
-  }
-}
-
-.nav-link:before {
+.nav-link span:before {
   content: "";
   height: 40px;
+  width: 100%;
   position: absolute;
   border-radius: 5px;
   z-index: -1;
-  visibility: hidden;
   transform: scaleX(0);
   transition: 0.3s ease-in-out;
   transform-origin: left;
   transition-delay: 0s;
+  top: 40%;
+  left: 10%;
 }
 
-.nav-link:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+.nav-link:hover {
+  span:before {
+    transform: scaleX(1);
+  }
 }
 
-/// NAV RESPONSIVE
 
-@media (min-width: 1200px) { 
-.navBis ul {
-  padding-right: 400px;
-}
-}
 
-@media (max-width: 1199.99px) and (min-width: 992px) { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+//       .bouton-projets {
+        
+//       }
+//       .bouton-cv {
+//         margin-bottom: 15px;
+//       }
+//       li {
+//         width: 100%;
+//         a {
+//           width: 500px;
+//           height: 5.5em;
+          
+//           color: $black;
+//           text-decoration: none;
+//           position: relative;
+//           .category {
+//             width: 500px;
+//             font-family: $sans-serif;
+//             font-size: 6em;
+//             text-decoration: none;
+//             line-height: 0.7em;
+//             transition: 0s ease-in-out;
+//             span {
+//               font-size: 0.5em;
+//               color: $black;
+//               font-family: $cursive;
+//             }
+//           }
+//         }
+//       }
+//       .hr {
+//         width: 80%;
+//         margin-top: 0 !important;
+//         margin-bottom: 30px;
+//         div {
+//           margin-right: 10px;
+//         }
+//         .dot {
+//           width: 10px;
+//           height: 10px;
+//           border-radius: 50%;
+//           background-color: $black;
+//         }
+//         .picto {
+//           height: 100%;
+//           img {
+//             height: 100%;
+//           }
+//         }
+//       }
+//       p {
+//         margin-bottom: 20px;
+//         font-family: $cursive;
+//         font-size: 1.2em;
+//         font-weight: 100;
+//         color: $black;
+//       }
+//       .reseaux {
+//         margin-right: 10vw;
+        
+//         a {
+//           font-size: 2em;
+//           font-family: $sans-serif;
+//           font-weight: 0;
+//           padding-right: 30px;
+//         }
+//         .reseau_linkedin {
+//           color: $blue;
+//         }
+//         .reseau_github {
+//           color:$green;
+//         }
+//         .reseau_dribbble {
+//           color: $red;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .navbar-white {
+//   background-color: $beige;
+// }
+
+// .bouton-projets {
+//   .nav-link:before {
+//     width: 22%;
+//     bottom: 8px;
+//     left: 47%;
+//     background: $blue;
+//   }
+//   .nav-link:hover {
+//     color: $blue;
+//   }
+// }
+
+// .bouton-code {
+//   .nav-link:before {
+//     width: 23%;
+//     bottom: 8px;
+//     left: 25%;
+//     background: $red;
+//   }
+//   .nav-link:hover {
+//     color: $red;
+//   }
+// }
+
+// .bouton-graphics {
+//   .nav-link:before {
+//     width: 36%;
+//     bottom: 8px;
+//     left: 58.5%;
+//     background:$green;
+//   }
+//   .nav-link:hover {
+//     color:$green;
+//   }
+// }
+
+// .bouton-cv {
+//   .nav-link:before {
+//     width: 42%;
+//     bottom: 8px;
+//     left: 22%;
+//     background: $yellow;
+//   }
+//   .nav-link:hover {
+//     color: $yellow;
+//   }
+// }
+
+// .nav-link:before {
+//   content: "";
+//   height: 40px;
+//   position: absolute;
+//   border-radius: 5px;
+//   z-index: -1;
+//   visibility: hidden;
+//   transform: scaleX(0);
+//   transition: 0.3s ease-in-out;
+//   transform-origin: left;
+//   transition-delay: 0s;
+// }
+
+// .nav-link:hover:before {
+//   visibility: visible;
+//   transform: scaleX(1);
+// }
+
+// /// NAV RESPONSIVE
+
+// @media (min-width: 1200px) { 
+// .navBis ul {
+//   padding-right: 400px;
+// }
+// }
+
+// @media (max-width: 1199.99px) and (min-width: 992px) { 
  
-}
+// }
 
-@media (max-width: 991.99px) and (min-width: 768px) { 
+// @media (max-width: 991.99px) and (min-width: 768px) { 
  
-}
+// }
 
-@media (max-width: 767.99px) and (min-width: 576px) { 
+// @media (max-width: 767.99px) and (min-width: 576px) { 
  
-}
+// }
 
-@media (max-width: 575.98px) { 
+// @media (max-width: 575.98px) { 
 
-}
+// }
 
-@media screen and (orientation: portrait) {
+// @media screen and (orientation: portrait) {
 
-}
+// }
 
-@media screen and (orientation: landscape) {
+// @media screen and (orientation: landscape) {
 
-}
+// }
