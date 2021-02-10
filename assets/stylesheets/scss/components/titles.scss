@@ -65,6 +65,9 @@ h1 {
   font-size: 15em !important;
   display: inline-block;
 }
+.contact h2 {
+  color: $green;
+}
 .sticky-title-content {
   position: sticky !important;
   position: -webkit-sticky !important;
@@ -98,6 +101,12 @@ h1 {
     height: 329px;
     h2 {
       color: $green;
+    }
+  }
+  .title-content-cv {
+    height: 269px;
+    h2 {
+      color: $blue;
     }
   }
 }
