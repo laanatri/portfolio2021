@@ -680,155 +680,208 @@
 
 
 <!--CV-->
-        <section class="container-fluid section-container lala" data-aos="fade-up" data-aos-duration="1000">
-            <div></div>
+        <section class="section-cv" data-aos="fade-up" data-aos-duration="1000">
+            <div class="img-content">
+                <img src="assets/images/image-home/fleurs_hor.png" alt="Un bouquet de fleurs.">
+            </div>
+
+
+
+
+
+
+            <div class="container section-container cv">
+
+
+                <div class="row-section row-section-reverse">
+
+
+
+                    <div class="section-title col-12 col-lg-4">
+                        <div class="sticky-title-content">
+                            <div class="title-content title-content-cv">
+                                <h2 class="h2-code">
+                                    CV
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="section-content col-12 col-lg-8">
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
         </section>
 
 
+        <section class="section-text-anim">
+            <div class="strip-text">
+                <div class="text-content">
 
 
+                    <svg class="strip-one">
+                        <symbol id="s-text">
+                          <text y="50%" dy=".35em">HTML5 - CSS3 - SASS - JS - HTML5 - CSS3 - SASS - JS - HTML5 - CSS3 - SASS - JS</text>
+                        </symbol>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                        <use class="text" xlink:href="#s-text"></use>
+                    </svg>
 
-        <!-- <section class="container-fluid section-cv" data-aos="fade-up" data-aos-duration="1000">
-            <div class="img-cv">
-                <img src="assets/images/image-home/fleurs_hor.png" alt="Bouquet de fleur">
-            </div>
-            <div class="container cv-container">
-                <div class="row flex-column">
-                    <div class="row">
-                        <div class="col-4 offset-4">
-                            <img src="assets/images/image-home/Image-portrait-home-myself.png" alt="">
-                        </div>
-                        <div class="col-3 flex-column">
-                            <h2 class="h-section">CV</h2>
-                            <a href="assets/fichier-link/adelaide_laanatri_cv.pdf" target="_blank">
-                                <p>Téléchargez</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <p class="col-9 text">Je m'appelle <span>Adélaïde Laanatri</span>. <span>Dévellopeuse web</span>, je souhaite évoluer vers du développement front car j’aime résoudre des problèmes en trouvant des solutions ingénieuses.</p>
-                    </div>
+
                 </div>
             </div>
-            <div>
-                <svg class="text-animate" >
-                    <symbol id="s-text">
-                        <text text-anchor="middle" x="50%" y="80%">HTML5 . CSS3 . JS . HTML5 . CSS3 . JS</text>
-                    </symbol>
-                    <g class = "g-ants">
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                        <use xlink:href="#s-text" class="text-copy"></use>
-                    </g>
-                </svg>
+            <div class="strip-text">
+                <div class="text-content">
+
+
+
+                    <svg class="strip-two">
+                        <symbol id="r-text">
+                          <text y="50%" dy=".35em">SASS - JQUERY - RUBY - SASS - JQUERY - RUBY - SASS - JQUERY - RUBY - </text>
+                        </symbol>
+                        <use class="text" xlink:href="#r-text"></use>
+                        <use class="text" xlink:href="#r-text"></use>
+                        <use class="text" xlink:href="#r-text"></use>
+                        <use class="text" xlink:href="#r-text"></use>
+                        <use class="text" xlink:href="#r-text"></use>
+                    </svg>
+
+
+
+                </div>
             </div>
-            <div>
-                <svg class="text-animate" >
-                    <symbol id="t-text">
-                        <text text-anchor="middle" x="50%" y="80%">lILILI . LALALALA . SCSS . JQUERY . RUBY</text>
-                    </symbol>
-                    <g class = "h-ants">
-                        <use xlink:href="#t-text" class="text-copy"></use>
-                        <use xlink:href="#t-text" class="text-copy"></use>
-                        <use xlink:href="#t-text" class="text-copy"></use>
-                        <use xlink:href="#t-text" class="text-copy"></use>
-                        <use xlink:href="#t-text" class="text-copy"></use>
-                    </g>
-                </svg>
-            </div>
-            <div class="container" id="formulaire">
-                <div class="">
-                    <div class="row flex-column col-lg-6 col-12 contact">
-                        <h2 class="h-section">Contact</h2>
-                        <p>Adélaïde Laanatri<br>Lyon 02 <br><span> 06 60 33 73 17 </span><br> contact@adelaidelaanatri.com</p>
-                    </div>
 
-                    <!--FORMULAIRE CONTACT-->
-                    <!--<div class="row  flex-column align-items-center col-lg-6 col-12 contacts">
-                        <form method="post" action="index.php?#formulaire" class="formulaireContact d-flex flex-column ">-->
-<!-- <?php
-    if (!empty($_POST)){
-        $mail = $_POST['mail'];
-        $objet = $_POST['objet'];
-        $message = $_POST['message'] ?? 'Formulaire de contact';
-        $nom = $_POST['nom'];
-        $prenom = $_POST['prenom'];
-        $msg = "Demande client : $nom $prenom ($mail)\n\n"  .$message;
-        $sendOk = true;
 
-    if (empty($nom)){
-        echo "<div class= 'error'>Veuillez renseigner votre nom.</div>";
-        $sendOk = false;
-    }
-    if (empty($prenom)){
-        echo "<div class= 'error'>Veuillez renseigner votre prénom.</div>";
-        $sendOk = false;
-    }
-    if (empty($mail)){
-        echo "<div class= 'error'>Veuillez renseigner votre mail.</div>";
-        $sendOk = false;
-    }
-    if (!strpos($mail, '@')){
-        echo "<div class= 'error'>Veuillez renseigner un mail valide.</div>";
-        $sendOk = false;
-    }
-    if (empty($message)){
-        echo "<div class= 'error'>Veuillez renseigner votre message.</div>";
-        $sendOk = false;
-    }
 
-    if ($sendOk == true){
-        $headers="From:$prenom $nom > $mail ";
-        $headers .= "Reply-to: $mail ";
-        $headers .= " X_MAILER: PHP/ ".phpversion().""; 
-        $headers .=' Content-Type: text/plain; charset=UTF-8';
-        //$headers = "From :$prenom $nom  > $mail /nReply-To: $mail/nX_Mailer: PHP/ " ;phpversion();
-        $msg .= $headers;
+        </section>
 
-        try{
-            $isSend = @mail( 'contact@adelaidelaanatri.com', $objet, $msg, $headers);
-            if($isSend === true){
-                echo "<div class= 'succes'>Formulaire de contact bien envoyé</div>";
-                $_POST = [];
-            }else{
-                echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire</div>";
-            }
-        }catch(\Trowable $e){
-            echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire</div>";
-        }
-    }
-    }
-?> -->
-<!--                             <div class="nomPrenom">
+        <section class=" container section-contact">
+            <div class="row">
 
-                                    <input type="text" id="nom" class="nom" name="nom" placeholder="Nom" value="<?= $_POST['nom'] ?? '' ?>">
-                                </div>
-                                <div class="nomPrenom">
+                <div class="contact section-title col-12 col-lg-6">
+                    <h2 class="h2-contact">Contact</h2>
+                    <p class="name">Adélaïde Laanatri</p>
+                    <p>Lyon 02 <br><span> 06 60 33 73 17 </span><br> laanatri.ade@gmail.com</p>
 
-                                    <input type="text" id="prenom" class="prenom" name="prenom" placeholder="Prénom" value="<?= $_POST['prenom'] ?? '' ?>">
-                                </div>
-                                <div class="formMail">
+                </div>
+                <div class="form col-12 col-lg-6">
 
-                                    <input type="text" id="mail" class="mail" name="mail" placeholder="Email" value="<?= $_POST['mail'] ?? '' ?>">
-                                </div>
-                                <div class="formObjet">
 
-                                    <input type="text" id="objet" class="objet" name="objet" placeholder="Objet" value="<?= $_POST['objet'] ?? '' ?>">
-                                </div>
-                                <div cs="formMessage">
-                                    <textarea name="message" id="message" class="message" placeholder="Message"><?= $_POST['message'] ?? '' ?></textarea>
-                                </div>
-                                <input type="submit" name="envoyer" id="envoyer" value="Envoyer" class="envoyer">
-                        </form>
-                    </div>
-
+                <!--FORMULAIRE CONTACT-->
+                    <form method="post" action="index.php?#formulaire" class="formulaireContact">
+                        
+                        
+                        
+                        <!--<?php
+                            if (!empty($_POST)){
+                                $mail = $_POST['mail'];
+                                $objet = $_POST['objet'];
+                                $message = $_POST['message'] ?? 'Formulaire de contact';
+                                $nom = $_POST['nom'];
+                                $prenom = $_POST['prenom'];
+                                $msg = "Demande client : $nom $prenom ($mail)\n\n"  .$message;
+                                $sendOk = true;
+                                
+                                if (empty($nom)){
+                                    echo "<div class= 'error'>Veuillez renseigner votre nom.</div>";
+                                    $sendOk = false;
+                                }
+                                if (empty($prenom)){
+                                    echo "<div class= 'error'>Veuillez renseigner votre prénom.</div>";
+                                    $sendOk = false;
+                                }
+                                if (empty($mail)){
+                                    echo "<div class= 'error'>Veuillez renseigner votre mail.</div>";
+                                    $sendOk = false;
+                                }
+                                if (!strpos($mail, '@')){
+                                    echo "<div class= 'error'>Veuillez renseigner un mail valide.</div>";
+                                    $sendOk = false;
+                                }
+                                if (empty($message)){
+                                    echo "<div class= 'error'>Veuillez renseigner votre message.</div>";
+                                    $sendOk = false;
+                                }
+                                
+                                if ($sendOk == true){
+                                    $headers="From:$prenom $nom > $mail ";
+                                    $headers .= "Reply-to: $mail ";
+                                    $headers .= " X_MAILER: PHP/ ".phpversion().""; 
+                                    $headers .=' Content-Type: text/plain; charset=UTF-8';
+                                    //$headers = "From :$prenom $nom  > $mail /nReply-To: $mail/nX_Mailer: PHP/ " ;phpversion();
+                                    $msg .= $headers;
+                                    
+                                    try{
+                                        $isSend = @mail( 'contact@adelaidelaanatri.com', $objet, $msg, $headers);
+                                        if($isSend === true){
+                                            echo "<div class= 'succes'>Formulaire de contact bien envoyé</div>";
+                                            $_POST = [];
+                                        }else{
+                                            echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire</div>";
+                                        }
+                                    }catch(\Trowable $e){
+                                        echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire</div>";
+                                    }
+                                }
+                            }
+                            ?>-->
+                        <div class="nomPrenom">
+                            
+                            <input type="text" id="nom" class="nom" name="nom" placeholder="Nom" value="<?= $_POST['nom'] ?? '' ?>">
+                        </div>
+                        <div class="nomPrenom">
+                            
+                            <input type="text" id="prenom" class="prenom" name="prenom" placeholder="Prénom" value="<?= $_POST['prenom'] ?? '' ?>">
+                        </div>
+                        <div class="formMail">
+                            
+                            <input type="text" id="mail" class="mail" name="mail" placeholder="Email" value="<?= $_POST['mail'] ?? '' ?>">
+                        </div>
+                        <div class="formObjet">
+                            
+                            <input type="text" id="objet" class="objet" name="objet" placeholder="Objet" value="<?= $_POST['objet'] ?? '' ?>">
+                        </div>
+                        <div cs="formMessage">
+                            <textarea name="message" id="message" class="message" placeholder="Message"><?= $_POST['message'] ?? '' ?></textarea>
+                        </div>
+                        <div class="btn-sub">
+                            <input type="submit" name="envoyer" id="envoyer" value="Envoyer" class="envoyer">
+                        </div>
+                    </form>
+                  
+                    
                     <!--FIN FORMULAIRE-->
-                <!-- </div>
+
+                </div>
+            
+                
+                
+                
+                
+                
+                
+                
             </div>
-        </section> -->
-<!--FIN CV-->        
+        </section>
+                
+                
+                
+                
+                
+
+
+
+
+
     </main>
 
     <footer>
