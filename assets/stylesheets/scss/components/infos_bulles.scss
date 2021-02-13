@@ -1,0 +1,89 @@
+@import "../config/colors";
+@import "../config/fonts";
+
+@keyframes infos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#section_projets {
+  .fa-info {
+    color: $blue;
+    span {
+      background-color: rgba(167, 192, 242, .5);
+      p {
+        background-color: $blue;
+      }
+    }
+  }
+}
+#section_code {
+  .fa-info {
+    color: $red;
+    span {
+      background-color: rgba(217, 61, 89, .5);
+      p {
+        background-color: $red;
+      }
+    }
+  }
+}
+#section_fun {
+  .fa-info {
+    color: $green;
+    span {
+      background-color: rgba(63, 179, 118, .5);
+      p {
+        background-color: $green;
+      }
+    }
+  }
+}
+
+.fa-info {
+  position: relative;
+  span {
+    display: none;
+    transition: 1s ease-in-out;
+    width: 300px;
+    position: absolute;
+    transform-origin: top right;
+    top: 100%;
+    right: 100%;
+    border-radius: 10px 0 10px 10px;
+    padding: 5px;
+    p {
+      font-family: $serif;
+      font-weight: 300;
+      color: $black;
+      border-radius: 10px 0 10px 10px;
+      padding: 20px;
+      height: 100%;
+      margin: 0 !important;
+    }
+  }
+}
+.fa-info:hover {
+  span {
+    display: block;
+    animation: infos .3s ease-in-out;
+  }
+}
+
+.card-reverse {
+  .fa-info {
+    span {
+      transform-origin: top left;
+      top: 100%;
+      left: 100%;
+      border-radius: 0 10px 10px 10px;
+      p {
+        border-radius: 0 10px 10px 10px;
+      }
+    }
+  }
+}
