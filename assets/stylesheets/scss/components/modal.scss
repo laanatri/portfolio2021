@@ -45,30 +45,59 @@
   .title-modal {
     color: $blue;
   }
+  ::-webkit-scrollbar-thumb {
+    background-color: $blue;
+  }
+  scrollbar-color: $blue transparent;
+
 }
 #myModalWelina {
   background-color: rgba(64, 48, 60, .5);
   .title-modal {
     color: $black;
   }
+  ::-webkit-scrollbar-thumb {
+    background-color: $black;
+  }
+  scrollbar-color: $black transparent;
+
 }
 #myModalAtre {
   background-color: rgba(63, 179, 118, .5);
   .title-modal {
     color: $green;
   }
+  ::-webkit-scrollbar-thumb {
+    background-color: $green;
+  }
+  scrollbar-color: $green transparent;
+
 }
 #myModalComponents {
   background-color: rgba(242, 206, 216, .5);
   .title-modal {
     color: rgba(217, 61, 89, .5);
   }
+  ::-webkit-scrollbar {
+    background-color: $pink;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: $pink;
+  }
+  scrollbar-color: $red $pink;
 }
 #myModalAnimations {
   background-color: rgba(217, 61, 89, .5);
   .title-modal {
     color: $red;
   }
+  ::-webkit-scrollbar {
+    background-color: $pink;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: $pink;
+  }
+  scrollbar-color: $red $pink;
 }
 #myModalVectoriels {
   background-color: rgba(242, 214, 75, .5);
@@ -136,17 +165,26 @@
   height: 100%;
   width: 100%;
   ::-webkit-scrollbar {
-    display: none;
+    background-color: transparent;
+    border: none;
+    width: 7px;
   }
-  
-  ::-webkit-scrollbar-track-piece {
-    display: none;
+
+ ::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    border: none;
+    width: 7px;
   }
-  
-  ::-webkit-scrollbar-thumb {
-    display: none;
+
+ ::-webkit-scrollbar-thumb {
+    background-color: $red;
+    background-size: cover;
+    border: none;
+    width: 7px;
   }
+  scrollbar-color: $red transparent;
 }
+
 @media (max-width: 991.99px) {
   .modal-box .d-flex {
     flex-direction: column;
@@ -170,6 +208,17 @@
     .modal-cont {
       width: 100% !important;
       height: 70% !important;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    
+    ::-webkit-scrollbar-track-piece {
+      display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      display: none;
     }
   }
 }
@@ -233,9 +282,6 @@
     width: 100%;
   }
 }
-
-
-
 
 #myModalWelina .modal-cont {
   overflow-y: scroll;
