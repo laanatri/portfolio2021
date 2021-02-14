@@ -52,6 +52,7 @@ main {
   margin: 0 !important;
   width: 100vw;
   margin-top: -200px !important;
+
   .img-content {
     width: 40%;
     height: 100vh;
@@ -60,7 +61,7 @@ main {
     }
   }
 
-  .cv {
+  .cv-content {
     height: 80vh;
     margin-top: -80vh;
 
@@ -140,13 +141,87 @@ main {
   }
 }
 
-
-
-
-
-
-
-
+  @media (max-width: 1199.99px) and (min-width: 992px) { 
+    .section-cv {
+      margin-top: -100px !important;
+      .img-content {
+        width: 50%;
+      }
+    }
+  }
+  
+   @media (max-width: 991.99px) and (min-width: 768px) { 
+    .section-cv {
+      margin-top: 0 !important;
+      .img-content {
+        width: 70%;
+      }
+    }
+    .cv-content {
+      margin-top: -95vh !important;
+      height: 120vh !important;
+    }
+    .contact {
+      height: 500px !important;
+    }
+    .section-contact {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 767.99px) and (min-width: 576px) { 
+    .section-cv {
+      margin-top: 0 !important;
+      .img-content {
+        width: 100%;
+      }
+    }
+    .cv-content {
+      margin-top: -80vh !important;
+      height: 120vh !important;
+    }
+    .contact {
+      height: 400px !important;
+    }
+    .section-contact {
+      margin-top: 50px;
+    }
+  }
+  
+  @media (max-width: 575.98px) { 
+    .section-cv {
+      margin-top: 0 !important;
+      .img-content {
+        width: 120%;
+      }
+    }
+    .cv-content {
+      margin-top: -85vh !important;
+      height: 190vh !important;
+    }
+    .contact {
+      height: 530px !important;
+    }
+    .section-contact {
+      margin-top: 50px;
+      .form {
+        height: 530px !important;
+        width: 100vw !important;
+      }
+      form {
+        width: 100% !important;
+        div {
+          width: 100% !important;
+        }
+      }
+      input, textarea {
+        width: 100% !important;
+      }
+      textarea {
+        height: 100px !important;
+      }
+    }
+  }
 
 
 
