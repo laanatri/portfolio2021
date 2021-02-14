@@ -221,6 +221,13 @@
       display: none;
     }
   }
+  #myModalVectoriels, #myModalPictos {
+    .frame-carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 
