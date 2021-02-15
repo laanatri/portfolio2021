@@ -75,7 +75,7 @@
 
 
 .nav-bis {
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,210 +201,47 @@
 
 
 
+/// NAV RESPONSIVE
 
+@media (min-width: 1200px) { 
 
+}
 
+@media (max-width: 1199.99px) and (min-width: 992px) { 
+ 
+}
 
+@media (max-width: 991.99px) and (min-width: 768px) { 
+ 
+}
 
+@media (max-width: 767.99px) and (min-width: 576px) { 
+ 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-//       .bouton-projets {
+@media (max-width: 575.98px) { 
+  .nav-bis {
+    height: calc(100vh - 50px);
+    li {
+      a {
+        font-size: 4.5em !important;
+        line-height: .7em !important;
         
-//       }
-//       .bouton-cv {
-//         margin-bottom: 15px;
-//       }
-//       li {
-//         width: 100%;
-//         a {
-//           width: 500px;
-//           height: 5.5em;
-          
-//           color: $black;
-//           text-decoration: none;
-//           position: relative;
-//           .category {
-//             width: 500px;
-//             font-family: $sans-serif;
-//             font-size: 6em;
-//             text-decoration: none;
-//             line-height: 0.7em;
-//             transition: 0s ease-in-out;
-//             span {
-//               font-size: 0.5em;
-//               color: $black;
-//               font-family: $cursive;
-//             }
-//           }
-//         }
-//       }
-//       .hr {
-//         width: 80%;
-//         margin-top: 0 !important;
-//         margin-bottom: 30px;
-//         div {
-//           margin-right: 10px;
-//         }
-//         .dot {
-//           width: 10px;
-//           height: 10px;
-//           border-radius: 50%;
-//           background-color: $black;
-//         }
-//         .picto {
-//           height: 100%;
-//           img {
-//             height: 100%;
-//           }
-//         }
-//       }
-//       p {
-//         margin-bottom: 20px;
-//         font-family: $cursive;
-//         font-size: 1.2em;
-//         font-weight: 100;
-//         color: $black;
-//       }
-//       .reseaux {
-//         margin-right: 10vw;
-        
-//         a {
-//           font-size: 2em;
-//           font-family: $sans-serif;
-//           font-weight: 0;
-//           padding-right: 30px;
-//         }
-//         .reseau_linkedin {
-//           color: $blue;
-//         }
-//         .reseau_github {
-//           color:$green;
-//         }
-//         .reseau_dribbble {
-//           color: $red;
-//         }
-//       }
-//     }
-//   }
-// }
+        span {
+          font-size: .4em !important;
+        }
+      }
 
-// .navbar-white {
-//   background-color: $beige;
-// }
 
-// .bouton-projets {
-//   .nav-link:before {
-//     width: 22%;
-//     bottom: 8px;
-//     left: 47%;
-//     background: $blue;
-//   }
-//   .nav-link:hover {
-//     color: $blue;
-//   }
-// }
+    }
+  }
 
-// .bouton-code {
-//   .nav-link:before {
-//     width: 23%;
-//     bottom: 8px;
-//     left: 25%;
-//     background: $red;
-//   }
-//   .nav-link:hover {
-//     color: $red;
-//   }
-// }
+}
 
-// .bouton-graphics {
-//   .nav-link:before {
-//     width: 36%;
-//     bottom: 8px;
-//     left: 58.5%;
-//     background:$green;
-//   }
-//   .nav-link:hover {
-//     color:$green;
-//   }
-// }
+@media screen and (orientation: portrait) {
 
-// .bouton-cv {
-//   .nav-link:before {
-//     width: 42%;
-//     bottom: 8px;
-//     left: 22%;
-//     background: $yellow;
-//   }
-//   .nav-link:hover {
-//     color: $yellow;
-//   }
-// }
+}
 
-// .nav-link:before {
-//   content: "";
-//   height: 40px;
-//   position: absolute;
-//   border-radius: 5px;
-//   z-index: -1;
-//   visibility: hidden;
-//   transform: scaleX(0);
-//   transition: 0.3s ease-in-out;
-//   transform-origin: left;
-//   transition-delay: 0s;
-// }
+@media screen and (orientation: landscape) {
 
-// .nav-link:hover:before {
-//   visibility: visible;
-//   transform: scaleX(1);
-// }
-
-// /// NAV RESPONSIVE
-
-// @media (min-width: 1200px) { 
-// .navBis ul {
-//   padding-right: 400px;
-// }
-// }
-
-// @media (max-width: 1199.99px) and (min-width: 992px) { 
- 
-// }
-
-// @media (max-width: 991.99px) and (min-width: 768px) { 
- 
-// }
-
-// @media (max-width: 767.99px) and (min-width: 576px) { 
- 
-// }
-
-// @media (max-width: 575.98px) { 
-
-// }
-
-// @media screen and (orientation: portrait) {
-
-// }
-
-// @media screen and (orientation: landscape) {
-
-// }
+}
