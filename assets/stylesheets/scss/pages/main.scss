@@ -144,8 +144,15 @@ main {
   @media (max-width: 1199.99px) and (min-width: 992px) { 
     .section-cv {
       margin-top: -100px !important;
+      height: 800px !important;
       .img-content {
         width: 50%;
+      }
+    }
+    .section-contact {
+      height: 640px !important;
+      .form {
+        height: 680px !important;
       }
     }
   }
@@ -334,6 +341,17 @@ $time-step: $time/$max;
   padding: 50px;
   display: flex;
   justify-content: center;
+  .error, .succes {
+    font-family: $serif;
+    background-color: rgba(217, 61, 89, .5);
+    padding: 5px 15px;
+    border-radius: 0 5px 0 5px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .succes {
+    background-color: rgba(63, 179, 118, .5);
+  }
   form {
     display: flex;
     flex-direction: column;

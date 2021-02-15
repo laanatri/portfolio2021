@@ -208,7 +208,19 @@
 }
 
 @media (max-width: 1199.99px) and (min-width: 992px) { 
- 
+  .nav-bis {
+    li {
+      a {
+        font-size: 4.5em !important;
+        line-height: .8em !important;
+        
+        span {
+          font-size: .4em !important;
+        }
+      }
+    }
+   
+  } 
 }
 
 @media (max-width: 991.99px) and (min-width: 768px) { 
@@ -231,11 +243,8 @@
           font-size: .4em !important;
         }
       }
-
-
     }
   }
-
 }
 
 @media screen and (orientation: portrait) {
