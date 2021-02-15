@@ -21,28 +21,6 @@
     }
   }
 }
-#section_code {
-  .fa-info {
-    color: $red;
-    span {
-      background-color: rgba(217, 61, 89, .5);
-      p {
-        background-color: $red;
-      }
-    }
-  }
-}
-#section_fun {
-  .fa-info {
-    color: $green;
-    span {
-      background-color: rgba(63, 179, 118, .5);
-      p {
-        background-color: $green;
-      }
-    }
-  }
-}
 
 .fa-info {
   position: relative;
@@ -51,6 +29,7 @@
     transition: 1s ease-in-out;
     width: 300px;
     position: absolute;
+    z-index: 10;
     transform-origin: top right;
     top: 100%;
     right: 100%;
