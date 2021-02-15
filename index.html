@@ -727,15 +727,12 @@
                     <p>Lyon 02 <br><span> 06 60 33 73 17 </span><br> laanatri.ade@gmail.com</p>
 
                 </div>
-                <div class="form col-12 col-lg-6">
+                <div class="form col-12 col-lg-6" id="formulaire">
 
 
                 <!--FORMULAIRE CONTACT-->
                     <form method="post" action="index.php?#formulaire" class="formulaireContact">
-                        
-                        
-                        
-                        <!--<?php
+                        <?php
                             if (!empty($_POST)){
                                 $mail = $_POST['mail'];
                                 $objet = $_POST['objet'];
@@ -787,7 +784,7 @@
                                     }
                                 }
                             }
-                            ?>-->
+                            ?>
                         <div class="nomPrenom">
                             
                             <input type="text" id="nom" class="nom" name="nom" placeholder="Nom" value="<?= $_POST['nom'] ?? '' ?>">
