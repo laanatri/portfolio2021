@@ -51,10 +51,16 @@ h1 {
   .home h2 {
     font-size: 5em;
   }
+  .contact h2 {
+    font-size: 5em !important;
+  }
 }
 
 @media (max-width: 1199.99px) and (min-width: 992px) { 
   .home h2 {
+    font-size: 7vw;
+  }
+  .contact h2 {
     font-size: 7vw;
   }
 }
@@ -172,7 +178,7 @@ h1 {
 
 @media (max-width: 991.99px) and (min-width: 768px) { 
   .contact h2 {
-    font-size: 21vw !important;
+    font-size: 10em !important;
   }
 }
 
@@ -185,10 +191,14 @@ h1 {
       font-size: 21vw !important;
     }
   }
+
   .contact h2 {
-    font-size: 6em !important;
+    font-size: 21vw !important;
+    width: 100%;
+    text-align: center;
   }
 }
+
 
 //// H3 TITLES CARDS
 

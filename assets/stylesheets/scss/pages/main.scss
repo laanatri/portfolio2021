@@ -137,28 +137,37 @@ main {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) { 
+@media (min-width: 1200px) { 
   .section-cv {
-    margin-bottom: 100px !important;
   }
-  .form {
-    height: 700px !important;
+  .cv-content {
+    margin-top: -90vh !important;
+  }
+  .link-cv {
+    margin-bottom: 0 !important;
+  }
+  .section-contact {
+    margin-top: 100px;
   }
 }
 
   @media (max-width: 1199.99px) and (min-width: 992px) { 
     .section-cv {
       margin-top: -100px !important;
-      height: 800px !important;
       .img-content {
         width: 50%;
       }
     }
-    .section-contact {
-      height: 640px !important;
-      .form {
-        height: 680px !important;
+    .cv-content {
+      margin-top: -90vh !important;
+      .section-cont {
+        .link-cv {
+          margin-bottom: 0 !important;
+        }
       }
+    }
+    .section-contact {
+      margin-top: 100px;
     }
   }
   
@@ -170,6 +179,12 @@ main {
       }
     }
     .cv-content {
+      margin-top: -90vh !important;
+      .section-cont {
+        .link-cv {
+          margin-bottom: 0 !important;
+        }
+      }
     }
     .contact {
       height: 500px !important;
@@ -187,8 +202,6 @@ main {
       }
     }
     .cv-content {
-      margin-top: -80vh !important;
-      height: 120vh !important;
     }
     .contact {
       height: 400px !important;
@@ -198,7 +211,7 @@ main {
     }
   }
   
-  @media (max-width: 575.98px) { 
+  @media (max-width: 767.99px) { 
     .section-cv {
       margin-top: 0 !important;
       .img-content {
@@ -212,15 +225,13 @@ main {
       }
     }
     .cv-content {
-      margin-top: -85vh !important;
+      margin-top: -60vh !important;
     }
     .contact {
-      height: 530px !important;
     }
     .section-contact {
       margin-top: 100px;
       .form {
-        height: 530px !important;
         width: 100vw !important;
       }
       form {
@@ -319,33 +330,31 @@ $time-step: $time/$max;
 
 
 
+//// CONTACT
+
+
 .contact {
   width: 100%;
-  height: 75vh;
   margin-bottom: 0 !important;
-  p {
-    font-family: $serif;
-    font-size: 1.5em;
-  }
   .name {
     font-size: 3em;
     color: $black;
   }
-  span {
-    font-weight: 900;
+  p {
+    font-family: $serif;
+    font-size: 1.5em;
+    span {
+      font-weight: 900;
+    }
   }
 }
+
+
+//// FORM
+
+
 .form {
   width: 100%;
-  height: 75vh;
-  // background-color: burlywood;
-}
-
-
-/////////////////////////////////
-
-
-.form {
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -423,7 +432,11 @@ $time-step: $time/$max;
     .btn-sub:hover:before, .btn-sub:hover:after {
       transform: scaleX(1);
     }
-    
   }
-  
+}
+
+@media (max-width: 767.99px) { 
+  .btn-sub:after, .btn-sub:before {
+    transform: scaleX(1) !important;
+  }
 }
