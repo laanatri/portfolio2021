@@ -113,6 +113,10 @@
     }
     .oeuil {
       margin: auto;
+      margin-top: 30px !important;
+    }
+    .p2 {
+      margin-bottom: 0 !important;
     }
   }
 }
@@ -151,11 +155,20 @@
     position: absolute;
   }
 }
+
 .card-reverse .oeuil {
   margin-left: auto;
 }
+
 .oeuil:hover {
   .img2 {
     display: block;
+  }
+}
+@media (max-width: 1199.99px) {
+  .oeuil {
+    .img2 {
+      display: block;
+    }
   }
 }
