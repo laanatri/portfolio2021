@@ -757,13 +757,14 @@
                                     echo "<div class= 'error'>Veuillez renseigner votre prénom.</div>";
                                     $sendOk = false;
                                 }
-                                if (empty($mail)){
-                                    echo "<div class= 'error'>Veuillez renseigner votre mail.</div>";
-                                    $sendOk = false;
-                                }
                                 if (!strpos($mail, '@')){
-                                    echo "<div class= 'error'>Veuillez renseigner un mail valide.</div>";
-                                    $sendOk = false;
+                                    if (empty($mail)){
+                                        echo "<div class= 'error'>Veuillez renseigner votre mail.</div>";
+                                        $sendOk = false;
+                                    } else {
+                                        echo "<div class= 'error'>Veuillez renseigner un mail valide.</div>";
+                                        $sendOk = false;
+                                    }
                                 }
                                 if (empty($message)){
                                     echo "<div class= 'error'>Veuillez renseigner votre message.</div>";
@@ -781,13 +782,13 @@
                                     try{
                                         $isSend = @mail( 'contact@adelaidelaanatri.com', $objet, $msg, $headers);
                                         if($isSend === true){
-                                            echo "<div class= 'succes'>Formulaire de contact bien envoyé</div>";
+                                            echo "<div class= 'succes'>Merci, votre message a bien été envoyé.</div>";
                                             $_POST = [];
                                         }else{
-                                            echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire</div>";
+                                            echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire.</div>";
                                         }
                                     }catch(\Trowable $e){
-                                        echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire</div>";
+                                        echo "<div class= 'error'>Une erreur est survenue lors de l'envoie du formulaire.</div>";
                                     }
                                 }
                             }
