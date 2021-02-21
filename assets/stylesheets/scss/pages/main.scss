@@ -141,6 +141,15 @@ main {
   }
 }
 
+@media (min-width: 1200px) and (max-width: 1300px) { 
+  .section-cv {
+    margin-bottom: 100px !important;
+  }
+  .form {
+    height: 700px !important;
+  }
+}
+
   @media (max-width: 1199.99px) and (min-width: 992px) { 
     .section-cv {
       margin-top: -100px !important;
