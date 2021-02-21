@@ -1,1 +1,23 @@
-@import"https://fonts.googleapis.com/css2?family=Sofia&display=swap";@import"https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";@font-face{font-family:"Slang";src:url("../../../fonts/slang-webfont.woff2") format("woff2"),url("../../../fonts/slang-webfont.woff") format("woff")}
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - assets/stylesheets/scss/config/fonts.scss
+
+Backtrace:
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/ade/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/ade/.rbenv/versions/2.6.6/bin/sass:23:in `load'
+/home/ade/.rbenv/versions/2.6.6/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - assets/stylesheets/scss/config/fonts.scss"; }
