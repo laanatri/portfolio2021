@@ -275,13 +275,19 @@
   }
   .links-modal {
     text-align: right;
+    width: 100%;
     a {
       font-family: $cursive;
       color: $green;
       font-size: 1.2em;
+      text-decoration: none;
     }
     a:first-of-type {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+    a:hover {
+      color: $black;
+
     }
   }
 }
