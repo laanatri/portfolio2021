@@ -49,6 +49,74 @@ const openModal = (btn, modal) => {
     modal.classList.add("modal-active");
 
 
+
+
+
+    ///SWIPPER
+
+    const swipes = modal.querySelector('.swiper-container');
+
+
+
+    console.log(swipes);
+    
+    
+    new Swiper(swipes, {
+      // Optional parameters
+      // If we need pagination
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // And if we need scrollbar
+    
+    });
+  
+    
+    
+    
+    const modalSurf = document.getElementById("myModalSurf");
+    const bullets = modalSurf.querySelectorAll(".swiper-pagination-bullet");
+    
+    bullets.forEach((bullet) => {
+      bullet.innerHTML = "<i class='fab fa-envira'></i>";
+      console.log(bullet);
+    })
+
+    const modalAtre = document.getElementById("myModalAtre");
+    const bulllets = modalAtre.querySelectorAll(".swiper-pagination-bullet");
+
+    bulllets.forEach((bulllet) => {
+      bulllet.innerHTML = "<i class='fas fa-fire'></i>";
+    })
+
+    const modalVectoriels = document.getElementById("myModalVectoriels");
+    const bullllets = modalVectoriels.querySelectorAll(".swiper-pagination-bullet");
+
+    bullllets.forEach((bullllet) => {
+      bullllet.innerHTML = "<i class='fas fa-bezier-curve'></i>";
+    })
+
+    const modalPictos = document.getElementById("myModalPictos");
+    const bulllllets = modalPictos.querySelectorAll(".swiper-pagination-bullet");
+
+    bulllllets.forEach((bulllllet) => {
+      bulllllet.innerHTML = "<i class='fas fa-signature'></i>";
+    })
+
+    ///
+
+
+
+
+
+
     const scro = window.scrollY;
 
     const scrolling = () => {
@@ -58,11 +126,13 @@ const openModal = (btn, modal) => {
     window.addEventListener('scroll', scrolling );
 
 
-///
+
 
 
     const closeModal = (close, modal) => {
+      
       close.onclick = () => {
+
         modal.style.display = "none";
         nav.style.display = 'flex';
         modal.classList.remove("modal-active");
@@ -77,7 +147,6 @@ const openModal = (btn, modal) => {
     })
 
 
-///
 
 
     const otherCloseModal = (modal) => {
@@ -97,8 +166,10 @@ const openModal = (btn, modal) => {
       otherCloseModal(modal);
     })
 
+
   }
 }
+
 
 boutonsArr.forEach((bouton) => {
   const ind = boutonsArr.indexOf(bouton);
@@ -111,49 +182,54 @@ boutonsArr.forEach((bouton) => {
 
 // CAROUSEL
 
-const btnSurf = document.querySelector(".myBtnSurf");
+// const btnSurf = document.querySelector(".myBtnSurf");
 
 
-boutonsArr.forEach((bouton) => {
-  bouton.addEventListener(("click") , () => {
-    const indBtn = boutonsArr.indexOf(bouton);
+// boutonsArr.forEach((bouton) => {
+//   bouton.addEventListener(("click") , () => {
+//     const indBtn = boutonsArr.indexOf(bouton);
 
 
-    const pagination = modals[indBtn].getElementsByTagName("i");
-    const paginationArr = Array.from(pagination);
+//     const pagination = modals[indBtn].getElementsByTagName("i");
+//     const paginationArr = Array.from(pagination);
 
-    const frames = modals[indBtn].querySelectorAll(".frame-carousel");
-    const framesArr = Array.from(frames);
+//     const frames = modals[indBtn].querySelectorAll(".frame-carousel");
+//     const framesArr = Array.from(frames);
 
 
-    const modalContent = modals[indBtn].querySelector(".modal-cont");
+//     const modalContent = modals[indBtn].querySelector(".modal-cont");
 
-    const w = modalContent.offsetWidth;
+//     const w = modalContent.offsetWidth;
   
-    framesArr.forEach((frame) => {
+//     framesArr.forEach((frame) => {
   
-      frame.style.width = w + "px";
-    })
+//       frame.style.width = w + "px";
+//     })
   
 
-    const carousel = modals[indBtn].querySelector(".carousel-content");
+//     const carousel = modals[indBtn].querySelector(".carousel-content");
 
-    paginationArr.forEach((page) => {
-      page.addEventListener(("click") , () => {
+//     paginationArr.forEach((page) => {
+//       page.addEventListener(("click") , () => {
 
-        paginationArr.forEach((page) => {
-          page.classList.remove("i-actif");
-        })
-        page.classList.add("i-actif");
+//         paginationArr.forEach((page) => {
+//           page.classList.remove("i-actif");
+//         })
+//         page.classList.add("i-actif");
 
 
-        const indPage = paginationArr.indexOf(page);
-        let X = w * indPage;
-        carousel.scrollTo(X, 0);
-      })
-    })
-  })
-})
+//         const indPage = paginationArr.indexOf(page);
+//         let X = w * indPage;
+//         carousel.scrollTo(X, 0);
+//       })
+//     })
+//   })
+// })
+
+
+
+
+
 
 // CAROUSEL
 

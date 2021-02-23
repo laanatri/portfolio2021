@@ -3,40 +3,51 @@
 
 .modal-cont {
   position: relative;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: initial !important;
+}
+.swiper-slide {
+  overflow-y: scroll;
+}
+.swiper-scrollbar {
+  display: none;
+}
+.swiper-pagination {
+  bottom: -30px !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: $black !important;
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  background-color: rgba(242, 239, 233, .5);
+  border-radius: 0 5px 0 5px;
+  transition: .3s ease-in-out;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: rgba(242, 239, 233, .8);
+}
 
-  .pagination {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    display: flex;
-    justify-content: center;
-    i {
-      padding: 10px;
-      opacity: .7;
-      cursor: pointer;
-    }
-    i:hover {
-      opacity: 1;
-    }
-    .i-actif {
-      opacity: 1;
-    }
-  }
-  .carousel-content {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100% 100% 100% 100% 100% 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-      .frame-carousel {
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;
-        img {
-          width: 100%;
-          margin: auto;
-        }
-      }
-  }
+.swiper-pagination-bullet {
+  height: 20px !important;
+  width: 20px !important;
+  background-color: transparent !important;
+  transition: .5s ease-in-out;
+}
+
+
+#myModalSurf .swiper-pagination-bullet, #myModalSurf .swiper-pagination-bullet-active {
+  color: $green !important;
+}
+#myModalAtre .swiper-pagination-bullet, #myModalAre .swiper-pagination-bullet-active {
+  color: $black !important;
+}
+
+#myModalVectoriels .swiper-slide, #myModalPictos .swiper-slide {
+  display: flex;
+  align-items: center;
 }
