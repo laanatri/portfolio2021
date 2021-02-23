@@ -48,7 +48,7 @@
   ::-webkit-scrollbar-thumb {
     background-color: $blue;
   }
-  scrollbar-color: $blue transparent;
+  scrollbar-color: $blue $beige;
 
 }
 #myModalWelina {
@@ -59,7 +59,7 @@
   ::-webkit-scrollbar-thumb {
     background-color: $black;
   }
-  scrollbar-color: $black transparent;
+  scrollbar-color: $black $beige;
 
 }
 #myModalAtre {
@@ -70,7 +70,7 @@
   ::-webkit-scrollbar-thumb {
     background-color: $green;
   }
-  scrollbar-color: $green transparent;
+  scrollbar-color: $green $beige;
 
 }
 #myModalComponents {
@@ -165,13 +165,13 @@
   height: 100%;
   width: 100%;
   ::-webkit-scrollbar {
-    background-color: transparent;
+    background-color: $beige;
     border: none;
     width: 7px;
   }
 
  ::-webkit-scrollbar-track-piece {
-    background-color: transparent;
+    background-color: $beige;
     border: none;
     width: 7px;
   }
@@ -182,7 +182,7 @@
     border: none;
     width: 7px;
   }
-  scrollbar-color: $red transparent;
+  scrollbar-color: $red $beige;
 }
 
 @media (max-width: 991.99px) {
