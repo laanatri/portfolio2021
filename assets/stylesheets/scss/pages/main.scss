@@ -34,7 +34,7 @@ main {
   }
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 575.98px) {
   .section-container {
     padding: 0 !important;
   }
@@ -208,6 +208,9 @@ main {
     }
     .section-contact {
       margin-top: 50px;
+    }
+    .link-cv {
+      margin-bottom: 0 !important;
     }
   }
   

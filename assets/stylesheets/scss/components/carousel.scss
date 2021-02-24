@@ -31,6 +31,9 @@
 .swiper-button-next:hover, .swiper-button-prev:hover {
   background-color: rgba(242, 239, 233, .8);
 }
+.swiper-button-next:focus, .swiper-button-prev:focus {
+  outline: none;
+}
 
 .swiper-pagination-bullet {
   height: 20px !important;
