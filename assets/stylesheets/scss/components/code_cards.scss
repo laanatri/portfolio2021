@@ -6,17 +6,18 @@
   .modal-cont {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
     column-gap: 20px;
     row-gap: 20px;
     overflow-y: scroll;
     border-bottom: 4px solid $black;
     .code-card {
-      width: 350px;
-      
+     
+      overflow: hidden;
       display: inline-flex;
       margin: auto;
       .img-code-card, .text-code-card {
-        width: 200px;
+        width: 180px;
       }
       .img-code-card {
         height: 200px;
@@ -34,7 +35,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        height: 250px;
+        width: 200px;
         margin-left: -50px;
         z-index: 1;
         border-radius: 20px 0 20px 0;
@@ -79,10 +80,7 @@
 @media (min-width: 1200px) { 
   .code-card:hover {
     .text-code-card {
-      animation: codeCard .5s ease-in-out;
-      z-index: 2;
-      transition: .5 ease;
-
+ 
     }
    
   }
@@ -101,8 +99,10 @@
 @media (max-width: 767.99px) { 
   #myModalComponents, #myModalAnimations {
     .modal-cont {
-      grid-template-columns: 250px;
-      grid-template-rows: 300px 300px 300px;
+      grid-template-columns: auto;
+      grid-template-rows: 250px 250px 250px;
+      .code-card {
+      }
     }
   }
 }

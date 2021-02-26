@@ -41,6 +41,9 @@
   background-color: transparent !important;
   transition: .5s ease-in-out;
 }
+.swiper-pagination-bullet:focus {
+  outline: none;
+}
 
 
 #myModalSurf .swiper-pagination-bullet, #myModalSurf .swiper-pagination-bullet-active {
