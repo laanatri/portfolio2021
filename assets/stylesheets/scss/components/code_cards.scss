@@ -35,7 +35,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        width: 200px;
+        height: 250px;
         margin-left: -50px;
         z-index: 1;
         border-radius: 20px 0 20px 0;
@@ -102,6 +102,9 @@
       grid-template-columns: auto;
       grid-template-rows: 250px 250px 250px;
       .code-card {
+        .img-code-card, .text-code-card {
+          width: 165px;
+        }
       }
     }
   }
