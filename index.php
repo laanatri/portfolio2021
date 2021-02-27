@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<body>
+<body class="body">
 <!--NAVBAR-->
     <nav class="navbar inactive">
         <div class="navbar-fixe">
@@ -84,7 +84,7 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="picto">
-                        <img src="assets/images/pictos/menu_int_picto.svg" alt="Forme abstraite">
+                        <img class="picto-nav" src="assets/images/pictos/menu_int_picto.svg" alt="Forme abstraite">
                     </div>
                 </div>
                 <p>Portfolio crée et codé par Adélaïde Laanatri</p>
@@ -92,6 +92,17 @@
                     <a href="https://fr.linkedin.com/in/ad%C3%A9la%C3%AFde-laanatri" class="reseau-linkedin" target="_blank">Linkedin</a>
                     <a href="https://github.com/laanatri" class="reseau-github" target="_blank">Github</a>
                     <a href="https://dribbble.com/Adelaide_Laanatri" class="reseau-dribbble" target="_blank">Dribbble</a>
+                </div>
+                <div class="dark-mode">
+                    <p id="dark">Dark mode</p>
+                    <div class="btn-dark-mode">
+                        <div class="line"></div>
+                        <div class="img-content">
+                            <img class="img-not-dark" src="assets/images/pictos/fleur-rose.png" alt="">
+                            <img class="img-dark" src="assets/images/pictos/fleur-rose_dark.png" alt="">
+
+                        </div>
+                    </div>
                 </div>
             </ul>
         </div>
@@ -104,7 +115,7 @@
                 <h1>Développeuse Web</h1>
             </div>
             <div class="picture-home">
-                <img src="assets/images/image_home/fleurs.png" alt="Bouquet de fleurs dans les tons de rouge, rose.">
+                <img class="img-home" src="assets/images/image_home/fleurs.png" alt="Bouquet de fleurs dans les tons de rouge, rose.">
             </div>
             <div class="name-home">
                 <h2>Adélaïde Laanatri</h2>
@@ -672,7 +683,7 @@
 <!--CV-->
         <section class="section-cv" data-aos="fade-up" data-aos-duration="1500">
             <div class="img-content">
-                <img src="assets/images/image_home/fleurs_hor.png" alt="Un bouquet de fleurs.">
+                <img class="img-cv" src="assets/images/image_home/fleurs_hor.png" alt="Un bouquet de fleurs.">
             </div>
             <div class="container section-container cv-content">
                 <div class="row-section row-section-reverse">
@@ -845,7 +856,7 @@
     <footer>
         <div class="footer-img">
             <div class="img-content">
-                <img src="assets/images/image_home/fleur_bottom.png" alt="Un bouquet de fleur.">
+                <img class="img-footer" src="assets/images/image_home/fleur_bottom.png" alt="Un bouquet de fleur.">
             </div>
         </div>
         <div class="footer-content">
