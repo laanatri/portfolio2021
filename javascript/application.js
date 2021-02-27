@@ -78,7 +78,9 @@ const openModal = (btn, modal) => {
     
     });
   
-    
+    ///SWIPPER
+
+    ///MODAL
     
     
     const modalSurf = document.getElementById("myModalSurf");
@@ -174,72 +176,16 @@ const openModal = (btn, modal) => {
 boutonsArr.forEach((bouton) => {
   const ind = boutonsArr.indexOf(bouton);
   openModal(bouton, modalsArr[ind]);
-})
+});
 
 // MODAL
 
-////////////////////////////////////////////////////////////////
 
-// CAROUSEL
-
-// const btnSurf = document.querySelector(".myBtnSurf");
-
-
-// boutonsArr.forEach((bouton) => {
-//   bouton.addEventListener(("click") , () => {
-//     const indBtn = boutonsArr.indexOf(bouton);
-
-
-//     const pagination = modals[indBtn].getElementsByTagName("i");
-//     const paginationArr = Array.from(pagination);
-
-//     const frames = modals[indBtn].querySelectorAll(".frame-carousel");
-//     const framesArr = Array.from(frames);
-
-
-//     const modalContent = modals[indBtn].querySelector(".modal-cont");
-
-//     const w = modalContent.offsetWidth;
-  
-//     framesArr.forEach((frame) => {
-  
-//       frame.style.width = w + "px";
-//     })
-  
-
-//     const carousel = modals[indBtn].querySelector(".carousel-content");
-
-//     paginationArr.forEach((page) => {
-//       page.addEventListener(("click") , () => {
-
-//         paginationArr.forEach((page) => {
-//           page.classList.remove("i-actif");
-//         })
-//         page.classList.add("i-actif");
-
-
-//         const indPage = paginationArr.indexOf(page);
-//         let X = w * indPage;
-//         carousel.scrollTo(X, 0);
-//       })
-//     })
-//   })
-// })
-
-
-
-
-
-
-// CAROUSEL
-
-//////////////////////////////////////////
 
 // NAVI
 
 const navB = document.querySelector(".navbar");
 const btnNav = document.querySelector(".btn-nav");
-
 
 
 const btnAnim = () => {
@@ -248,19 +194,23 @@ const btnAnim = () => {
 }
 
 
-
-
-
 btnNav.addEventListener(("click") , () => {
-
-
   console.log("nav!!!!");
-  navB.classList.toggle("active");
-  navB.classList.toggle("inactive");
+
+  console.log(document.querySelector(".dark-mode-on"));
+
+  if (document.querySelector(".dark-mode-on") != null) {
+    console.log("dark");
+    navB.classList.toggle("active-dark");
+    navB.classList.toggle("inactive");
+  } else {
+    console.log("light");
+    navB.classList.toggle("active");
+    navB.classList.toggle("inactive");
+  }
+
   btnAnim();
-
 })
-
 
 
 const navItems = document.querySelectorAll(".nav-item");
@@ -278,3 +228,64 @@ const eventMenuClick = () => {
 eventMenuClick();
 
 // NAVI
+
+
+// DARK MODE
+
+const dark = document.querySelector(".dark-mode");
+var c = 0;
+
+dark.addEventListener('click', () => {
+  console.log("dark mode!!");
+  dark.classList.toggle("dark-mode-on");
+
+  document.body.id = 'dark';
+  document.body.classList.toggle("body");
+  document.body.classList.toggle("dark");
+
+
+  navB.classList.toggle("active");
+  navB.classList.toggle("active-dark");
+
+
+
+
+  c = c + 1;
+  console.log(c);
+
+	if (c%2 == 0) {
+		console.log("even");
+    document.querySelector(".img-home").src = "assets/images/image_home/fleurs.png";
+    document.querySelector(".img-cv").src = "assets/images/image_home/fleurs_hor.png";
+    document.querySelector(".img-footer").src = "assets/images/image_home/fleur_bottom.png";
+    document.querySelectorAll(".img2").forEach((img) => {
+      img.src = "assets/images/image_home/oeuil2.svg";
+    })
+    document.querySelectorAll(".img1").forEach((img) => {
+      img.src = "assets/images/image_home/oeuil1.svg";
+    })
+    document.querySelector(".picto .picto-nav").src = "assets/images/pictos/menu_int_picto.svg";
+
+    
+  } else {
+    console.log("odd");
+    document.querySelector(".img-home").src = "assets/images/image_home/fleurs_ver_dark.png";
+    document.querySelector(".img-cv").src = "assets/images/image_home/fleurs_hor_dark.png";
+    document.querySelector(".img-footer").src = "assets/images/image_home/fleur-bottom_dark.png";
+    document.querySelectorAll(".img2").forEach((img) => {
+      img.src = "assets/images/image_home/oeuil2_dark.svg";
+    })
+    document.querySelectorAll(".img1").forEach((img) => {
+      img.src = "assets/images/image_home/oeuil1_dark.svg";
+    })
+    document.querySelector(".picto .picto-nav").src = "assets/images/pictos/menu_int_picto_dark.svg";
+
+  
+  };
+
+
+
+
+});
+
+// DARK MODE

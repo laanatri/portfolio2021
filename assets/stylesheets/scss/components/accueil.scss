@@ -85,11 +85,15 @@
 .home {
     .picture-home {
       width: 100vw;
+      height: auto;
       overflow: hidden;
       top: 35%;
       img {
         width: 120%;
       }
     }
+  }
+  .title-home, .name-home {
+    height: 70vh !important;
   }
 }

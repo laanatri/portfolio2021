@@ -26,6 +26,37 @@
     opacity: 1;
   }
 }
+.navbar.active-dark {
+  height: 100vh;
+  background-color: $black;
+  .nav-bis {
+    opacity: 1;
+  }
+  ul li a {
+    color: $beige;
+  }
+  p {
+    color: $beige;
+  }
+  .projets:hover {
+    color: $blue;
+  }
+  .code:hover {
+    color: $red;
+  }
+  .fun:hover {
+    color: $green;
+  }
+  .cv:hover {
+    color: $yellow;
+  }
+  .hr .dot {
+    background-color: $beige;
+  }
+  .dark-mode .btn-dark-mode .line {
+    background-color: $beige;
+  }
+}
 
 
 
@@ -116,12 +147,17 @@
         background-color: $black;
       }
     }
+    .picto-nav {
+      height: 27px;
+      width: 74px;
+    }
     p {
       font-family: $cursive;
       color: $black;
     }
     .reseaux {
       display: flex;
+      margin-bottom: 15px;
       a {
         font-family: $sans-serif;
         font-size: 2em;
@@ -198,6 +234,66 @@
     transform: scaleX(1);
   }
 }
+
+
+
+/// DARK MODE
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+  #dark {
+    font-family: $sans-serif;
+    margin: 0;
+    margin-right: 15px;
+  }
+  .btn-dark-mode {
+    cursor: pointer;
+    transition: 3s ease-in-out;
+    position: relative;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .line {
+      height: 4px;
+      width: 70px;
+      background-color: $black;
+      margin-left: 15px;
+
+    }
+    .img-content {
+      position: absolute;
+      left: 0;
+      transition: all .5s ease-in-out;
+      height: 40px;
+      width: 40px;
+      img {
+        height: 40px;
+        width: 40px;
+      }
+      .img-dark {
+        position: absolute;
+        left: 0;
+      }
+      .img-not-dark {
+        position: relative;
+        z-index: 1;
+        transition: all .5s ease-in-out;
+      }
+    }
+  }
+}
+.dark-mode-on {
+  .img-content {
+    left: 50px !important;
+  }
+  .img-not-dark {
+    opacity: 0;
+  }
+}
+
 
 
 

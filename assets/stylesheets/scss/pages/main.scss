@@ -4,11 +4,14 @@
 
 body {
   overflow-x: hidden;
+}
+.body {
   background-color: $beige !important;
 }
 main {
   scroll-behavior: smooth;
 }
+
 
 
 ////SECTIONS
@@ -418,7 +421,7 @@ $time-step: $time/$max;
       position: absolute;
       z-index: -1;
       transform-origin: center;
-      bottom: -5%;
+      bottom: 7%;
       transform: scaleX(0);
       transition: 0.3s ease-in-out;
     }

@@ -1,0 +1,84 @@
+@import "../config/colors";
+@import "../config/fonts";
+
+.dark {
+  background-color: $black;
+/// NAVIGATION
+
+
+/// SECTIONS
+  h2 {
+    color: $beige;
+  }
+  h3 {
+    color: $beige !important;
+  }
+  .card .card-text p {
+    color: $beige;
+  }
+  .card .card-text .hr {
+    background-color: $beige;
+  }
+  .card .card-text .fa-info p {
+    color: $black;
+  }
+  .section-cv .p-cont p {
+    color: $beige;
+  }
+  .section-contact {
+    color: $beige;
+  }
+  .footer-content {
+    color: $beige;
+    border-top: 4px solid $beige;
+    .links a {
+      color: $beige;
+    }
+  }
+  .modal-box {
+    background-color: $black !important;
+  }
+  #myModalWelina .title-modal {
+    color: $beige;
+  }
+  #myModalWelina {
+    background-color: rgba(242, 239, 233, .5);
+  }
+  .modal-title .links-modal a:hover {
+    color: $beige;
+  }
+  #myModalAtre .swiper-pagination-bullet, #myModalAre .swiper-pagination-bullet-active {
+    color: $green;
+  }
+  #myModalVectoriels .swiper-pagination {
+    color: $yellow;
+  }
+  #myModalPictos .swiper-pagination {
+    color: $green;
+  }
+  #myModalVectoriels .modal-box .d-flex ::-webkit-scrollbar-track-piece, #myModalPictos .modal-box .d-flex ::-webkit-scrollbar-track-piece {
+    background-color: $black;
+  }
+  #myModalComponents .modal-cont, #myModalAnimations .modal-cont {
+    border-bottom: 4px solid $beige;
+  }
+  .section-cv .cv-content .row-section .section-cont .link-cv a {
+    color: $beige;
+  }
+  .section-cv .cv-content .row-section .section-cont .link-cv a:before, .section-cv .cv-content .row-section .section-cont .link-cv a:after {
+    background-color: $red;
+  }
+  .form form input, .form form textarea {
+    border-bottom: 2px solid $beige;
+    color: $beige;
+  }
+  .form form input::placeholder, .form form textarea::placeholder {
+    color: $beige;
+  }
+  .form form .btn-sub:after, .form form .btn-sub:before, .form form .btn-sub:after, .form form .btn-sub:after {
+    background-color: $red;
+  }
+  .contact .name {
+    color: $beige;
+  }
+}
